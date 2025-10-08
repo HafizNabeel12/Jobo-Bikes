@@ -19,8 +19,60 @@ const LandingPage = () => {
         />
       </section>
 
-      {/* Why Choose Us Section */}
-     
+      {/* Why Trust Section - NEW */}
+      <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Title */}
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
+              WHY TRUST JOBOBIKE?
+            </h2>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
+            {/* Stat 1 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#58c0c2] mb-2 md:mb-3">
+                300+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Partners in Europe
+              </p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#58c0c2] mb-2 md:mb-3">
+                50000+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Sold Electric Bikes
+              </p>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#58c0c2] mb-2 md:mb-3">
+                100000+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Jobobike Fans
+              </p>
+            </div>
+
+            {/* Stat 4 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#58c0c2] mb-2 md:mb-3">
+                20+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Experience in Ebike Manufacturing
+              </p>
+            </div>
+          </div>
+        </div>
+      </section>
 
       {/* Featured Products */}
       <section className="mx-auto mt-6 max-w-7xl px-4 sm:px-2 mb-16">
@@ -71,8 +123,6 @@ const LandingPage = () => {
                       {formatCurrency(product.price)}
                     </span>
                   )}
-
-
                 </div>
 
                 <div className="mt-2 sm:mt-0 sm:ml-2 flex-shrink-0">
@@ -87,15 +137,12 @@ const LandingPage = () => {
         </ul>
       </section>
 
-
-
       {/* What are E-bikes Section */}
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
             <h2 className="text-4xl text-gray-800 mb-4">Sykkellageret – spesialisten på el-sykler i Norge</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Oppdag el-sykler som kombinerer sykkelglede med smart teknologi. Hos Sykkellageret får du kvalitet, service og trygg handel – derfor velger flere oss.
-</p>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Oppdag el-sykler som kombinerer sykkelglede med smart teknologi. Hos Sykkellageret får du kvalitet, service og trygg handel – derfor velger flere oss.</p>
           </div>
 
           <div className="grid lg:grid-cols-2 gap-12 items-center">
@@ -181,7 +228,6 @@ const LandingPage = () => {
                     <div className="w-2 h-2 bg-black rounded-full"></div>
                     <span>Byutforskere som vil oppdage nye steder på en enkel og morsom måte.</span>
                   </div>
-                
                 </div>
               </div>
             </div>
@@ -225,7 +271,7 @@ const LandingPage = () => {
         </div>
       </section>
 
- <section className="hidden md:block py-16 bg-white ">
+      <section className="hidden md:block py-16 bg-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-3xl text-center text-gray-800 mb-12">Sykkellageret – valgt av kunder over hele Norge</h2>
           <div className="grid md:grid-cols-3 gap-8">
@@ -286,7 +332,5 @@ const LandingPage = () => {
     </div>
   );
 };
-
-
 
 export default LandingPage;
