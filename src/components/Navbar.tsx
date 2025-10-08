@@ -9,9 +9,10 @@ import {
   ChevronDown,
   EllipsisVertical,
   X,
+  ChevronRight,
 } from 'lucide-react';
 import { CartIcon } from './CartIcon';
-import { searchProducts } from '@/lib/productData'; // <-- adjust path if needed
+import { searchProducts, getProductBySlug, getAllProductSlugs } from '@/lib/productData'; // <-- adjust path if needed
 
 export default function Navbar() {
   const router = useRouter();
@@ -29,6 +30,9 @@ export default function Navbar() {
   // Mobile e-bikes accordion
   const [mobileDropdownOpen, setMobileDropdownOpen] = useState(false);
 
+  // Dynamic categories from products
+  const [categories, setCategories] = useState<any[]>([]);
+
   // Refs to detect outside click for search dropdown (desktop + mobile)
   const desktopSearchRef = useRef<HTMLDivElement | null>(null);
   const mobileSearchRef = useRef<HTMLDivElement | null>(null);
@@ -38,6 +42,59 @@ export default function Navbar() {
     window.addEventListener('scroll', handleScroll);
     return () => window.removeEventListener('scroll', handleScroll);
   }, []);
+
+  // Fetch categories from products
+  useEffect(() => {
+    try {
+      const slugs = getAllProductSlugs();
+      const categoryMap = new Map();
+
+      slugs.forEach((slug) => {
+        const product = getProductBySlug(slug);
+        if (product && product.category && Array.isArray(product.category)) {
+          product.category.forEach((cat: string) => {
+            if (!categoryMap.has(cat)) {
+              categoryMap.set(cat, {
+                name: formatCategoryName(cat),
+                slug: cat,
+                tagline: getCategoryTagline(cat),
+                image: product.image || '/images/placeholder.png',
+                description: '',
+              });
+            }
+          });
+        }
+      });
+
+      setCategories(Array.from(categoryMap.values()));
+    } catch (err) {
+      console.error('Error loading categories:', err);
+    }
+  }, []);
+
+  // Helper function to format category names
+  const formatCategoryName = (category: string): string => {
+    return category
+      .split('-')
+      .map(word => word.charAt(0).toUpperCase() + word.slice(1))
+      .join(' ');
+  };
+
+  // Helper function to get category taglines
+  const getCategoryTagline = (category: string): string => {
+    const taglines: { [key: string]: string } = {
+      'dyu': 'Smart Compact Mobility',
+      'jobo': 'Adventure with Power',
+      'lightweight': 'Easy to Carry & Ride',
+      'commuter-ebike': 'Urban Mobility Enjoyment',
+      'step-through': 'Comfort Inclusivity Safety',
+      'folding': 'Fold Ride Conquer',
+      'fat-tire': 'Stable Off-road All-Terrain',
+      'cargo': 'More Power When Carrying Loads',
+      'mtb': 'Power Technique Outstand',
+    };
+    return taglines[category] || 'Explore our collection';
+  };
 
   // Debounced search: wait 250ms after user stops typing
   useEffect(() => {
@@ -98,21 +155,6 @@ export default function Navbar() {
     { name: 'Accessories', href: '/accessorie' },
     { name: 'Terms of Service', href: '/terms' },
     { name: 'Contact Us', href: '/contact' },
-  ];
-
-  const categories = [
-    {
-      name: 'DYU Bikes',
-      slug: 'dyu',
-      tagline: 'Smart Compact Mobility',
-      image: '/images/d3f/d3f-main.png',
-    },
-    {
-      name: 'JOBO Bikes',
-      slug: 'jobo',
-      tagline: 'Adventure with Power',
-      image: '/images/lyon/lyon-1.png',
-    },
   ];
 
   const moreMenuItems = [
@@ -223,21 +265,24 @@ export default function Navbar() {
             </button>
 
             {mobileDropdownOpen && (
-              <div className="ml-6 mt-2 space-y-2">
+              <div className="ml-2 mt-2 space-y-2">
                 {categories.map((cat) => (
                   <Link
                     key={cat.slug}
                     href={`/category/${cat.slug}`}
-                    className="flex items-center justify-between bg-gray-50 p-2 rounded-md hover:bg-gray-100 transition"
+                    className="flex items-center justify-between bg-gray-50 p-3 rounded-md hover:bg-gray-100 transition group"
                   >
-                    <div>
-                      <p className="text-gray-800 font-medium">{cat.name}</p>
-                      <p className="text-xs text-gray-600">{cat.tagline}</p>
+                    <div className="flex-1">
+                      <div className="flex items-center gap-2">
+                        <p className="text-gray-800 font-semibold text-sm">{cat.name}</p>
+                        <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#58c0c2] transition-colors" />
+                      </div>
+                      <p className="text-xs text-gray-500 mt-1">{cat.tagline}</p>
                     </div>
                     <img
                       src={cat.image}
                       alt={cat.name}
-                      className="w-12 h-12 object-contain rounded border border-gray-200"
+                      className="w-16 h-16 object-contain rounded border border-gray-200"
                     />
                   </Link>
                 ))}
@@ -347,22 +392,82 @@ export default function Navbar() {
                       {item.dropdown && <ChevronDown className="w-4 h-4 text-gray-500" />}
                     </button>
 
-                    {/* Dropdown for E-Bikes on desktop */}
+                    {/* Dropdown for E-Bikes on desktop - JOBOBIKE Style */}
                     {item.dropdown && activeDropdown === index && (
-                      <div className="absolute left-0 top-full w-[550px] bg-white shadow-xl rounded-xl border border-gray-100 p-6 grid grid-cols-2 gap-6 z-50">
-                        {categories.map((cat) => (
+                      <div className="absolute left-0 top-full mt-2 bg-white shadow-2xl rounded-xl border border-gray-100 z-50 min-w-[700px] max-h-[500px] overflow-hidden flex flex-col">
+                        {/* Title Section - Fixed */}
+                        <div className="px-8 pt-8 pb-4 border-b border-gray-200 flex-shrink-0">
+                          <h3 className="text-2xl font-bold text-gray-900">Browse by Category</h3>
+                          <p className="text-sm text-gray-600 mt-1">Explore our complete e-bike collection</p>
+                        </div>
+
+                        {/* Categories Grid - Scrollable with custom scrollbar */}
+                        <div className="overflow-y-auto flex-1 px-8 py-6 custom-scrollbar">
+                          <div className="grid grid-cols-3 gap-6">
+                            {categories.map((cat) => (
+                              <Link
+                                key={cat.slug}
+                                href={`/category/${cat.slug}`}
+                                className="group flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 transition-all duration-300 hover:shadow-md"
+                              >
+                                {/* Image Container */}
+                                <div className="w-full h-32 mb-4 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden group-hover:bg-white transition-colors">
+                                  <img
+                                    src={cat.image}
+                                    alt={cat.name}
+                                    className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
+                                  />
+                                </div>
+
+                                {/* Category Info */}
+                                <div className="w-full">
+                                  <div className="flex items-center justify-center gap-1 mb-2">
+                                    <h4 className="text-base font-bold text-gray-900 group-hover:text-[#58c0c2] transition-colors">
+                                      {cat.name}
+                                    </h4>
+                                    <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#58c0c2] group-hover:translate-x-1 transition-all" />
+                                  </div>
+                                  <p className="text-xs text-gray-500 leading-relaxed">
+                                    {cat.tagline}
+                                  </p>
+                                </div>
+                              </Link>
+                            ))}
+                          </div>
+                        </div>
+
+                        {/* View All Link - Fixed */}
+                        <div className="px-8 py-4 border-t border-gray-200 text-center flex-shrink-0">
                           <Link
-                            key={cat.slug}
-                            href={`/category/${cat.slug}`}
-                            className="flex items-center justify-between group hover:bg-gray-50 p-3 rounded-lg transition-all"
+                            href="/category/all"
+                            className="inline-flex items-center gap-2 text-sm font-semibold text-[#58c0c2] hover:text-[#45a0a2] transition-colors"
                           >
-                            <div>
-                              <h3 className="text-black font-semibold text-base">{cat.name}</h3>
-                              <p className="text-sm text-gray-600">{cat.tagline}</p>
-                            </div>
-                            <img src={cat.image} alt={cat.name} className="w-20 h-20 object-contain rounded-md border border-gray-200" />
+                            View All E-Bikes
+                            <ChevronRight className="w-4 h-4" />
                           </Link>
-                        ))}
+                        </div>
+
+                        {/* Custom Scrollbar Styles */}
+                        <style jsx>{`
+                          .custom-scrollbar::-webkit-scrollbar {
+                            width: 6px;
+                          }
+                          .custom-scrollbar::-webkit-scrollbar-track {
+                            background: #f1f1f1;
+                            border-radius: 10px;
+                          }
+                          .custom-scrollbar::-webkit-scrollbar-thumb {
+                            background: #58c0c2;
+                            border-radius: 10px;
+                          }
+                          .custom-scrollbar::-webkit-scrollbar-thumb:hover {
+                            background: #45a0a2;
+                          }
+                          .custom-scrollbar {
+                            scrollbar-width: thin;
+                            scrollbar-color: #58c0c2 #f1f1f1;
+                          }
+                        `}</style>
                       </div>
                     )}
                   </div>
