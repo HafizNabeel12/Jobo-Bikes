@@ -181,58 +181,59 @@ export default function Navbar() {
       >
         {/* MOBILE */}
         <div className="md:hidden bg-white">
-          <div className="flex justify-between items-center px-4 py-3 border-b border-gray-200">
-            <Link href="/">
-              <img src="/images/logo.jpg" alt="Logo" className="h-20 w-auto" />
+          {/* Mobile Header - Compact and Clean */}
+          <div className="flex justify-between items-center px-4 py-2.5 border-b border-gray-100">
+            <Link href="/" className="flex-shrink-0">
+              <img src="/images/logo.jpg" alt="Logo" className="h-12 w-auto" />
             </Link>
 
-            <div className="flex items-center space-x-4">
-              <Link href="/cart">
-                <CartIcon className="text-gray-700" />
+            <div className="flex items-center space-x-3">
+              <Link href="/cart" className="p-2 hover:bg-gray-50 rounded-lg transition-colors">
+                <CartIcon className="text-gray-700 w-5 h-5" />
               </Link>
 
               <button
                 id="more-menu-button"
                 onClick={toggleMoreMenu}
-                className="flex-shrink-0 p-1"
+                className="p-2 hover:bg-gray-50 rounded-lg transition-colors"
                 aria-label="More menu"
               >
-                <EllipsisVertical className="w-5 h-5 text-gray-700 hover:text-black transition-colors" />
+                <EllipsisVertical className="w-5 h-5 text-gray-700" />
               </button>
             </div>
           </div>
 
-          {/* Mobile Search */}
-          <div className="px-4 py-3 border-b border-gray-200" ref={mobileSearchRef}>
+          {/* Mobile Search - Sleek Design */}
+          <div className="px-3 py-3 bg-gray-50" ref={mobileSearchRef}>
             <div className="relative">
-              <Search className="absolute left-3 top-3 w-4 h-4 text-gray-400" />
+              <Search className="absolute left-3 top-1/2 -translate-y-1/2 w-4 h-4 text-gray-400" />
               <input
                 value={query}
                 onChange={(e) => setQuery(e.target.value)}
                 onKeyDown={handleKeyDown}
                 onFocus={() => { if (results.length) setShowResults(true); }}
                 type="text"
-                placeholder="Hva leter du etter?"
-                className="w-full pl-10 pr-4 py-2 text-sm bg-gray-50 border border-gray-200 rounded-md focus:outline-none focus:border-[#58c0c2]"
+                placeholder="Søk etter produkter..."
+                className="w-full pl-10 pr-4 py-2.5 text-sm bg-white border border-gray-200 rounded-lg focus:outline-none focus:border-[#58c0c2] focus:ring-2 focus:ring-[#58c0c2]/20 transition-all"
               />
 
-              {/* Mobile search results (expand under input) */}
+              {/* Mobile search results */}
               {showResults && results.length > 0 && (
-                <div className="mt-2 bg-white border border-gray-200 rounded-md shadow max-h-64 overflow-y-auto">
+                <div className="absolute top-full left-0 right-0 mt-2 bg-white border border-gray-200 rounded-lg shadow-lg max-h-72 overflow-y-auto z-50">
                   {results.slice(0, 8).map((product) => (
                     <Link
                       key={product.id}
                       href={`/products/${product.slug}`}
-                      className="flex items-center justify-between px-3 py-2 hover:bg-gray-50"
+                      className="flex items-center justify-between px-3 py-3 hover:bg-gray-50 transition-colors border-b border-gray-100 last:border-b-0"
                       onClick={() => {
                         setShowResults(false);
                         setQuery('');
                       }}
                     >
-                      <div className="text-left">
-                        <div className="text-sm font-medium text-black">{product.name}</div>
+                      <div className="text-left flex-1 min-w-0 pr-3">
+                        <div className="text-sm font-medium text-black truncate">{product.name}</div>
                         {product.price !== undefined && (
-                          <div className="text-xs text-gray-500 mt-1">
+                          <div className="text-xs text-gray-500 mt-0.5">
                             {typeof product.price === 'number' ? `${product.price} kr` : product.price}
                           </div>
                         )}
@@ -240,64 +241,69 @@ export default function Navbar() {
                       <img
                         src={product.image || '/images/placeholder.png'}
                         alt={product.name}
-                        className="w-12 h-12 object-contain rounded-md border border-gray-200 ml-2"
+                        className="w-14 h-14 object-contain rounded-md border border-gray-200 flex-shrink-0"
                       />
                     </Link>
                   ))}
                 </div>
               )}
-
             </div>
           </div>
 
-          {/* Mobile nav (with E-Bikes accordion + other items) */}
-          <div className="px-2 py-3 space-y-1">
-            <button
-              onClick={toggleMobileDropdown}
-              className="flex items-center justify-between w-full px-4 py-2 text-gray-800 font-medium rounded-md hover:bg-gray-100 transition"
-            >
-              <span>E-Bikes</span>
-              <ChevronDown
-                className={`w-4 h-4 transition-transform duration-200 ${
-                  mobileDropdownOpen ? 'rotate-180' : ''
-                }`}
-              />
-            </button>
+          {/* Mobile Navigation - Modern Card Style */}
+          <div className="px-3 py-3 bg-white space-y-2">
+            {/* E-Bikes Dropdown */}
+            <div className="bg-gray-50 rounded-lg overflow-hidden">
+              <button
+                onClick={toggleMobileDropdown}
+                className="flex items-center justify-between w-full px-4 py-3 text-gray-900 font-semibold hover:bg-gray-100 transition-colors"
+              >
+                <span className="text-sm">E-Bikes</span>
+                <ChevronDown
+                  className={`w-4 h-4 text-gray-600 transition-transform duration-300 ${
+                    mobileDropdownOpen ? 'rotate-180' : ''
+                  }`}
+                />
+              </button>
 
-            {mobileDropdownOpen && (
-              <div className="ml-2 mt-2 space-y-2">
-                {categories.map((cat) => (
-                  <Link
-                    key={cat.slug}
-                    href={`/category/${cat.slug}`}
-                    className="flex items-center justify-between bg-gray-50 p-3 rounded-md hover:bg-gray-100 transition group"
-                  >
-                    <div className="flex-1">
-                      <div className="flex items-center gap-2">
-                        <p className="text-gray-800 font-semibold text-sm">{cat.name}</p>
-                        <ChevronRight className="w-4 h-4 text-gray-400 group-hover:text-[#58c0c2] transition-colors" />
+              {mobileDropdownOpen && (
+                <div className="px-2 pb-2 space-y-2 bg-white">
+                  {categories.map((cat) => (
+                    <Link
+                      key={cat.slug}
+                      href={`/category/${cat.slug}`}
+                      className="flex items-center justify-between p-3 rounded-lg hover:bg-gray-50 transition-all group border border-gray-100"
+                      onClick={() => setMobileDropdownOpen(false)}
+                    >
+                      <div className="flex-1 min-w-0 pr-3">
+                        <div className="flex items-center gap-1.5">
+                          <p className="text-sm font-semibold text-gray-900 truncate">{cat.name}</p>
+                          <ChevronRight className="w-3.5 h-3.5 text-gray-400 group-hover:text-[#58c0c2] group-hover:translate-x-0.5 transition-all flex-shrink-0" />
+                        </div>
+                        <p className="text-xs text-gray-500 mt-0.5 truncate">{cat.tagline}</p>
                       </div>
-                      <p className="text-xs text-gray-500 mt-1">{cat.tagline}</p>
-                    </div>
-                    <img
-                      src={cat.image}
-                      alt={cat.name}
-                      className="w-16 h-16 object-contain rounded border border-gray-200"
-                    />
-                  </Link>
-                ))}
-              </div>
-            )}
+                      <img
+                        src={cat.image}
+                        alt={cat.name}
+                        className="w-14 h-14 object-contain rounded-md border border-gray-200 flex-shrink-0"
+                      />
+                    </Link>
+                  ))}
+                </div>
+              )}
+            </div>
 
+            {/* Other Navigation Items */}
             {navItems
               .filter((i) => i.name !== 'E-Bikes')
               .map((item) => (
                 <Link
                   key={item.name}
                   href={item.href}
-                  className="block px-4 py-2 text-gray-800 rounded-md hover:bg-gray-100 transition"
+                  className="flex items-center justify-between px-4 py-3 text-sm font-semibold text-gray-900 bg-gray-50 rounded-lg hover:bg-gray-100 transition-colors"
                 >
-                  {item.name}
+                  <span>{item.name}</span>
+                  <ChevronRight className="w-4 h-4 text-gray-400" />
                 </Link>
               ))}
           </div>
@@ -448,7 +454,7 @@ export default function Navbar() {
                         {/* View All Link - Fixed */}
                         <div className="px-8 py-4 border-t border-gray-200 text-center flex-shrink-0">
                           <Link
-                            href="/category/all"
+                            href="/cycle"
                             className="inline-flex items-center gap-2 text-sm font-semibold text-[#58c0c2] hover:text-[#45a0a2] transition-colors"
                           >
                             View All E-Bikes
