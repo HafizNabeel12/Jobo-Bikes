@@ -382,19 +382,28 @@ export default function Navbar() {
                   <div
                     key={index}
                     className="relative group"
-                    onMouseEnter={() => toggleDropdown(index)}
+                    onMouseEnter={() => item.dropdown && toggleDropdown(index)}
                     onMouseLeave={() => setActiveDropdown(null)}
                   >
-                    <button
-                      className={`flex items-center space-x-1 text-gray-700 hover:text-black transition-colors duration-200 ${item.dropdown ? 'cursor-pointer' : ''}`}
-                    >
-                      <span>{item.name}</span>
-                      {item.dropdown && <ChevronDown className="w-4 h-4 text-gray-500" />}
-                    </button>
+                    {item.dropdown ? (
+                      <button
+                        className="flex items-center space-x-1 text-gray-700 hover:text-black transition-colors duration-200 cursor-pointer"
+                      >
+                        <span>{item.name}</span>
+                        <ChevronDown className="w-4 h-4 text-gray-500" />
+                      </button>
+                    ) : (
+                      <Link
+                        href={item.href}
+                        className="flex items-center space-x-1 text-gray-700 hover:text-black transition-colors duration-200"
+                      >
+                        <span>{item.name}</span>
+                      </Link>
+                    )}
 
                     {/* Dropdown for E-Bikes on desktop - JOBOBIKE Style */}
                     {item.dropdown && activeDropdown === index && (
-                      <div className="absolute left-0 top-full  bg-white shadow-2xl rounded-xl border border-gray-100 z-50 min-w-[700px] max-h-[500px] overflow-hidden flex flex-col">
+                      <div className="absolute left-0 top-full mt-2 bg-white shadow-2xl rounded-xl border border-gray-100 z-50 min-w-[700px] max-h-[500px] overflow-hidden flex flex-col">
                         {/* Title Section - Fixed */}
                         <div className="px-8 pt-8 pb-4 border-b border-gray-200 flex-shrink-0">
                           <h3 className="text-2xl font-bold text-gray-900">Browse by Category</h3>
@@ -439,7 +448,7 @@ export default function Navbar() {
                         {/* View All Link - Fixed */}
                         <div className="px-8 py-4 border-t border-gray-200 text-center flex-shrink-0">
                           <Link
-                            href="/cycle"
+                            href="/category/all"
                             className="inline-flex items-center gap-2 text-sm font-semibold text-[#58c0c2] hover:text-[#45a0a2] transition-colors"
                           >
                             View All E-Bikes
