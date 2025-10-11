@@ -216,7 +216,7 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-16 md:h-20">
               {/* Logo */}
               <Link href="/" className="flex-shrink-0">
-                <img src="/images/logo.jpg" alt="Logo" className="h-12 md:h-14 w-auto" />
+                <img src="/images/logo.jpg" alt="Logo" className="h-12 md:h-10 w-auto" />
               </Link>
 
               {/* Desktop Navigation */}
@@ -244,7 +244,7 @@ export default function Navbar() {
 
                     {/* Dropdown for E-Bikes */}
                     {item.dropdown && activeDropdown === index && (
-                      <div className="absolute left-0 top-full mt-2 bg-white shadow-2xl rounded-xl border border-gray-100 z-50 min-w-[700px] max-h-[500px] overflow-hidden flex flex-col">
+                      <div className="absolute left-0 top-full  bg-white shadow-2xl rounded-xl border border-gray-100 z-50 min-w-[700px] max-h-[500px] overflow-hidden flex flex-col">
                         <div className="px-8 pt-8 pb-4 border-b border-gray-200 flex-shrink-0">
                           <h3 className="text-2xl font-bold text-gray-900">Browse by Category</h3>
                           <p className="text-sm text-gray-600 mt-1">Explore our complete e-bike collection</p>
