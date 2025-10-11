@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import React, { useState } from 'react'
 import { ChevronDownIcon, ChevronUpIcon } from 'lucide-react'
@@ -21,16 +21,16 @@ const TermsOfService: React.FC = () => {
     {
       id: 'parter',
       title: '1. Parter',
-      content: `Disse vilkårene gjelder mellom Sykkellageret AS (org.nr [sett inn org.nr]) og kunden («du/deg»). Ved å handle på sykkellageret.no aksepterer du disse vilkårene.`
+      content: `Disse vilkÃ¥rene gjelder mellom Sykkellageret AS (org.nr [sett inn org.nr]) og kunden (Â«du/degÂ»). Ved Ã¥ handle pÃ¥ sykkellageret.no aksepterer du disse vilkÃ¥rene.`
     },
     {
       id: 'bestilling',
       title: '2. Bestilling',
-      content: `Når du legger inn en bestilling, mottar du en ordrebekreftelse på e-post. 
+      content: `NÃ¥r du legger inn en bestilling, mottar du en ordrebekreftelse pÃ¥ e-post. 
 
-Du vil også motta en digital bruksanvisning for produktet på e-post.
+Du vil ogsÃ¥ motta en digital bruksanvisning for produktet pÃ¥ e-post.
 
-Avtalen er bindende når du har mottatt ordrebekreftelsen.
+Avtalen er bindende nÃ¥r du har mottatt ordrebekreftelsen.
 `
     },
     {
@@ -38,37 +38,37 @@ Avtalen er bindende når du har mottatt ordrebekreftelsen.
       title: '3. Betaling',
       content: `Vi tilbyr betaling med Vipps, Visa, Mastercard og Klarna.
 
-Beløpet trekkes når varen sendes fra vårt lager.`
+BelÃ¸pet trekkes nÃ¥r varen sendes fra vÃ¥rt lager.`
     },
     {
       id: 'levering',
       title: '4. Levering',
-      content: `Estimert leveringstid er 7–14 virkedager.
+      content: `Estimert leveringstid er 7â€“14 virkedager.
 
 Vi leverer kun innen Norge.
 
-Fraktkostnad vises før betaling.`
+Fraktkostnad vises fÃ¸r betaling.`
     },
     {
       id: 'angrerett',
       title: '5. Angrerett',
       content: `Du har 14 dagers angrerett etter Angrerettloven.
 
-Varen må være ubrukt og i original emballasje.
+Varen mÃ¥ vÃ¦re ubrukt og i original emballasje.
 
 Returfrakt betales av kunden.`
     },
     {
       id: 'reklamasjon',
       title: '6. Reklamasjon',
-      content: `Du har 2 års reklamasjonsrett etter Forbrukerkjøpsloven.
+      content: `Du har 2 Ã¥rs reklamasjonsrett etter ForbrukerkjÃ¸psloven.
 
 Reklamasjonen gjelder feil som ikke skyldes normal slitasje eller feil bruk.`
     },
     {
       id: 'personvern',
       title: '7. Personvern',
-      content: `Vi behandler personopplysninger i samsvar med vår personvernerklæring og gjeldende lover (GDPR).`
+      content: `Vi behandler personopplysninger i samsvar med vÃ¥r personvernerklÃ¦ring og gjeldende lover (GDPR).`
     }
   ]
 
@@ -83,7 +83,7 @@ Reklamasjonen gjelder feil som ikke skyldes normal slitasje eller feil bruk.`
             </Link>
           </li>
           <li aria-hidden="true" className="text-gray-400">/</li>
-          <li className="text-black font-medium">Vilkår</li>
+          <li className="text-black font-medium">VilkÃ¥r</li>
         </ol>
       </nav>
 
@@ -91,10 +91,10 @@ Reklamasjonen gjelder feil som ikke skyldes normal slitasje eller feil bruk.`
       <div className="bg-white shadow-sm">
         <div className="max-w-4xl mx-auto px-4 py-8">
           <h1 className="text-4xl font-bold text-gray-900 text-center mb-2">
-            Kjøpsvilkår
+            KjÃ¸psvilkÃ¥r
           </h1>
           <p className="text-gray-600 text-center">
-            Vennligst les disse vilkårene nøye før du handler hos oss
+            Vennligst les disse vilkÃ¥rene nÃ¸ye fÃ¸r du handler hos oss
           </p>
         </div>
       </div>

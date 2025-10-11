@@ -1,31 +1,31 @@
-"use client";
+﻿"use client";
 
 import React, { useState } from "react";
 
 const sections = [
   {
     title: "1. Behandlingsansvarlig",
-    content: `Det er Sykkellageret AS (org.nr. [sett inn org.nr]) som er behandlingsansvarlig for personopplysninger som behandles. Vår registrerte adresse er [sett inn adresse], Norge. Spørsmål om personvern kan sendes til support@sykkellageret.no.`,
+    content: `Det er Sykkellageret AS (org.nr. [sett inn org.nr]) som er behandlingsansvarlig for personopplysninger som behandles. VÃ¥r registrerte adresse er [sett inn adresse], Norge. SpÃ¸rsmÃ¥l om personvern kan sendes til support@sykkellageret.no.`,
   },
   {
     title: "2. Innsamling og behandling av personopplysninger",
-    content: `Vi samler inn personopplysninger når du handler hos oss, registrerer deg for nyhetsbrev, bruker nettsiden vår eller kommuniserer med oss. Dette kan inkludere:\n- Navn, e-post, telefonnummer\n- Leverings- og fakturaadresse\n- Betalingsinformasjon (via sikre tredjepartsløsninger)\n- IP-adresse og tekniske data (gjennom cookies)\n- Kjøpshistorikk og bruk av nettstedet`,
+    content: `Vi samler inn personopplysninger nÃ¥r du handler hos oss, registrerer deg for nyhetsbrev, bruker nettsiden vÃ¥r eller kommuniserer med oss. Dette kan inkludere:\n- Navn, e-post, telefonnummer\n- Leverings- og fakturaadresse\n- Betalingsinformasjon (via sikre tredjepartslÃ¸sninger)\n- IP-adresse og tekniske data (gjennom cookies)\n- KjÃ¸pshistorikk og bruk av nettstedet`,
   },
   {
-    title: "3. Formål og lovgrunnlag",
-    content: `Vi behandler opplysninger for å:\n- Oppfylle kjøpsavtaler (ordrebehandling, levering, kundeservice)\n- Overholde juridiske forpliktelser (bokføring, forbrukerrettigheter)\n- Gi kundeservice, håndtere reklamasjoner og returer\n- Sende nyhetsbrev og tilbud dersom du har gitt samtykke\n- Forbedre nettsiden og markedsføringen gjennom analyse (kun med samtykke)`,
+    title: "3. FormÃ¥l og lovgrunnlag",
+    content: `Vi behandler opplysninger for Ã¥:\n- Oppfylle kjÃ¸psavtaler (ordrebehandling, levering, kundeservice)\n- Overholde juridiske forpliktelser (bokfÃ¸ring, forbrukerrettigheter)\n- Gi kundeservice, hÃ¥ndtere reklamasjoner og returer\n- Sende nyhetsbrev og tilbud dersom du har gitt samtykke\n- Forbedre nettsiden og markedsfÃ¸ringen gjennom analyse (kun med samtykke)`,
   },
   {
     title: "4. Informasjonskapsler",
-    content: `Vi bruker cookies for nødvendige funksjoner (handlekurv, innlogging), analyse og markedsføring. Samtykke til ikke-nødvendige cookies administreres via vårt cookie-banner. Du kan når som helst endre eller trekke tilbake samtykket ditt.`,
+    content: `Vi bruker cookies for nÃ¸dvendige funksjoner (handlekurv, innlogging), analyse og markedsfÃ¸ring. Samtykke til ikke-nÃ¸dvendige cookies administreres via vÃ¥rt cookie-banner. Du kan nÃ¥r som helst endre eller trekke tilbake samtykket ditt.`,
   },
   {
-    title: "5. Bruk av tredjeparter og overføring av data",
-    content: `Vi samarbeider med tredjepartsleverandører for betaling (f.eks. Vipps, Klarna), frakt (f.eks. PostNord, Bring) og markedsføring (f.eks. Google, Meta). Disse mottar kun nødvendige data for å utføre sine tjenester. Ved overføring utenfor EU/EØS benyttes EUs standardkontrakter (SCC).`,
+    title: "5. Bruk av tredjeparter og overfÃ¸ring av data",
+    content: `Vi samarbeider med tredjepartsleverandÃ¸rer for betaling (f.eks. Vipps, Klarna), frakt (f.eks. PostNord, Bring) og markedsfÃ¸ring (f.eks. Google, Meta). Disse mottar kun nÃ¸dvendige data for Ã¥ utfÃ¸re sine tjenester. Ved overfÃ¸ring utenfor EU/EÃ˜S benyttes EUs standardkontrakter (SCC).`,
   },
   {
     title: "6. Lagring og sletting",
-    content: `- Ordre- og kjøpsdata lagres minimum 5 år i henhold til bokføringsloven.\n- Markedsføringssamtykke lagres maks 24 måneder etter siste aktivitet.\n- Supporthenvendelser slettes normalt innen 12 måneder.\n- Data slettes når formålet opphører, med mindre lov krever videre lagring.`,
+    content: `- Ordre- og kjÃ¸psdata lagres minimum 5 Ã¥r i henhold til bokfÃ¸ringsloven.\n- MarkedsfÃ¸ringssamtykke lagres maks 24 mÃ¥neder etter siste aktivitet.\n- Supporthenvendelser slettes normalt innen 12 mÃ¥neder.\n- Data slettes nÃ¥r formÃ¥let opphÃ¸rer, med mindre lov krever videre lagring.`,
   },
   {
     title: "7. Sikkerhet",
@@ -33,11 +33,11 @@ const sections = [
   },
   {
     title: "8. Dine rettigheter",
-    content: `Du har rett til innsyn, retting, sletting, begrensning av behandling, dataportabilitet og å trekke tilbake samtykke. Du kan klage til Datatilsynet dersom du mener vi bryter regelverket.`,
+    content: `Du har rett til innsyn, retting, sletting, begrensning av behandling, dataportabilitet og Ã¥ trekke tilbake samtykke. Du kan klage til Datatilsynet dersom du mener vi bryter regelverket.`,
   },
   {
     title: "9. Kontakt",
-    content: `For spørsmål om personvern eller for å utøve dine rettigheter, kontakt oss på support@sykkellageret.no.`,
+    content: `For spÃ¸rsmÃ¥l om personvern eller for Ã¥ utÃ¸ve dine rettigheter, kontakt oss pÃ¥ support@sykkellageret.no.`,
   },
 ];
 
@@ -53,7 +53,7 @@ const PrivacyPolicy = () => {
       <div className="max-w-4xl mx-auto">
         {/* Title */}
         <h1 className="text-3xl md:text-4xl font-extrabold text-center text-gray-800 dark:text-white mt-24">
-          Personvernvilkår
+          PersonvernvilkÃ¥r
         </h1>
         <p className="text-center text-gray-500 mt-3 text-sm">
           Sist oppdatert: 24. september 2025
@@ -72,7 +72,7 @@ const PrivacyPolicy = () => {
               >
                 {section.title}
                 <span className="text-xl">
-                  {openIndex === index ? "−" : "+"}
+                  {openIndex === index ? "âˆ’" : "+"}
                 </span>
               </button>
               {openIndex === index && (

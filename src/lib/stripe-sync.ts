@@ -1,4 +1,4 @@
-import { stripe } from './stripe';
+﻿import { stripe } from './stripe';
 import { PRODUCTS_DATA } from '@/lib/productData';
 
 export async function syncProductsWithStripe() {

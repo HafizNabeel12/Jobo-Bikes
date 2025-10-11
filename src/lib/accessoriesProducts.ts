@@ -1,4 +1,4 @@
-// lib/accessoriesProducts.ts
+﻿// lib/accessoriesProducts.ts
 
 export interface AccessoryProduct {
   id: string;
@@ -186,11 +186,11 @@ export const accessoriesProducts: AccessoryProduct[] = [
       { label: "Compatibility", value: "Phones up to 6.7 inches" },
       { label: "Water Resistance", value: "IPX6" },
       { label: "Mounting", value: "Handlebar Mount" },
-      { label: "Rotation", value: "360°" }
+      { label: "Rotation", value: "360Â°" }
     ],
     features: [
       "Waterproof touchscreen cover",
-      "360° rotation",
+      "360Â° rotation",
       "Secure locking mechanism",
       "Quick release system",
       "Universal phone compatibility"

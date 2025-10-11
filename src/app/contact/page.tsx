@@ -1,4 +1,4 @@
-'use client'
+﻿'use client'
 
 import React, { useState } from 'react'
 import { 
@@ -73,7 +73,7 @@ const ContactUs: React.FC = () => {
         <div className="max-w-7xl mx-auto px-4 py-12 text-center">
           <h1 className="text-4xl font-bold text-gray-900 mb-4">Kontakt oss</h1>
           <p className="text-xl text-gray-600 max-w-2xl mx-auto">
-            Har du spørsmål om våre el-sykler? Vi er her for å hjelpe! Ta kontakt med vårt team av eksperter for personlig assistanse.
+            Har du spÃ¸rsmÃ¥l om vÃ¥re el-sykler? Vi er her for Ã¥ hjelpe! Ta kontakt med vÃ¥rt team av eksperter for personlig assistanse.
           </p>
         </div>
       </div>
@@ -97,7 +97,7 @@ const ContactUs: React.FC = () => {
               {submitStatus === 'error' && (
                 <div className="mb-6 p-4 bg-red-50 border border-red-200 rounded-lg">
                   <p className="text-red-800">
-                    Beklager, det oppstod en feil ved sending av meldingen. Vennligst prøv igjen.
+                    Beklager, det oppstod en feil ved sending av meldingen. Vennligst prÃ¸v igjen.
                   </p>
                 </div>
               )}
@@ -205,7 +205,7 @@ const ContactUs: React.FC = () => {
                   className={`w-full py-4 px-6 rounded-lg font-semibold text-white transition-all duration-200 ${
                     isSubmitting
                       ? 'bg-gray-400 cursor-not-allowed'
-                      : 'bg-[#58c0c2] hover:bg-[#58c0c2] focus:ring-4 focus:ring-blue-200 shadow-lg hover:shadow-xl'
+                      : 'bg-[#12b190] hover:bg-[#12b190] focus:ring-4 focus:ring-blue-200 shadow-lg hover:shadow-xl'
                   }`}
                 >
                   {isSubmitting ? (
@@ -233,7 +233,7 @@ const ContactUs: React.FC = () => {
               <div className="space-y-6">
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <MapPinIcon className="h-6 w-6 text-[#58c0c2]" />
+                    <MapPinIcon className="h-6 w-6 text-[#12b190]" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Adresse</h4>
@@ -246,12 +246,12 @@ const ContactUs: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <PhoneIcon className="h-6 w-6 text-[#58c0c2]" />
+                    <PhoneIcon className="h-6 w-6 text-[#12b190]" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">Telefon</h4>
                     <p className="text-gray-600 mt-1">
-                      <a href="tel:+4722334455" className="hover:text-[#58c0c2] transition-colors">
+                      <a href="tel:+4722334455" className="hover:text-[#12b190] transition-colors">
                         +47 405 56 333
                       </a>
                     </p>
@@ -260,13 +260,13 @@ const ContactUs: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <Mail className="h-6 w-6 text-[#58c0c2]" />
+                    <Mail className="h-6 w-6 text-[#12b190]" />
                   </div>
                   <div>
                     <h4 className="font-medium text-gray-900">E-post</h4>
                     <div className="text-gray-600 mt-1">
                       <p>
-                        <a href="mailto:support@sykkellageret.no" className="hover:text-[#58c0c2] transition-colors">
+                        <a href="mailto:support@sykkellageret.no" className="hover:text-[#12b190] transition-colors">
                           support@sykkellageret.no
                         </a>
                       </p>
@@ -276,14 +276,14 @@ const ContactUs: React.FC = () => {
 
                 <div className="flex items-start space-x-4">
                   <div className="flex-shrink-0">
-                    <ClockIcon className="h-6 w-6 text-[#58c0c2]" />
+                    <ClockIcon className="h-6 w-6 text-[#12b190]" />
                   </div>
                   <div>
-                    <h4 className="font-medium text-gray-900">Åpningstider</h4>
+                    <h4 className="font-medium text-gray-900">Ã…pningstider</h4>
                     <div className="text-gray-600 mt-1 space-y-1">
                       <p>Mandag - Fredag: 09:00 - 18:00</p>
-                      <p>Lørdag: 10:00 - 16:00</p>
-                      <p>Søndag: Stengt</p>
+                      <p>LÃ¸rdag: 10:00 - 16:00</p>
+                      <p>SÃ¸ndag: Stengt</p>
                     </div>
                   </div>
                 </div>

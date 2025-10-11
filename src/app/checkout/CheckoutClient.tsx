@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState, useEffect } from 'react';
 import { loadStripe } from '@stripe/stripe-js';
@@ -103,13 +103,13 @@ export default function CheckoutClient() {
       
       if (data.clientSecret) {
         setClientSecret(data.clientSecret);
-        console.log('✅ Client secret set successfully');
+        console.log('âœ… Client secret set successfully');
       } else {
         throw new Error('No client secret received');
       }
       
     } catch (err: any) {
-      console.error('❌ Payment intent creation failed:', err);
+      console.error('âŒ Payment intent creation failed:', err);
       setError(`Payment setup failed: ${err.message}`);
     } finally {
       setLoading(false);
@@ -136,12 +136,12 @@ export default function CheckoutClient() {
       {/* Debug Panel - Disabled */}
       {false && (
         <div className="bg-green-50 border border-green-200 rounded-lg p-4">
-          <h3 className="font-semibold text-green-800 mb-2">✅ Cart Status (CartContext Only)</h3>
+          <h3 className="font-semibold text-green-800 mb-2">âœ… Cart Status (CartContext Only)</h3>
           <div className="text-sm text-green-700 space-y-1">
             <p>Cart Items: {cartItems.length}</p>
             <p>Total Items: {totalItems}</p>
             <p>Loading: {cartLoading ? 'Yes' : 'No'}</p>
-            <p>Client Secret: {clientSecret ? '✅ Ready' : '❌ Not set'}</p>
+            <p>Client Secret: {clientSecret ? 'âœ… Ready' : 'âŒ Not set'}</p>
             {error && <p className="text-red-600">Error: {error}</p>}
             
             {cartItems.length > 0 && (
@@ -149,7 +149,7 @@ export default function CheckoutClient() {
                 <p className="font-semibold">Cart Contents:</p>
                 {cartItems.map((item, i) => (
                   <p key={i} className="text-xs">
-                    • {item.name} - {formatCurrency(item.price)} x {item.quantity} = {formatCurrency(item.price * item.quantity)}
+                    â€¢ {item.name} - {formatCurrency(item.price)} x {item.quantity} = {formatCurrency(item.price * item.quantity)}
                   </p>
                 ))}
                 <p className="text-xs font-semibold mt-1">
@@ -178,7 +178,7 @@ export default function CheckoutClient() {
                   onClick={() => window.history.back()}
                   className="text-sm text-red-800 underline hover:text-red-600"
                 >
-                  ← Go back to cart
+                  â† Go back to cart
                 </button>
                 <button
                   onClick={() => {

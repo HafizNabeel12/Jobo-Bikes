@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { useRouter } from 'next/navigation';
@@ -6,7 +6,7 @@ import Image from 'next/image';
 import { useCart } from '@/components/CartContext'; // Adjust path as needed
 import { CartSummary } from '../components/CartSummary'; // Adjust path as needed
 import { ArrowLeft, ShoppingBag, Trash2, Plus, Minus } from 'lucide-react';
-import BuyNowButton from './BuyNowButton'; // ✅ Import BuyNowButton
+import BuyNowButton from './BuyNowButton'; // âœ… Import BuyNowButton
 import { formatCurrency } from '@/utils/currency';
 
 const CartPage: React.FC = () => {
@@ -18,7 +18,7 @@ const CartPage: React.FC = () => {
   };
 
   const handleStartFresh = () => {
-    if (confirm('Dette vil tømme handlekurven din. Er du sikker?')) {
+    if (confirm('Dette vil tÃ¸mme handlekurven din. Er du sikker?')) {
       clearCart();
     }
   };
@@ -37,7 +37,7 @@ const CartPage: React.FC = () => {
   const handleCheckout = async () => {
     try {
       if (!items || items.length === 0) {
-        alert('Handlekurven din er tom. Legg til varer før du går til kassen.');
+        alert('Handlekurven din er tom. Legg til varer fÃ¸r du gÃ¥r til kassen.');
         return;
       }
       
@@ -52,14 +52,14 @@ const CartPage: React.FC = () => {
       );
       
       if (!validItems) {
-        alert('Det ser ut til å være et problem med varene i handlekurven. Oppdater siden og prøv igjen.');
+        alert('Det ser ut til Ã¥ vÃ¦re et problem med varene i handlekurven. Oppdater siden og prÃ¸v igjen.');
         return;
       }
       
       router.push("/checkout");
     } catch (error) {
       console.error('Checkout error:', error);
-      alert('Det oppstod en feil ved å gå til kassen. Prøv igjen.');
+      alert('Det oppstod en feil ved Ã¥ gÃ¥ til kassen. PrÃ¸v igjen.');
     }
   };
 
@@ -70,7 +70,7 @@ const CartPage: React.FC = () => {
       <div className="min-h-screen bg-gradient-to-br from-gray-50 to-gray-100 flex justify-center items-center">
         <div className="container mx-auto px-4 py-8">
           <div className="flex justify-center items-center h-64">
-            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[#58c0c2] border-t-[#58c0c2]"></div>
+            <div className="animate-spin rounded-full h-12 w-12 border-4 border-[#12b190] border-t-[#12b190]"></div>
             <span className="ml-4 text-gray-700 font-medium">Laster handlekurven...</span>
           </div>
         </div>
@@ -85,21 +85,21 @@ const CartPage: React.FC = () => {
           {/* MOBILE EMPTY CART */}
           <div className="lg:hidden">
             <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-8 text-center backdrop-blur-sm">
-              <div className="w-20 h-20 bg-gradient-to-br from-[#58c0c2] to-[#58c0c2] rounded-full flex items-center justify-center mx-auto mb-6">
-                <ShoppingBag className="h-10 w-10 text-[#58c0c2]" />
+              <div className="w-20 h-20 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center mx-auto mb-6">
+                <ShoppingBag className="h-10 w-10 text-[#12b190]" />
               </div>
               <h2 className="text-2xl font-bold text-gray-900 mb-3">Handlekurven din er tom</h2>
               <p className="text-gray-600 mb-8 text-sm leading-relaxed">
-                Oppdag fantastiske produkter og legg dem til i handlekurven for å komme i gang.
+                Oppdag fantastiske produkter og legg dem til i handlekurven for Ã¥ komme i gang.
               </p>
               
               <div className="space-y-3">
                 <button
                   onClick={handleContinueShopping}
-                  className="w-full bg-gradient-to-r from-[#58c0c2] to-[#58c0c2] text-white px-6 py-4 rounded-xl font-semibold hover:from-[#58c0c2] hover:to-[#58c0c2] transition-all duration-300 flex items-center gap-2 justify-center text-sm shadow-lg transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-[#12b190] to-[#12b190] text-white px-6 py-4 rounded-xl font-semibold hover:from-[#12b190] hover:to-[#12b190] transition-all duration-300 flex items-center gap-2 justify-center text-sm shadow-lg transform hover:scale-105"
                 >
                   <ArrowLeft className="h-4 w-4" />
-                  Start å handle
+                  Start Ã¥ handle
                 </button>
               </div>
             </div>
@@ -108,19 +108,19 @@ const CartPage: React.FC = () => {
           {/* DESKTOP EMPTY CART */}
           <div className="hidden lg:block">
             <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-16 text-center max-w-2xl mx-auto backdrop-blur-sm">
-              <div className="w-28 h-28 bg-gradient-to-br from-[#58c0c2] to-[#58c0c2] rounded-full flex items-center justify-center mx-auto mb-8">
-                <ShoppingBag className="h-14 w-14 text-[#58c0c2]" />
+              <div className="w-28 h-28 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center mx-auto mb-8">
+                <ShoppingBag className="h-14 w-14 text-[#12b190]" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Handlekurven din er tom</h2>
-              <p className="text-gray-600 mb-10 text-lg">Det ser ut som du ikke har lagt til noe i handlekurven ennå.</p>
+              <p className="text-gray-600 mb-10 text-lg">Det ser ut som du ikke har lagt til noe i handlekurven ennÃ¥.</p>
               
               <div className="flex flex-col sm:flex-row gap-4 justify-center">
                 <button
                   onClick={handleContinueShopping}
-                  className="bg-gradient-to-r from-[#58c0c2] to-[#58c0c2] text-white px-10 py-4 rounded-xl font-semibold hover:from-[#58c0c2] hover:to-[#58c0c2] transition-all duration-300 flex items-center gap-3 justify-center shadow-lg transform hover:scale-105"
+                  className="bg-gradient-to-r from-[#12b190] to-[#12b190] text-white px-10 py-4 rounded-xl font-semibold hover:from-[#12b190] hover:to-[#12b190] transition-all duration-300 flex items-center gap-3 justify-center shadow-lg transform hover:scale-105"
                 >
                   <ArrowLeft className="h-5 w-5" />
-                  Fortsett å handle
+                  Fortsett Ã¥ handle
                 </button>
               </div>
             </div>
@@ -130,7 +130,7 @@ const CartPage: React.FC = () => {
     );
   }
 
-  // ✅ Calculate total
+  // âœ… Calculate total
   const total = items.reduce((sum, item) => sum + item.price * item.quantity, 0);
 
   return (
@@ -146,8 +146,8 @@ const CartPage: React.FC = () => {
                   {totalItems} {totalItems === 1 ? 'vare' : 'varer'}
                 </p>
               </div>
-              <div className="w-12 h-12 bg-gradient-to-br from-[#58c0c2] to-[#58c0c2] rounded-full flex items-center justify-center">
-                <ShoppingBag className="h-6 w-6 text-[#58c0c2]" />
+              <div className="w-12 h-12 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center">
+                <ShoppingBag className="h-6 w-6 text-[#12b190]" />
               </div>
             </div>
           </div>
@@ -198,12 +198,12 @@ const CartPage: React.FC = () => {
                           min="1"
                           value={item.quantity}
                           onChange={(e) => handleQuantityChange(item.id, parseInt(e.target.value) || 1)}
-                          className="w-16 h-8 text-center text-sm font-bold text-black border-2 border-gray-200 rounded-lg focus:border-[#58c0c2] focus:outline-none"
+                          className="w-16 h-8 text-center text-sm font-bold text-black border-2 border-gray-200 rounded-lg focus:border-[#12b190] focus:outline-none"
                         />
                       </div>
                       
                       <div className="text-right flex-shrink-0">
-                        <p className="text-lg font-bold text-[#58c0c2]">{formatCurrency(item.price * item.quantity)}</p>
+                        <p className="text-lg font-bold text-[#12b190]">{formatCurrency(item.price * item.quantity)}</p>
                         <p className="text-xs text-gray-500">{formatCurrency(item.price)} per stk</p>
                       </div>
                     </div>
@@ -219,9 +219,9 @@ const CartPage: React.FC = () => {
             
             <button
               onClick={handleCheckout}
-              className="w-full bg-gradient-to-r from-[#58c0c2] to-[#58c0c2] text-white py-4 px-6 rounded-xl font-bold text-lg hover:from-[#58c0c2] hover:to-[#58c0c2] transition-all duration-300 shadow-lg transform hover:scale-105 mb-3"
+              className="w-full bg-gradient-to-r from-[#12b190] to-[#12b190] text-white py-4 px-6 rounded-xl font-bold text-lg hover:from-[#12b190] hover:to-[#12b190] transition-all duration-300 shadow-lg transform hover:scale-105 mb-3"
             >
-              Gå til kassen
+              GÃ¥ til kassen
             </button>
             
             <button
@@ -229,7 +229,7 @@ const CartPage: React.FC = () => {
               className="w-full bg-gray-100 text-gray-700 py-3 px-6 rounded-xl font-semibold hover:bg-gray-200 transition-all duration-200 flex items-center justify-center gap-2 text-sm border border-gray-200"
             >
               <ArrowLeft className="h-4 w-4" />
-              Fortsett å handle
+              Fortsett Ã¥ handle
             </button>
           </div>
           <div className="h-32"></div>
@@ -245,8 +245,8 @@ const CartPage: React.FC = () => {
                   {totalItems} {totalItems === 1 ? 'vare' : 'varer'} i handlekurven
                 </p>
               </div>
-              <div className="w-16 h-16 bg-gradient-to-br from-[#58c0c2] to-[#58c0c2] rounded-full flex items-center justify-center">
-                <ShoppingBag className="h-8 w-8 text-[#58c0c2]" />
+              <div className="w-16 h-16 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center">
+                <ShoppingBag className="h-8 w-8 text-[#12b190]" />
               </div>
             </div>
           </div>
@@ -291,12 +291,12 @@ const CartPage: React.FC = () => {
                                   min="1"
                                   value={item.quantity}
                                   onChange={(e) => handleQuantityChange(item.id, parseInt(e.target.value) || 1)}
-                                  className="w-20 h-12 text-center text-lg font-bold text-black border-2 border-gray-200 rounded-lg focus:border-[#58c0c2] focus:outline-none"
+                                  className="w-20 h-12 text-center text-lg font-bold text-black border-2 border-gray-200 rounded-lg focus:border-[#12b190] focus:outline-none"
                                 />
                               </div>
                               
                               <div className="text-right">
-                                <p className="text-3xl font-bold text-[#58c0c2]">{formatCurrency(item.price * item.quantity)}</p>
+                                <p className="text-3xl font-bold text-[#12b190]">{formatCurrency(item.price * item.quantity)}</p>
                                 <p className="text-sm text-gray-600 font-medium">{formatCurrency(item.price)} per stk</p>
                               </div>
                             </div>
@@ -324,9 +324,9 @@ const CartPage: React.FC = () => {
 
                 <button
                   onClick={handleCheckout}
-                  className="w-full bg-gradient-to-r from-[#58c0c2] to-[#58c0c2] text-white py-4 px-6 rounded-xl font-bold text-lg hover:from-[#58c0c2] hover:to-[#58c0c2] transition-all duration-300 shadow-lg transform hover:scale-105"
+                  className="w-full bg-gradient-to-r from-[#12b190] to-[#12b190] text-white py-4 px-6 rounded-xl font-bold text-lg hover:from-[#12b190] hover:to-[#12b190] transition-all duration-300 shadow-lg transform hover:scale-105"
                 >
-                  Gå til kassen
+                  GÃ¥ til kassen
                 </button>
 
                 <div className="bg-white rounded-2xl shadow-lg border border-gray-200 p-6">
@@ -335,19 +335,19 @@ const CartPage: React.FC = () => {
                     className="w-full bg-gray-100 text-gray-700 py-4 px-6 rounded-xl font-semibold hover:bg-gray-200 transition-all duration-200 flex items-center justify-center gap-3 border border-gray-200"
                   >
                     <ArrowLeft className="h-5 w-5" />
-                    Fortsett å handle
+                    Fortsett Ã¥ handle
                   </button>
                   
                   <div className="text-center mt-8 pt-6 border-t border-gray-200">
                     <div className="flex items-center justify-center gap-3 text-sm text-gray-600 mb-3">
                       <div className="w-6 h-6 bg-green-100 rounded-full flex items-center justify-center">
-                        <span className="text-green-600 text-sm font-bold">✓</span>
+                        <span className="text-green-600 text-sm font-bold">âœ“</span>
                       </div>
-                      <span className="font-medium">Kopi av E-sykkel manualen vil bli sendt på e-post med sporingsnummer</span>
+                      <span className="font-medium">Kopi av E-sykkel manualen vil bli sendt pÃ¥ e-post med sporingsnummer</span>
                     </div>
                     <div className="flex items-center justify-center gap-3 text-sm text-gray-600">
-                      <div className="w-6 h-6 bg-[#58c0c2] rounded-full flex items-center justify-center">
-                        <span className="text-[#58c0c2] text-sm font-bold">💾</span>
+                      <div className="w-6 h-6 bg-[#12b190] rounded-full flex items-center justify-center">
+                        <span className="text-[#12b190] text-sm font-bold">ðŸ’¾</span>
                       </div>
                       <span className="font-medium">Handlekurven din lagres automatisk</span>
                     </div>

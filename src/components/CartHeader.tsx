@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import Link from 'next/link';
@@ -26,7 +26,7 @@ const CartHeader: React.FC<CartHeaderProps> = ({ className = '' }) => {
           
           {/* Cart Count Badge */}
           {totalItems > 0 && (
-            <div className="absolute -top-2 -right-2 bg-[#58c0c2] text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
+            <div className="absolute -top-2 -right-2 bg-[#12b190] text-black text-xs font-bold w-5 h-5 rounded-full flex items-center justify-center">
               {totalItems > 99 ? '99+' : totalItems}
             </div>
           )}
@@ -45,7 +45,7 @@ const CartHeader: React.FC<CartHeaderProps> = ({ className = '' }) => {
           <Link href="/cart">
             <Button 
               size="sm" 
-              className="w-full mt-2 bg-[#58c0c2] hover:bg-[#58c0c2] text-black font-semibold"
+              className="w-full mt-2 bg-[#12b190] hover:bg-[#12b190] text-black font-semibold"
             >
               View Cart
             </Button>

@@ -1,8 +1,8 @@
-import { NextRequest, NextResponse } from 'next/server';
+﻿import { NextRequest, NextResponse } from 'next/server';
 import Stripe from 'stripe';
 
 if (!process.env.STRIPE_SECRET_KEY) {
-  console.error('❌ STRIPE_SECRET_KEY is not configured in environment variables');
+  console.error('âŒ STRIPE_SECRET_KEY is not configured in environment variables');
 }
 
 const stripe = process.env.STRIPE_SECRET_KEY
@@ -24,11 +24,11 @@ export async function POST(request: NextRequest) {
     }
 
     const body = await request.json();
-    console.log('📩 Payment intent API received:', body);
+    console.log('ðŸ“© Payment intent API received:', body);
 
     const { items = [] } = body;
 
-    // ✅ Calculate amount from cart items (real-time data)
+    // âœ… Calculate amount from cart items (real-time data)
     const calculateOrderAmount = (items: any[]) => {
       if (!items || items.length === 0) {
         throw new Error('No items in cart');
@@ -40,7 +40,7 @@ export async function POST(request: NextRequest) {
         return sum + price * quantity;
       }, 0);
 
-      console.log('✅ Calculated total amount:', total);
+      console.log('âœ… Calculated total amount:', total);
       return total;
     };
 
@@ -50,7 +50,7 @@ export async function POST(request: NextRequest) {
       throw new Error('Invalid amount calculated');
     }
 
-    console.log('💳 Creating Stripe payment intent with amount:', amount);
+    console.log('ðŸ’³ Creating Stripe payment intent with amount:', amount);
 
     const paymentIntent = await stripe.paymentIntents.create({
       amount: amount,
@@ -62,14 +62,14 @@ export async function POST(request: NextRequest) {
       },
     });
 
-    console.log('✅ Payment intent created:', paymentIntent.id);
+    console.log('âœ… Payment intent created:', paymentIntent.id);
 
     return NextResponse.json({
       clientSecret: paymentIntent.client_secret,
       amount: amount,
     });
   } catch (error: any) {
-    console.error('❌ Error creating payment intent:', error);
+    console.error('âŒ Error creating payment intent:', error);
     return NextResponse.json(
       {
         error: error.message || 'Internal server error',

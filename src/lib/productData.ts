@@ -1,4 +1,4 @@
-
+﻿
 
 // src/lib/productData.ts
 export interface ProductCard {
@@ -216,7 +216,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "90-110 km",
           combined: "75-95 km"
         },
-        gradability: "25°",
+        gradability: "25Â°",
         turningRadius: "1.8m"
       },
       wheels: {
@@ -377,7 +377,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "90-120 km",
           combined: "80-100 km"
         },
-        gradability: "20°"
+        gradability: "20Â°"
       },
       wheels: {
         size: "27.5\"",
@@ -543,7 +543,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "60-80 km",
           combined: "50-70 km"
         },
-        gradability: "15°"
+        gradability: "15Â°"
       },
       wheels: {
         size: "20\"",
@@ -704,7 +704,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "80-100 km",
           combined: "70-90 km"
         },
-        gradability: "20°"
+        gradability: "20Â°"
       },
       wheels: {
         size: "26\"",
@@ -865,7 +865,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "70-90 km",
           combined: "60-80 km"
         },
-        gradability: "15°"
+        gradability: "15Â°"
       },
       wheels: {
         size: "28\"",
@@ -1026,7 +1026,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "70-90 km",
           combined: "60-80 km"
         },
-        gradability: "25°"
+        gradability: "25Â°"
       },
       wheels: {
         size: "26\"",
@@ -1185,7 +1185,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "80-100 km",
           combined: "70-90 km"
         },
-        gradability: "20°"
+        gradability: "20Â°"
       },
       wheels: {
         size: "28\"",
@@ -1344,7 +1344,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "60-80 km",
           combined: "50-70 km"
         },
-        gradability: "35°"
+        gradability: "35Â°"
       },
       wheels: {
         size: "27.5\"",
@@ -1505,7 +1505,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
           pedalAssist: "40-60 km",
           combined: "35-50 km"
         },
-        gradability: "12°"
+        gradability: "12Â°"
       },
       wheels: {
         size: "26\"",
@@ -1596,17 +1596,17 @@ export const PRODUCTS_DATA: ProductCard[] = [
 
 
 
-// ✅ Get product by slug
+// âœ… Get product by slug
 export const getProductBySlug = (slug: string): ProductCard | undefined => {
   return PRODUCTS_DATA.find((product) => product.slug === slug);
 };
 
-// ✅ Get all slugs
+// âœ… Get all slugs
 export const getAllProductSlugs = (): string[] => {
   return PRODUCTS_DATA.map((product) => product.slug);
 };
 
-// ✅ Get related products
+// âœ… Get related products
 export const getRelatedProducts = (
   currentProductId: string,
   limit: number = 3
@@ -1614,14 +1614,14 @@ export const getRelatedProducts = (
   return PRODUCTS_DATA.filter((p) => p.id !== currentProductId).slice(0, limit);
 };
 
-// ✅ Get products by category
+// âœ… Get products by category
 export const getProductsByCategory = (category: string): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => 
     product.category.includes(category)
   );
 };
 
-// ✅ Search products
+// âœ… Search products
 export const searchProducts = (query: string): ProductCard[] => {
   const lowerQuery = query.toLowerCase();
   return PRODUCTS_DATA.filter((product) =>
@@ -1636,7 +1636,7 @@ export const searchProducts = (query: string): ProductCard[] => {
   );
 };
 
-// ✅ Get products by price range
+// âœ… Get products by price range
 export const getProductsByPriceRange = (
   minPrice: number, 
   maxPrice: number
@@ -1646,47 +1646,47 @@ export const getProductsByPriceRange = (
   );
 };
 
-// ✅ Get products sorted by price
+// âœ… Get products sorted by price
 export const getProductsSortedByPrice = (ascending: boolean = true): ProductCard[] => {
   return [...PRODUCTS_DATA].sort((a, b) => 
     ascending ? a.price - b.price : b.price - a.price
   );
 };
 
-// ✅ Get products sorted by rating
+// âœ… Get products sorted by rating
 export const getProductsSortedByRating = (ascending: boolean = false): ProductCard[] => {
   return [...PRODUCTS_DATA].sort((a, b) => 
     ascending ? a.rating - b.rating : b.rating - a.rating
   );
 };
 
-// ✅ Get featured products (with badges)
+// âœ… Get featured products (with badges)
 export const getFeaturedProducts = (): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => product.badge);
 };
 
-// ✅ Get lightweight products
+// âœ… Get lightweight products
 export const getLightweightProducts = (): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => 
     product.category.includes('lightweight')
   );
 };
 
-// ✅ Get folding bikes
+// âœ… Get folding bikes
 export const getFoldingBikes = (): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => 
     product.specifications.foldable === true
   );
 };
 
-// ✅ Get commuter bikes
+// âœ… Get commuter bikes
 export const getCommuterBikes = (): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => 
     product.category.includes('commuter-ebike')
   );
 };
 
-// ✅ Get step-through bikes
+// âœ… Get step-through bikes
 export const getStepThroughBikes = (): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) => 
     product.category.includes('step-through')

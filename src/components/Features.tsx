@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { 
@@ -18,7 +18,7 @@ const Features = () => {
   const mainFeatures = [
     {
       id: '1',
-      icon: <Battery className="w-12 h-12 text-[#58c0c2]" />,
+      icon: <Battery className="w-12 h-12 text-[#12b190]" />,
       title: 'Long-Lasting Battery',
       description: 'Up to 40+ miles on a single charge with our advanced lithium-ion battery technology.',
       stats: '40+ Miles Range',
@@ -26,7 +26,7 @@ const Features = () => {
     },
     {
       id: '2',
-      icon: <Zap className="w-12 h-12 text-[#58c0c2]" />,
+      icon: <Zap className="w-12 h-12 text-[#12b190]" />,
       title: 'Lightning Fast',
       description: 'Reach speeds up to 28 MPH with our powerful electric motor system.',
       stats: '28 MPH Top Speed',
@@ -34,7 +34,7 @@ const Features = () => {
     },
     {
       id: '3',
-      icon: <Bike className="w-12 h-12 text-[#58c0c2]" />,
+      icon: <Bike className="w-12 h-12 text-[#12b190]" />,
       title: 'Ultra Portable',
       description: 'Foldable design that fits in tight spaces - perfect for dorms and apartments.',
       stats: 'Compact & Foldable',
@@ -42,32 +42,32 @@ const Features = () => {
     },
     {
       id: '4',
-      icon: <Shield className="w-12 h-12 text-[#58c0c2]" />,
+      icon: <Shield className="w-12 h-12 text-[#12b190]" />,
       title: 'Safety First',
       description: 'Advanced braking system, LED lights, and reflective materials for maximum safety.',
-      stats: '360° Safety Features',
+      stats: '360Â° Safety Features',
       bgColor: 'bg-gray-800'
     }
   ];
 
   const additionalFeatures = [
     {
-      icon: <Award className="w-8 h-8 text-[#58c0c2]" />,
+      icon: <Award className="w-8 h-8 text-[#12b190]" />,
       title: 'Premium Quality',
       description: 'Made with aircraft-grade aluminum and premium components.'
     },
     {
-      icon: <Wrench className="w-8 h-8 text-[#58c0c2]" />,
+      icon: <Wrench className="w-8 h-8 text-[#12b190]" />,
       title: 'Easy Assembly',
       description: '10-20 minutes setup with included tools and video guide.'
     },
     {
-      icon: <Truck className="w-8 h-8 text-[#58c0c2]" />,
+      icon: <Truck className="w-8 h-8 text-[#12b190]" />,
       title: 'Free Shipping',
       description: 'Fast delivery within 7 business days, completely free.'
     },
     {
-      icon: <Clock className="w-8 h-8 text-[#58c0c2]" />,
+      icon: <Clock className="w-8 h-8 text-[#12b190]" />,
       title: '24/7 Support',
       description: 'Round-the-clock customer service and technical support.'
     }
@@ -93,7 +93,7 @@ const Features = () => {
           </div>
           <h2 className="text-4xl md:text-5xl font-bold text-black mb-6">
             Built For
-            <span className="block text-[#58c0c2]">Student Life</span>
+            <span className="block text-[#12b190]">Student Life</span>
           </h2>
           <p className="text-xl text-gray-600 max-w-3xl mx-auto">
             Every DYU e-bike is engineered with students in mind - combining performance, portability, and affordability.
@@ -112,7 +112,7 @@ const Features = () => {
             >
               {/* Background Pattern */}
               {/* <div className="absolute inset-0 opacity-10">
-                <div className="absolute top-4 right-4 w-20 h-20 border-2 border-[#58c0c2] rounded-full"></div>
+                <div className="absolute top-4 right-4 w-20 h-20 border-2 border-[#12b190] rounded-full"></div>
                 <div className="absolute bottom-4 left-4 w-16 h-16 border-2 border-white rounded-full"></div>
               </div> */}
               
@@ -124,7 +124,7 @@ const Features = () => {
                 <p className="text-black mb-4 leading-relaxed">
                   {feature.description}
                 </p>
-                <div className="bg-[#58c0c2] text-black rounded-full px-4 py-2 inline-block">
+                <div className="bg-[#12b190] text-black rounded-full px-4 py-2 inline-block">
                   <span className="text-sm font-bold">{feature.stats}</span>
                 </div>
               </div>
@@ -163,7 +163,7 @@ const Features = () => {
         {/* <div className="grid grid-cols-1 lg:grid-cols-2 gap-16 items-center">
          
           <div>
-            <div className="inline-flex items-center gap-2 bg-[#58c0c2] text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
+            <div className="inline-flex items-center gap-2 bg-[#12b190] text-black px-4 py-2 rounded-full text-sm font-medium mb-6">
               <Users className="w-4 h-4" />
               Trusted by Students
             </div>
@@ -178,7 +178,7 @@ const Features = () => {
             <div className="space-y-4">
               {whyChooseUs.map((item, index) => (
                 <div key={index} className="flex items-center gap-3">
-                  <div className="flex-shrink-0 w-6 h-6 bg-[#58c0c2] rounded-full flex items-center justify-center">
+                  <div className="flex-shrink-0 w-6 h-6 bg-[#12b190] rounded-full flex items-center justify-center">
                     <CheckCircle className="w-4 h-4 text-black" />
                   </div>
                   <span className="text-gray-700">{item}</span>
@@ -193,15 +193,15 @@ const Features = () => {
               
               <div className="bg-gray-800 rounded-2xl p-8 mb-6">
                 <div className="text-center">
-                  <Bike className="w-24 h-24 mx-auto text-[#58c0c2] mb-4" />
-                  <div className="text-3xl font-bold mb-2 text-[#58c0c2]">50,000+</div>
+                  <Bike className="w-24 h-24 mx-auto text-[#12b190] mb-4" />
+                  <div className="text-3xl font-bold mb-2 text-[#12b190]">50,000+</div>
                   <div className="text-gray-300">Happy Students</div>
                 </div>
               </div>
               
               <div className="grid grid-cols-2 gap-4">
                 <div className="bg-gray-800 rounded-xl p-4 text-center">
-                  <div className="text-2xl font-bold mb-1 text-[#58c0c2]">4.9★</div>
+                  <div className="text-2xl font-bold mb-1 text-[#12b190]">4.9â˜…</div>
                   <div className="text-sm text-gray-300">Rating</div>
                 </div>
                 <div className="bg-gray-800 rounded-xl p-4 text-center">
@@ -212,11 +212,11 @@ const Features = () => {
             </div> */}
             
             {/* Floating Elements */}
-            {/* <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#58c0c2] rounded-full flex items-center justify-center shadow-lg">
+            {/* <div className="absolute -top-4 -right-4 w-20 h-20 bg-[#12b190] rounded-full flex items-center justify-center shadow-lg">
               <Award className="w-10 h-10 text-black" />
             </div>
             <div className="absolute -bottom-4 -left-4 w-16 h-16 bg-white border-2 border-gray-200 rounded-full flex items-center justify-center shadow-lg">
-              <CheckCircle className="w-8 h-8 text-[#58c0c2]" />
+              <CheckCircle className="w-8 h-8 text-[#12b190]" />
             </div>
           </div>
         </div> */}

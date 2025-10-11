@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import {
@@ -29,13 +29,13 @@ export default function PaymentForm() {
     });
     const [saveInfo, setSaveInfo] = useState(false);
 
-    // 🧮 Calculate totals from cart
+    // ðŸ§® Calculate totals from cart
     const subtotal = cartItems.reduce((sum, item) => sum + (item.price * item.quantity), 0);
     const saved = 0;
     const taxId = 0;
     const total = subtotal - saved + taxId;
 
-    // 💱 Currency options - Only NOK
+    // ðŸ’± Currency options - Only NOK
     const currencies = [
         { code: 'NOK', rate: 1, symbol: 'kr' }
     ];
@@ -82,7 +82,7 @@ export default function PaymentForm() {
                 setMessage("An unexpected error occurred.");
             }
         } else {
-            // ✅ Clear the cart after successful payment
+            // âœ… Clear the cart after successful payment
             clearCart();
         }
 
@@ -95,7 +95,7 @@ export default function PaymentForm() {
             <div className="bg-white p-6 rounded-lg border border-gray-200">
                 <h2 className="text-lg font-medium mb-6 text-black">Order Summary</h2>
 
-                {/* 🛒 Dynamic Cart Items */}
+                {/* ðŸ›’ Dynamic Cart Items */}
                 <div className="space-y-4 mb-6">
                     {cartItems.map((item) => (
                         <div key={item.id} className="flex items-center gap-3">
@@ -103,7 +103,7 @@ export default function PaymentForm() {
                                 {item.image ? (
                                     <img src={item.image} alt={item.name} className="w-10 h-10 object-cover rounded" />
                                 ) : (
-                                    <span className="text-blue-600 text-sm">📦</span>
+                                    <span className="text-blue-600 text-sm">ðŸ“¦</span>
                                 )}
                             </div>
                             <div className="flex-1">
@@ -309,7 +309,7 @@ export default function PaymentForm() {
                     <button
                         type="submit"
                         disabled={isLoading || !stripe || !elements}
-                        className="w-full bg-[#58c0c2] hover:bg-[#58c0c2] text-white py-4 rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed"
+                        className="w-full bg-[#12b190] hover:bg-[#12b190] text-white py-4 rounded-lg font-medium disabled:opacity-50 disabled:cursor-not-allowed"
                     >
                         {isLoading ? 'Processing...' : 'Pay'}
                     </button>

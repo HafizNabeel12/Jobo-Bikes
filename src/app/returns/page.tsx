@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
 
 interface Section {
@@ -10,25 +10,25 @@ const sections: Section[] = [
   {
     title: "Retur",
     content: `
-Du har 14 dagers angrerett på alle kjøp gjort i vår nettbutikk.
+Du har 14 dagers angrerett pÃ¥ alle kjÃ¸p gjort i vÃ¥r nettbutikk.
 
-Varen må returneres ubrukt, i original stand og emballasje.
+Varen mÃ¥ returneres ubrukt, i original stand og emballasje.
 
-Kunden betaler returfrakt, med mindre returen skyldes en feil fra vår side.
+Kunden betaler returfrakt, med mindre returen skyldes en feil fra vÃ¥r side.
 
-Kontakt oss på support@sykkellageret.no før du sender varen tilbake.
+Kontakt oss pÃ¥ support@sykkellageret.no fÃ¸r du sender varen tilbake.
     `,
   },
   {
     title: "Reklamasjon",
     content: `
-Du har 2 års reklamasjonsrett i henhold til norsk forbrukerkjøpslov.
+Du har 2 Ã¥rs reklamasjonsrett i henhold til norsk forbrukerkjÃ¸pslov.
 
 Reklamasjonen gjelder feil og mangler som ikke skyldes vanlig slitasje eller feil bruk.
 
 Dersom varen er defekt, dekker vi returfrakt og sender reparert eller nytt produkt.
 
-Vi behandler reklamasjoner normalt innen 1–2 uker.
+Vi behandler reklamasjoner normalt innen 1â€“2 uker.
     `,
   },
 ];
@@ -66,7 +66,7 @@ const ReturPage = () => {
                   {index + 1}. {section.title}
                 </span>
                 <span className="text-xl font-bold text-gray-600 dark:text-gray-300">
-                  {openIndex === index ? "−" : "+"}
+                  {openIndex === index ? "âˆ’" : "+"}
                 </span>
               </button>
 

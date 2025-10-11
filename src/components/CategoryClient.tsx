@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import Link from "next/link";
@@ -12,8 +12,8 @@ interface CategoryClientProps {
 const SORTS = [
   { value: "recommended", label: "Anbefalt" },
   { value: "new", label: "Nyheter" },
-  { value: "price-asc", label: "Pris: Lav–Høy" },
-  { value: "price-desc", label: "Pris: Høy–Lav" },
+  { value: "price-asc", label: "Pris: Lavâ€“HÃ¸y" },
+  { value: "price-desc", label: "Pris: HÃ¸yâ€“Lav" },
 ];
 
 export default function CategoryClient({ products, slug }: CategoryClientProps) {
@@ -122,7 +122,7 @@ export default function CategoryClient({ products, slug }: CategoryClientProps) 
                 <div className="mt-2 sm:mt-0 sm:ml-2 flex-shrink-0">
                   <AddToCartButton
                     product={product}
-                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-black bg-[#58c0c2] hover:bg-[#58c0c2] transition sm:text-white sm:bg-black sm:hover:border-black sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
+                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-black bg-[#12b190] hover:bg-[#12b190] transition sm:text-white sm:bg-black sm:hover:border-black sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
                   />
                 </div>
               </div>

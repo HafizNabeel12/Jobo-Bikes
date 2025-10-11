@@ -1,4 +1,4 @@
-import { Suspense } from 'react';
+﻿import { Suspense } from 'react';
 import CheckoutClient from './CheckoutClient';
 
 export default function CheckoutPage() {

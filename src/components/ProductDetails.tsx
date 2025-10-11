@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import { useState } from "react";
 import Image from "next/image";
@@ -20,7 +20,7 @@ function ReviewStars({ rating = 5, reviewCount = 14 }: { rating?: number; review
             key={star}
             className={`w-4 h-4 ${
               star <= rating
-                ? "fill-[#58c0c2] text-[#58c0c2]"
+                ? "fill-[#12b190] text-[#12b190]"
                 : "fill-gray-200 text-gray-200"
             }`}
           />
@@ -146,7 +146,7 @@ export default function ProductDetails({ product }: { product: ProductCard }) {
           <div className="mt-4">
             <AddToCartButton
               product={product}
-              className="w-full bg-[#58c0c2] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#58c0c2]"
+              className="w-full bg-[#12b190] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#12b190]"
             />
           </div>
 
@@ -362,7 +362,7 @@ export default function ProductDetails({ product }: { product: ProductCard }) {
               {/* Add to Cart Button */}
               <AddToCartButton
                 product={product}
-                className="w-44 bg-[#58c0c2] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#58c0c2]"
+                className="w-44 bg-[#12b190] text-white px-6 py-3 rounded-md font-semibold hover:bg-[#12b190]"
               />
             </div>
 

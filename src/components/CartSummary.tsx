@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { useCart } from '@/components/CartContext'; // Adjust path as needed
@@ -41,7 +41,7 @@ export const CartSummary: React.FC<CartSummaryProps> = ({
         
         <div className="flex justify-between">
           <span className="text-gray-600">Shipping</span>
-          <span className="font-medium text-[#58c0c2]">Free</span>
+          <span className="font-medium text-[#12b190]">Free</span>
         </div>
         
         <div className="border-t pt-2">
@@ -58,7 +58,7 @@ export const CartSummary: React.FC<CartSummaryProps> = ({
         <div className="space-y-2">
           <button
             onClick={handleCheckout}
-            className="w-full bg-[#58c0c2] text-black py-3 px-6 rounded-lg hover:bg-[#58c0c2] transition-colors font-semibold"
+            className="w-full bg-[#12b190] text-black py-3 px-6 rounded-lg hover:bg-[#12b190] transition-colors font-semibold"
           >
             Proceed to Checkout
           </button>

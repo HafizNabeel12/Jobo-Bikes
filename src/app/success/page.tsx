@@ -1,4 +1,4 @@
-// app/success/page.tsx  (Server component wrapper)
+﻿// app/success/page.tsx  (Server component wrapper)
 export const dynamic = "force-dynamic";
 
 import SuccessClient from '@/components/SuccessClient';

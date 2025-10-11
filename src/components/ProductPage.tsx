@@ -1,10 +1,10 @@
-"use client";
+﻿"use client";
 
 import { useMemo, useState } from "react";
 import { ChevronDown } from "lucide-react";
 import Link from "next/link";
 import { AddToCartButton } from "./AddToCartButton";
-import { PRODUCTS_DATA } from "@/lib/productData";  // ✅ Import products from data file
+import { PRODUCTS_DATA } from "@/lib/productData";  // âœ… Import products from data file
 
 /**
  * ProductPage.tsx
@@ -23,14 +23,14 @@ const SUBCATEGORIES = [
   "Hybrid/By",
   "Barn/Junior",
   "Deler",
-  "Tilbehør",
+  "TilbehÃ¸r",
 ];
 
 const SORTS = [
   { value: "recommended", label: "Anbefalt" },
   { value: "new", label: "Nyheter" },
-  { value: "price-asc", label: "Pris: Lav–Høy" },
-  { value: "price-desc", label: "Pris: Høy–Lav" },
+  { value: "price-asc", label: "Pris: Lavâ€“HÃ¸y" },
+  { value: "price-desc", label: "Pris: HÃ¸yâ€“Lav" },
 ];
 
 export default function ProductPage() {
@@ -134,7 +134,7 @@ export default function ProductPage() {
                 <div className="mt-2 sm:mt-0 sm:ml-2 flex-shrink-0">
                   <AddToCartButton 
                     product={product}  
-                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-black bg-[#58c0c2] hover:bg-[#58c0c2] transition sm:text-white sm:bg-black sm:hover:border-black sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
+                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-black bg-[#12b190] hover:bg-[#12b190] transition sm:text-white sm:bg-black sm:hover:border-black sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
                   />
                 </div>
               </div> 
@@ -146,7 +146,7 @@ export default function ProductPage() {
         <section className="mt-8 sm:mt-10 rounded-xl sm:rounded-2xl border border-gray-200 bg-gray-50 p-4 sm:p-6">
           <h2 className="text-base sm:text-lg font-semibold text-black">Velg riktig sykkel</h2>
           <p className="mt-2 text-xs sm:text-sm leading-5 sm:leading-6 text-gray-700">
-            Utforsk vårt utvalg av elsykler, terreng- og landeveissykler. Vi hjelper deg å finne en sykkel som passer ditt behov—til jobb, trening eller tur.
+            Utforsk vÃ¥rt utvalg av elsykler, terreng- og landeveissykler. Vi hjelper deg Ã¥ finne en sykkel som passer ditt behovâ€”til jobb, trening eller tur.
           </p>
           <ul className="mt-3 list-disc pl-4 sm:pl-5 text-xs sm:text-sm leading-5 sm:leading-6 text-gray-700 space-y-1">
             <li>Fri frakt over 1000 kr</li>

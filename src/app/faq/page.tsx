@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 import React, { useState } from "react";
 
 interface Section {
@@ -11,30 +11,30 @@ const sections: Section[] = [
     title: "Levering",
     content: `
 Hvor lang tid tar levering?
-Normalt 2–5 virkedager innen Norge.
+Normalt 2â€“5 virkedager innen Norge.
 
 Leverer dere til utlandet?
-Foreløpig leverer vi kun innen Norge.
+ForelÃ¸pig leverer vi kun innen Norge.
     `,
   },
   {
     title: "Montering",
     content: `
 Leveres sykkelen ferdig montert?
-Syklene leveres 85–95 % ferdig montert. Du trenger kun å sette på styre, pedaler og eventuelt hjul.
+Syklene leveres 85â€“95 % ferdig montert. Du trenger kun Ã¥ sette pÃ¥ styre, pedaler og eventuelt hjul.
 
 Kan jeg bestille montering?
-Ja, vi tilbyr montering i vårt showroom mot et tillegg.
+Ja, vi tilbyr montering i vÃ¥rt showroom mot et tillegg.
     `,
   },
   {
     title: "Batteri og lading",
     content: `
 Hvor lang rekkevidde har batteriet?
-Rekkevidden varierer fra 40–120 km avhengig av modell, terreng og bruk.
+Rekkevidden varierer fra 40â€“120 km avhengig av modell, terreng og bruk.
 
 Hvor lang tid tar lading?
-Vanlig ladetid er 4–6 timer.
+Vanlig ladetid er 4â€“6 timer.
 
 Kan jeg lade batteriet inne?
 Ja, batteriene kan tas av og lades inne.
@@ -44,27 +44,27 @@ Ja, batteriene kan tas av og lades inne.
     title: "Service og vedlikehold",
     content: `
 Trenger sykkelen service?
-Ja, vi anbefaler service én gang i året, eller oftere ved mye bruk.
+Ja, vi anbefaler service Ã©n gang i Ã¥ret, eller oftere ved mye bruk.
 
 Tilbyr dere reservedeler?
-Ja, vi har reservedeler og tilbehør tilgjengelig i nettbutikken.
+Ja, vi har reservedeler og tilbehÃ¸r tilgjengelig i nettbutikken.
     `,
   },
   {
     title: "Retur og reklamasjon",
     content: `
 Hvordan returnerer jeg en vare?
-Kontakt oss på support@sykkellageret.no innen 14 dager. Varen må være ubrukt og i original emballasje.
+Kontakt oss pÃ¥ support@sykkellageret.no innen 14 dager. Varen mÃ¥ vÃ¦re ubrukt og i original emballasje.
 
 Hvor lenge gjelder reklamasjon?
-Opptil 5 år i henhold til norsk forbrukerlovgivning.
+Opptil 5 Ã¥r i henhold til norsk forbrukerlovgivning.
     `,
   },
   {
     title: "Bruk og regler",
     content: `
-Trenger jeg førerkort for el-sykkel?
-Nei, så lenge sykkelen følger norske regler (maks 25 km/t, 250W motor).
+Trenger jeg fÃ¸rerkort for el-sykkel?
+Nei, sÃ¥ lenge sykkelen fÃ¸lger norske regler (maks 25 km/t, 250W motor).
 
 Kan jeg bruke sykkelen i sykkelfelt?
 Ja, el-sykler regnes som vanlige sykler.
@@ -73,13 +73,13 @@ Ja, el-sykler regnes som vanlige sykler.
   {
     title: "Kontakt oss",
     content: `
-Har du spørsmål om våre el-sykler, bestillinger, retur eller service? Vårt kundeserviceteam hjelper deg gjerne.
+Har du spÃ¸rsmÃ¥l om vÃ¥re el-sykler, bestillinger, retur eller service? VÃ¥rt kundeserviceteam hjelper deg gjerne.
 
-📧 E-post: support@sykkellageret.no
-📞 Telefon: [sett inn nummer]
-🕐 Åpningstider: Mandag–Fredag kl. 09:00–16:00
+ðŸ“§ E-post: support@sykkellageret.no
+ðŸ“ž Telefon: [sett inn nummer]
+ðŸ• Ã…pningstider: Mandagâ€“Fredag kl. 09:00â€“16:00
 
-Vi besvarer henvendelser vanligvis innen 24 timer på hverdager.
+Vi besvarer henvendelser vanligvis innen 24 timer pÃ¥ hverdager.
     `,
   },
 ];
@@ -96,7 +96,7 @@ const FAQPage = () => {
       <div className="max-w-4xl mx-auto px-6">
         {/* Heading */}
         <h1 className="text-3xl md:text-5xl font-extrabold text-center text-gray-900 dark:text-white mb-2">
-          Ofte stilte spørsmål
+          Ofte stilte spÃ¸rsmÃ¥l
         </h1>
         <p className="text-center text-gray-500 text-sm mb-10">
           Sist oppdatert: 26. september 2025
@@ -117,7 +117,7 @@ const FAQPage = () => {
                   {index + 1}. {section.title}
                 </span>
                 <span className="text-xl font-bold text-gray-600 dark:text-gray-300">
-                  {openIndex === index ? "−" : "+"}
+                  {openIndex === index ? "âˆ’" : "+"}
                 </span>
               </button>
 

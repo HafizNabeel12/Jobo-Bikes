@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import Image from 'next/image';
@@ -75,7 +75,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, className = '' }) =>
             <Button
               onClick={handleAddToCart}
               disabled={isAdding}
-              className="bg-white text-black hover:bg-[#58c0c2] hover:text-black font-semibold px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
+              className="bg-white text-black hover:bg-[#12b190] hover:text-black font-semibold px-6 py-2 rounded-full transform translate-y-4 group-hover:translate-y-0 transition-transform duration-300"
             >
               {isAdding ? (
                 <>
@@ -93,7 +93,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, className = '' }) =>
 
           {/* In Cart Badge */}
           {isInCart && (
-            <div className="absolute top-3 right-3 bg-[#58c0c2] text-black text-xs font-bold px-2 py-1 rounded-full">
+            <div className="absolute top-3 right-3 bg-[#12b190] text-black text-xs font-bold px-2 py-1 rounded-full">
               {cartQuantity} in cart
             </div>
           )}
@@ -130,7 +130,7 @@ const ProductCard: React.FC<ProductCardProps> = ({ product, className = '' }) =>
                 transition-all duration-300 font-semibold
                 ${justAdded 
                   ? 'bg-green-500 hover:bg-green-600 text-white' 
-                  : 'bg-[#58c0c2] hover:bg-[#58c0c2] text-black'
+                  : 'bg-[#12b190] hover:bg-[#12b190] text-black'
                 }
               `}
             >

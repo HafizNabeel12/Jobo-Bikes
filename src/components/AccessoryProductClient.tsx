@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import { useState } from 'react';
 import Image from 'next/image';
@@ -98,7 +98,7 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2 text-gray-600">
-                      <span className="text-teal-500 mt-1">✓</span>
+                      <span className="text-teal-500 mt-1">âœ“</span>
                       <span>{feature}</span>
                     </li>
                   ))}
@@ -131,14 +131,14 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 <div className="flex items-center gap-2">
                   <button
                     onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                    className="w-8 h-8 border border-[#58c0c2] rounded-lg bg-[#58c0c2] text-black hover:bg-[#58c0c2] transition-colors text-sm"
+                    className="w-8 h-8 border border-[#12b190] rounded-lg bg-[#12b190] text-black hover:bg-[#12b190] transition-colors text-sm"
                   >
                     -
                   </button>
                   <span className="text-lg font-medium w-8 text-center text-black">{quantity}</span>
                   <button
                     onClick={() => setQuantity(quantity + 1)}
-                    className="w-8 h-8 border border-[#58c0c2] rounded-lg bg-[#58c0c2] text-black hover:bg-[#58c0c2] transition-colors text-sm"
+                    className="w-8 h-8 border border-[#12b190] rounded-lg bg-[#12b190] text-black hover:bg-[#12b190] transition-colors text-sm"
                   >
                     +
                   </button>
@@ -151,7 +151,7 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 disabled={!product.inStock}
                 className={`w-full py-4 rounded-lg font-medium transition-all mb-6 ${
                   product.inStock
-                    ? 'bg-[#58c0c2] text-black hover:bg-[#58c0c2]'
+                    ? 'bg-[#12b190] text-black hover:bg-[#12b190]'
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
               >
@@ -227,14 +227,14 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
               <div className="flex items-center gap-3">
                 <button
                   onClick={() => setQuantity(Math.max(1, quantity - 1))}
-                  className="w-10 h-10 border border-[#58c0c2] rounded-lg bg-[#58c0c2] text-black hover:bg-[#58c0c2] transition-colors"
+                  className="w-10 h-10 border border-[#12b190] rounded-lg bg-[#12b190] text-black hover:bg-[#12b190] transition-colors"
                 >
                   -
                 </button>
                 <span className="text-lg font-medium w-12 text-center text-black">{quantity}</span>
                 <button
                   onClick={() => setQuantity(quantity + 1)}
-                  className="w-10 h-10 border border-[#58c0c2] rounded-lg bg-[#58c0c2] text-black hover:bg-[#58c0c2] transition-colors"
+                  className="w-10 h-10 border border-[#12b190] rounded-lg bg-[#12b190] text-black hover:bg-[#12b190] transition-colors"
                 >
                   +
                 </button>
@@ -248,7 +248,7 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 disabled={!product.inStock}
                 className={`w-full py-4 rounded-lg font-medium transition-all ${
                   product.inStock
-                    ? 'bg-[#58c0c2] text-black hover:bg-[#58c0c2]'
+                    ? 'bg-[#12b190] text-black hover:bg-[#12b190]'
                     : 'bg-gray-300 text-gray-500 cursor-not-allowed'
                 }`}
               >
@@ -301,7 +301,7 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2 text-gray-600">
-                      <span className="text-teal-500 mt-1">✓</span>
+                      <span className="text-teal-500 mt-1">âœ“</span>
                       <span>{feature}</span>
                     </li>
                   ))}

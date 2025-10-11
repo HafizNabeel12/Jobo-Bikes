@@ -1,4 +1,4 @@
-// utils/cartCookies.ts
+﻿// utils/cartCookies.ts
 import Cookies from 'js-cookie';
 import { CartItem, CartState } from '../types/cart';
 

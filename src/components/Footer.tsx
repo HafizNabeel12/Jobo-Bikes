@@ -1,4 +1,4 @@
-"use client";
+﻿"use client";
 
 import React from "react";
 import Link from "next/link";
@@ -24,27 +24,27 @@ const Footer = () => {
         <div className="grid grid-cols-1 md:grid-cols-4 gap-12">
           {/* Newsletter */}
           <div>
-            <h3 className="font-semibold mb-3 text-base">Motta våre nyhetsbrev</h3>
+            <h3 className="font-semibold mb-3 text-base">Motta vÃ¥re nyhetsbrev</h3>
             <p className="text-sm text-gray-600 mb-4">
-              Få nyheter, tips og eksklusive tilbud rett i innboksen.
+              FÃ¥ nyheter, tips og eksklusive tilbud rett i innboksen.
             </p>
             <div className="flex">
               <input
                 type="email"
                 placeholder="E-post"
-                className="w-full border border-gray-300 rounded-l-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#58c0c2]"
+                className="w-full border border-gray-300 rounded-l-lg px-3 py-2 text-sm focus:outline-none focus:ring-2 focus:ring-[#12b190]"
               />
-              <button className="bg-[#58c0c2] text-black px-4 py-2 rounded-r-lg text-sm font-medium hover:bg-[#58c0c2] transition">
+              <button className="bg-[#12b190] text-black px-4 py-2 rounded-r-lg text-sm font-medium hover:bg-[#12b190] transition">
                 Meld inn
               </button>
             </div>
             <div className="flex gap-4 mt-5">
-              <FaInstagram className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
-              <FaTiktok className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
-              <FaFacebook className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
-              <FaPinterest className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
-              <FaYoutube className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
-              <FaXTwitter className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#58c0c2]" />
+              <FaInstagram className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
+              <FaTiktok className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
+              <FaFacebook className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
+              <FaPinterest className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
+              <FaYoutube className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
+              <FaXTwitter className="w-5 h-5 cursor-pointer text-gray-600 hover:text-[#12b190]" />
             </div>
           </div>
 
@@ -52,11 +52,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3 text-base">Handle</h3>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><Link href="/el-sykler" className="hover:text-[#58c0c2]">Alle el-sykler</Link></li>
-              <li><Link href="/tilbehor" className="hover:text-[#58c0c2]">Tilbehør</Link></li>
-              <li><Link href="/reservedeler" className="hover:text-[#58c0c2]">Reservedeler</Link></li>
-              <li><Link href="/kampanjer" className="hover:text-[#58c0c2]">Nyheter og kampanjer</Link></li>
-              <li><Link href="/gavekort" className="hover:text-[#58c0c2]">Gavekort</Link></li>
+              <li><Link href="/el-sykler" className="hover:text-[#12b190]">Alle el-sykler</Link></li>
+              <li><Link href="/tilbehor" className="hover:text-[#12b190]">TilbehÃ¸r</Link></li>
+              <li><Link href="/reservedeler" className="hover:text-[#12b190]">Reservedeler</Link></li>
+              <li><Link href="/kampanjer" className="hover:text-[#12b190]">Nyheter og kampanjer</Link></li>
+              <li><Link href="/gavekort" className="hover:text-[#12b190]">Gavekort</Link></li>
             </ul>
           </div>
 
@@ -64,11 +64,11 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3 text-base">SYKKELLAGERET</h3>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><Link href="/om-oss" className="hover:text-[#58c0c2]">Om oss</Link></li>
-              <li><Link href="/barekraft" className="hover:text-[#58c0c2]">Bærekraft og miljø</Link></li>
-              <li><Link href="/b2b" className="hover:text-[#58c0c2]">Bedriftsavtaler (B2B)</Link></li>
-              <li><Link href="/affiliate" className="hover:text-[#58c0c2]">Samarbeidspartner</Link></li>
-              <li><Link href="/blogg" className="hover:text-[#58c0c2]">Blogg & artikler</Link></li>
+              <li><Link href="/om-oss" className="hover:text-[#12b190]">Om oss</Link></li>
+              <li><Link href="/barekraft" className="hover:text-[#12b190]">BÃ¦rekraft og miljÃ¸</Link></li>
+              <li><Link href="/b2b" className="hover:text-[#12b190]">Bedriftsavtaler (B2B)</Link></li>
+              <li><Link href="/affiliate" className="hover:text-[#12b190]">Samarbeidspartner</Link></li>
+              <li><Link href="/blogg" className="hover:text-[#12b190]">Blogg & artikler</Link></li>
             </ul>
           </div>
 
@@ -76,12 +76,12 @@ const Footer = () => {
           <div>
             <h3 className="font-semibold mb-3 text-base">Kundeservice</h3>
             <ul className="space-y-2 text-sm text-gray-700">
-              <li><Link href="/faq" className="hover:text-[#58c0c2]">FAQ</Link></li>
-              <li><Link href="/contact" className="hover:text-[#58c0c2]">Kontakt oss</Link></li>
-              <li><Link href="/returns" className="hover:text-[#58c0c2]">Retur og reklamasjon</Link></li>
-              <li><Link href="/privacypolicy" className="hover:text-[#58c0c2]">Personvernerklæring</Link></li>
-              <li><Link href="/terms" className="hover:text-[#58c0c2]">Kjøpsvilkår</Link></li>
-              <li><Link href="/bruksanvisninger" className="hover:text-[#58c0c2]">Bruksanvisninger</Link></li>
+              <li><Link href="/faq" className="hover:text-[#12b190]">FAQ</Link></li>
+              <li><Link href="/contact" className="hover:text-[#12b190]">Kontakt oss</Link></li>
+              <li><Link href="/returns" className="hover:text-[#12b190]">Retur og reklamasjon</Link></li>
+              <li><Link href="/privacypolicy" className="hover:text-[#12b190]">PersonvernerklÃ¦ring</Link></li>
+              <li><Link href="/terms" className="hover:text-[#12b190]">KjÃ¸psvilkÃ¥r</Link></li>
+              <li><Link href="/bruksanvisninger" className="hover:text-[#12b190]">Bruksanvisninger</Link></li>
             </ul>
           </div>
         </div>
@@ -93,15 +93,15 @@ const Footer = () => {
             <h4 className="font-semibold mb-3">Kontakt oss</h4>
             <ul className="space-y-2 text-gray-700">
               <li className="flex items-center gap-2">
-                <HiOutlineEnvelope className="w-4 h-4 text-[#58c0c2]" />
+                <HiOutlineEnvelope className="w-4 h-4 text-[#12b190]" />
                 support@sykkellageret.no
               </li>
               <li className="flex items-center gap-2">
-                <HiOutlinePhone className="w-4 h-4 text-[#58c0c2]" />
+                <HiOutlinePhone className="w-4 h-4 text-[#12b190]" />
                 [sett inn tlf.nr]
               </li>
               <li className="flex items-center gap-2">
-                <HiOutlineBuildingOffice2 className="w-4 h-4 text-[#58c0c2]" />
+                <HiOutlineBuildingOffice2 className="w-4 h-4 text-[#12b190]" />
                 [adresse]
               </li>
             </ul>
@@ -122,7 +122,7 @@ const Footer = () => {
       {/* Bottom Bar */}
       <div className="border-t border-gray-200 py-4">
         <div className="max-w-7xl mx-auto px-6 text-center text-xs text-gray-500">
-          © 2025 <span className="text-[#58c0c2] font-semibold">Sykkellageret <span className="text-gray-500">-</span>Jalut Holdings</span>. Org nr: 931946641. Alle rettigheter forbeholdt.
+          Â© 2025 <span className="text-[#12b190] font-semibold">Sykkellageret <span className="text-gray-500">-</span>Jalut Holdings</span>. Org nr: 931946641. Alle rettigheter forbeholdt.
         </div>
       </div>
     </footer>

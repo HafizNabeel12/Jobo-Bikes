@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React, { useState } from 'react';
 import { useCart, CartItem } from '@/components/CartContext'; // Adjust path as needed

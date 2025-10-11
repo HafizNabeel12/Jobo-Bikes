@@ -1,4 +1,4 @@
-      import { NextResponse } from 'next/server';
+﻿      import { NextResponse } from 'next/server';
 import { syncProductsWithStripe } from '@/lib/stripe-sync';
 
 export async function POST() {

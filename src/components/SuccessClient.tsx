@@ -1,4 +1,4 @@
-// app/success/SuccessClient.tsx
+﻿// app/success/SuccessClient.tsx
 'use client';
 
 import React, { useEffect, useState } from 'react';
@@ -83,7 +83,7 @@ export default function SuccessClient() {
   return (
     <div className="min-h-screen flex items-center justify-center p-6 mt-32">
       <div className="max-w-2xl w-full bg-white rounded-lg shadow p-8 text-center">
-        <div className="text-6xl mb-4">✅</div>
+        <div className="text-6xl mb-4">âœ…</div>
         <h1 className="text-2xl font-bold mb-2 text-black">Payment Successful</h1>
         <p className="text-gray-600 mb-4">Thank you for your purchase.</p>
 
@@ -92,9 +92,9 @@ export default function SuccessClient() {
             <p><strong>Payment ID:</strong> {paymentIntent.id}</p>
             <p><strong>Status:</strong> {paymentIntent.status}</p>
             <p><strong>Amount:</strong> 
-              {paymentIntent.amount ? `$${(paymentIntent.amount / 100).toFixed(2)}` : '—'}
+              {paymentIntent.amount ? `$${(paymentIntent.amount / 100).toFixed(2)}` : 'â€”'}
             </p>
-            <p><strong>Receipt Email:</strong> {paymentIntent.receipt_email || '—'}</p>
+            <p><strong>Receipt Email:</strong> {paymentIntent.receipt_email || 'â€”'}</p>
           </div>
         ) : (
           <p className="text-gray-500">Payment details are not available.</p>

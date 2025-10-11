@@ -1,4 +1,4 @@
-'use client';
+﻿'use client';
 
 import React from 'react';
 import { useCart, CartItem } from '@/components/CartContext'; // Adjust path as needed
@@ -30,7 +30,7 @@ export const CartItemRow: React.FC<CartItemRowProps> = ({ item, className = '' }
         {item.category && (
           <p className="text-sm text-gray-600">Category: {item.category}</p>
         )}
-        <p className="text-lg font-bold text-[#58c0c2]">{formatCurrency(item.price)}</p>
+        <p className="text-lg font-bold text-[#12b190]">{formatCurrency(item.price)}</p>
       </div>
 
       <div className="flex items-center gap-3">
