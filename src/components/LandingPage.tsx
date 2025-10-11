@@ -19,7 +19,7 @@ const LandingPage = () => {
         />
       </section>
 
-      {/* Why Trust Section - NEW */}
+      {/* Why Trust Section */}
       <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           {/* Section Title */}
@@ -76,9 +76,11 @@ const LandingPage = () => {
 
       {/* Featured Products */}
       <section className="mx-auto mt-6 max-w-7xl px-4 sm:px-2 mb-16">
-        <h2 className="text-2xl md:text-3xl font-bold text-center text-gray-800 mb-12">
-          Utvalgte produkter
-        </h2>
+        <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
+              Popular Categories
+            </h2>
+          </div>
 
         <ul
           role="list"
@@ -137,97 +139,109 @@ const LandingPage = () => {
         </ul>
       </section>
 
-      {/* What are E-bikes Section */}
-      <section className="py-20 bg-white">
+      {/* Service & Support Section */}
+      <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <div className="text-center mb-16">
-            <h2 className="text-4xl text-gray-800 mb-4">Sykkellageret â€“ spesialisten pÃ¥ el-sykler i Norge</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Oppdag el-sykler som kombinerer sykkelglede med smart teknologi. Hos Sykkellageret fÃ¥r du kvalitet, service og trygg handel â€“ derfor velger flere oss.</p>
-          </div>
+          {/* Section Title */}
+          <h2 className="text-2xl md:text-3xl lg:text-4xl font-bold text-center text-black mb-12 md:mb-16">
+            SERVICE & SUPPORT
+          </h2>
 
-          <div className="grid lg:grid-cols-2 gap-12 items-center">
-            <div className="space-y-8">
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#12b190] rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                    <path d="M9.049 2.927c.3-.921 1.603-.921 1.902 0l1.07 3.292a1 1 0 00.95.69h3.462c.969 0 1.371 1.24.588 1.81l-2.8 2.034a1 1 0 00-.364 1.118l1.07 3.292c.3.921-.755 1.688-1.54 1.118l-2.8-2.034a1 1 0 00-1.175 0l-2.8 2.034c-.784.57-1.838-.197-1.539-1.118l1.07-3.292a1 1 0 00-.364-1.118L2.98 8.72c-.783-.57-.38-1.81.588-1.81h3.461a1 1 0 00.951-.69l1.07-3.292z" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl text-gray-800 mb-2">MiljÃ¸vennlig transport</h3>
-                  <p className="text-gray-600">Reduser karbonavtrykket ditt med null utslipp og bidra til en renere fremtid</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#12b190] rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M3 6a3 3 0 013-3h10a1 1 0 01.8 1.6L14.25 8l2.55 3.4A1 1 0 0116 13H6a1 1 0 00-1 1v3a1 1 0 11-2 0V6z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl text-gray-800 mb-2">Spar tid og penger</h3>
-                  <p className="text-gray-600">UnngÃ¥ trafikk, parkeringsavgifter og drivstoffkostnader med smart pendling</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#12b190] rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M10 2L3 7v11a1 1 0 001 1h3a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1h3a1 1 0 001-1V7l-7-5z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl text-gray-800 mb-2">Bedre helse og kondisjon</h3>
-                  <p className="text-gray-600">FÃ¥ mosjon mens du pendler - perfekt balanse mellom trening og transport</p>
-                </div>
-              </div>
-
-              <div className="flex items-start space-x-4">
-                <div className="flex-shrink-0 w-12 h-12 bg-[#12b190] rounded-lg flex items-center justify-center">
-                  <svg className="w-6 h-6 text-black" fill="currentColor" viewBox="0 0 20 20">
-                    <path fillRule="evenodd" d="M11.3 1.046A1 1 0 0112 2v5h4a1 1 0 01.82 1.573l-7 10A1 1 0 018 18v-5H4a1 1 0 01-.82-1.573l7-10a1 1 0 011.12-.38z" clipRule="evenodd" />
-                  </svg>
-                </div>
-                <div>
-                  <h3 className="text-xl text-gray-800 mb-2">Kraftig assistanse</h3>
-                  <p className="text-gray-600">Elektrisk motor gir deg ekstra kraft pÃ¥ bakker og lange turer</p>
-                </div>
-              </div>
+          <div className="grid grid-cols-1 lg:grid-cols-2 gap-8 lg:gap-12 items-start">
+            {/* Left Side - Image */}
+            <div className="w-full">
+              <img
+                src="/images/jobobike-retail.png"
+                alt="Service and Support"
+                className="w-full h-auto rounded-lg object-cover"
+              />
             </div>
 
-            <div className="relative">
-              <div className="bg-gradient-to-r from-[#12b190] to-[#12b190] rounded-2xl p-8 text-black">
-                <h3 className="text-2xl mb-6">Perfekt for alle</h3>
-                <div className="space-y-4">
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Pendlere som vil spare tid og komme raskere frem.</span>
+            {/* Right Side - Service Cards */}
+            <div className="space-y-6">
+              {/* Test Point Card */}
+              <div className="bg-[#12b190] rounded-lg p-6 text-white">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="w-12 h-12"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 12l2-2m0 0l7-7 7 7M5 10v10a1 1 0 001 1h3m10-11l2 2m-2-2v10a1 1 0 01-1 1h-3m-6 0a1 1 0 001-1v-4a1 1 0 011-1h2a1 1 0 011 1v4a1 1 0 001 1m-6 0h6"
+                      />
+                    </svg>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Deg som Ã¸nsker en lettere og mer behagelig sykkeltur</span>
+                  <Link href="/contact">
+                    <h3 className="text-xl font-bold mb-2">Test point</h3>
+                    <p className="text-sm leading-relaxed">
+                      Jobobike offers test rides at our factory in Warsaw. Find your nearest
+                      shop and arrange a test ride now.
+                    </p>
+                  </Link>
+                </div>
+              </div>
+
+              {/* Service at your fingertips Card */}
+              <div className="bg-gray-100 rounded-lg p-6 hover:bg-[#12b190] text-black  hover:text-white">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="w-12 h-12 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M16 7a4 4 0 11-8 0 4 4 0 018 0zM12 14a7 7 0 00-7 7h14a7 7 0 00-7-7z"
+                      />
+                    </svg>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Familier med barn og bagasje som trenger ekstra kraft.</span>
+                  <Link href="/contact">
+                    <h3 className="text-xl font-bold mb-2 ">
+                      Service at your fingertips
+                    </h3>
+                    <p className="text-sm  leading-relaxed">
+                      Professional service team to support you in fitting, repairing and
+                      maintaining e-bikes.
+                    </p>
+                  </Link>
+                </div>
+              </div>
+
+              {/* JOBOBIKE Retail Card */}
+              <div className="bg-gray-100 rounded-lg p-6 hover:bg-[#12b190] text-black  hover:text-white">
+                <div className="flex items-start gap-4">
+                  <div className="flex-shrink-0">
+                    <svg
+                      className="w-12 h-12 text-gray-600"
+                      fill="none"
+                      stroke="currentColor"
+                      viewBox="0 0 24 24"
+                    >
+                      <path
+                        strokeLinecap="round"
+                        strokeLinejoin="round"
+                        strokeWidth={2}
+                        d="M3 3h2l.4 2M7 13h10l4-8H5.4M7 13L5.4 5M7 13l-2.293 2.293c-.63.63-.184 1.707.707 1.707H17m0 0a2 2 0 100 4 2 2 0 000-4zm-8 2a2 2 0 11-4 0 2 2 0 014 0z"
+                      />
+                    </svg>
                   </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>MiljÃ¸bevisste som vil gjÃ¸re en grÃ¸nn forskjell i hverdagen.</span>
-                  </div>
-                  <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Sykkelentusiaster som bare elsker friheten pÃ¥ to hjul.</span>
-                  </div>
-                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Eventyrlystne som vil pÃ¥ tur og utforske naturen.</span>
-                  </div>
-                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
-                    <span>Byutforskere som vil oppdage nye steder pÃ¥ en enkel og morsom mÃ¥te.</span>
-                  </div>
+                  <Link href="/contact">
+                    <h3 className="text-xl font-bold mb-2 ">JOBOBIKE Retail</h3>
+                    <p className="text-sm  leading-relaxed">
+                      Pick up your ideal electric bike at Jobobike retail. 80+ dealers for
+                      your choice.
+                    </p>
+                  </Link>
                 </div>
               </div>
             </div>
@@ -235,12 +249,6 @@ const LandingPage = () => {
         </div>
       </section>
 
-   
-
-  
-
-      
-     
     </div>
   );
 };
