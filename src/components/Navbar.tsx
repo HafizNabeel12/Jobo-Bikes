@@ -201,7 +201,7 @@ export default function Navbar() {
                   <span className="hidden sm:inline">Free Shipping to the EU</span>
                   <span className="sm:hidden">Free Ship</span>
                 </div>
-                <div className="hidden md:flex items-center space-x-1.5">
+                <div className="flex items-center space-x-1.5">
                   <Users className="w-4 h-4" />
                   <span>300+ Partners in Europe</span>
                 </div>
@@ -216,7 +216,7 @@ export default function Navbar() {
             <div className="flex justify-between items-center h-16 md:h-20">
               {/* Logo */}
               <Link href="/" className="flex-shrink-0">
-                <img src="/images/logo.jpg" alt="Logo" className="h-12 md:h-10 w-auto" />
+                <img src="/images/logo.jpg" alt="Logo" className="h-8 md:h-10 w-auto" />
               </Link>
 
               {/* Desktop Navigation */}

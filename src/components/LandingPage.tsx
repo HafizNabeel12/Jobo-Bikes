@@ -8,12 +8,12 @@ import { formatCurrency } from '@/utils/currency';
 
 const LandingPage = () => {
   return (
-    <div className="min-h-screen bg-white mt-56 md:mt-24">
+    <div className="min-h-screen bg-white mt-40 md:mt-24">
 
       {/* Hero Section */}
       <section className="flex justify-center items-center sm:m-0">
         <img
-          src="/images/hero.png"
+          src="/images/banner.jpg"
           alt="DYU E-Bikes"
           className="max-h-[600px] w-auto md:object-contain md:max-w-7xl md:px-4 sm:px-2"
         />
