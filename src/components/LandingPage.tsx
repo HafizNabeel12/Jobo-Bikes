@@ -74,11 +74,67 @@ const LandingPage = () => {
         </div>
       </section>
 
+       {/* ===== Popular Categories Section ===== */}
+      <section className="py-12 md:py-20 bg-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-black mb-12">
+            POPULAR CATEGORIES
+          </h2>
+
+          <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 items-center justify-center text-center">
+            {/* Fat Tire */}
+            <Link href="/category/fat-tire">
+              <div>
+                <img
+                  src="/images/mover/mover-1.png"
+                  alt="Fat Tire"
+                  className="mx-auto w-72 h-60 object-contain"
+                />
+                <div className="mt-3 flex justify-center items-center gap-1 text-black font-medium text-lg">
+                  <span>Fat Tire</span>
+                  <span className="text-[#12b190]">➜</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* lightweight */}
+            <Link href="/category/lightweight">
+              <div>
+                <img
+                  src="/images/lyon/lyon-1.png"
+                  alt="Step-thru"
+                  className="mx-auto w-72 h-60 object-contain"
+                />
+                <div className="mt-3 flex justify-center items-center gap-1 text-black font-medium text-lg">
+                  <span>Lightweight</span>
+                  <span className="text-[#12b190]">➜</span>
+                </div>
+              </div>
+            </Link>
+
+            {/* Cargo & Family */}
+            <Link href="/category/cargo">
+              <div>
+                <img
+                  src="/images/eddy-x/eddy-1.png"
+                  alt="Cargo & Family"
+                  className="mx-auto w-72 h-60 object-contain"
+                />
+                <div className="mt-3 flex justify-center items-center gap-1 text-black font-medium text-lg">
+                  <span>Cargo & Family</span>
+                  <span className="text-[#12b190]">➜</span>
+                </div>
+              </div>
+            </Link>
+          </div>
+        </div>
+      </section>
+
       {/* Featured Products */}
       <section className="mx-auto mt-6 max-w-7xl px-4 sm:px-2 mb-16">
         <div className="text-center mb-10 md:mb-16">
             <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
-              Popular Categories
+              Popular E-Bikes
             </h2>
           </div>
 
