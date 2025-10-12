@@ -226,12 +226,7 @@ const LandingPage = () => {
             </p>
           </div>
 
-          {/* Read More Button */}
-          <div className="mb-16">
-            <button className="bg-[#12b190] text-white px-10 py-3.5 rounded-full font-medium hover:bg-[#0fa080] transition-colors shadow-lg hover:shadow-xl">
-              Read more
-            </button>
-          </div>
+         
 
           {/* Certificates Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">

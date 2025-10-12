@@ -79,7 +79,7 @@ const PrivacyPolicy = () => {
             The only personal information we collect about you is either provided by you voluntarily or as described below under &quot;Information Collected from Your Use of the Site.&quot; Jobo Europe does not collect children&apos;s information or any other special category data.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            If you access or submit an inquiry through our Site, set up an account, subscribe to a service, register to receive marketing materials, participate in contests, sweepstakes or promotions, upload a photo, or receive other services, we may ask you to provide certain personal information such as your name, email address, phone number, location, and zip code, and other personally identifiable information ("Personal Information").
+            If you access or submit an inquiry through our Site, set up an account, subscribe to a service, register to receive marketing materials, participate in contests, sweepstakes or promotions, upload a photo, or receive other services, we may ask you to provide certain personal information such as your name, email address, phone number, location, and zip code, and other personally identifiable information (&quot;Personal Information&quot;).
           </p>
           <p className="text-gray-700 leading-relaxed">
             We take reasonable steps to make sure that we ask only for the information we need for the purposes listed in &quot;How We Use Your Information&quot;. We also take steps to ensure that your contact information is accurate, complete, current, and otherwise reliable. We will only collect and process your Personal Information if we have a lawful basis for doing so.
@@ -170,7 +170,7 @@ const PrivacyPolicy = () => {
             Changes to This Privacy Notice
           </h2>
           <p className="text-gray-700 leading-relaxed">
-            We may update this Privacy Notice from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our Site with a new "Last updated" date. We encourage you to review this Privacy Notice periodically.
+            We may update this Privacy Notice from time to time to reflect changes in our practices or legal requirements. We will notify you of any material changes by posting the updated policy on our Site with a new &quot;Last updated&quot; date. We encourage you to review this Privacy Notice periodically.
           </p>
         </section>
 
