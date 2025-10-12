@@ -86,7 +86,7 @@ const LandingPage = () => {
           role="list"
           className="grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-3 lg:grid-cols-3 overflow-hidden"
         >
-          {PRODUCTS_DATA.map((product) => (
+          {PRODUCTS_DATA.slice(0,6).map((product) => (
             <li
               key={product.id}
               className="group rounded-xl sm:rounded-2xl border border-gray-200 p-2 sm:p-3 transition hover:border-black"

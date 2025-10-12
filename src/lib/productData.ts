@@ -141,7 +141,7 @@ export interface ProductCard {
 }
 
 export const PRODUCTS_DATA: ProductCard[] = [
- 
+
   {
     id: "7",
     name: "JOBOBIKE Lyon Pro",
@@ -153,7 +153,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     images: [
       "/images/lyon/lyon-1.png",
       "/images/lyon/lyon-2.png",
-      
+
     ],
     features: [
       "250W Mid-Drive Motor",
@@ -315,7 +315,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     images: [
       "/images/dyno/dyno-1.png",
       "/images/dyno/dyno-2.png",
-      
+
     ],
     features: [
       "250W Rear Hub Motor",
@@ -481,7 +481,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "/images/sam/sam-6.png",
       "/images/sam/sam-7.png",
       "/images/sam/sam-8.png",
-     
+
     ],
     features: [
       "350W Rear Hub Motor",
@@ -1122,8 +1122,8 @@ export const PRODUCTS_DATA: ProductCard[] = [
     discount: "16%",
     image: "/images/eddy-x/eddy-1.png",
     images: [
-     "/images/eddy-x/eddy-1.png",
-     "/images/eddy-x/eddy-2.png",
+      "/images/eddy-x/eddy-1.png",
+      "/images/eddy-x/eddy-2.png",
     ],
     features: [
       "250W Mid-Drive Motor",
@@ -1441,8 +1441,8 @@ export const PRODUCTS_DATA: ProductCard[] = [
     discount: "17%",
     image: "/images/astra/astra-1.png",
     images: [
-    "/images/astra/astra-1.png",
-    "/images/astra/astra-2.png",
+      "/images/astra/astra-1.png",
+      "/images/astra/astra-2.png",
     ],
     features: [
       "250W Front Hub Motor",
@@ -1597,12 +1597,14 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 1699,
     price: 1399,
     discount: "-18%",
-    image: "/images/products/jobobike-viva-main.jpg",
+    image: "/images/viva/viva-1.png",
     images: [
-      "/images/products/jobobike-viva-1.jpg",
-      "/images/products/jobobike-viva-2.jpg",
-      "/images/products/jobobike-viva-3.jpg",
-      "/images/products/jobobike-viva-4.jpg"
+      "/images/viva/viva-1.png",
+      "/images/viva/viva-2.png",
+      "/images/viva/viva-3.png",
+      "/images/viva/viva-4.png",
+      "/images/viva/viva-5.png",
+
     ],
     features: [
       "Lightweight 22kg aluminum frame",
@@ -1760,12 +1762,13 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 1699,
     price: 1399,
     discount: "-18%",
-    image: "/images/products/jobobike-viva-st-main.jpg",
+    image: "/images/viva-st/viva-st-1.png",
     images: [
-      "/images/products/jobobike-viva-st-1.jpg",
-      "/images/products/jobobike-viva-st-2.jpg",
-      "/images/products/jobobike-viva-st-3.jpg",
-      "/images/products/jobobike-viva-st-4.jpg"
+      "/images/viva-st/viva-st-1.png",
+      "/images/viva-st/viva-st-2.png",
+      "/images/viva-st/viva-st-3.png",
+      "/images/viva-st/viva-st-4.png",
+      "/images/viva-st/viva-st-5.png",
     ],
     features: [
       "Step-through frame for easy mounting",
@@ -1923,12 +1926,10 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 2299,
     price: 1899,
     discount: "-17%",
-    image: "/images/products/jobobike-henry-main.jpg",
+    image: "/images/henry/henry-1.png",
     images: [
-      "/images/products/jobobike-henry-1.jpg",
-      "/images/products/jobobike-henry-2.jpg",
-      "/images/products/jobobike-henry-3.jpg",
-      "/images/products/jobobike-henry-4.jpg"
+     "/images/henry/henry-1.png",
+     "/images/henry/henry-2.png",
     ],
     features: [
       "Bafang M200 mid-drive motor",
@@ -2079,19 +2080,20 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Bell"
     ]
   },
-   {
+  {
     id: "jobobike-romer",
     name: "JOBOBIKE Romer",
     slug: "jobobike-romer",
     originalPrice: 2199,
     price: 1799,
     discount: "-18%",
-    image: "/images/products/jobobike-romer-main.jpg",
+    image: "/images/romer/romer-1.png",
     images: [
-      "/images/products/jobobike-romer-1.jpg",
-      "/images/products/jobobike-romer-2.jpg",
-      "/images/products/jobobike-romer-3.jpg",
-      "/images/products/jobobike-romer-4.jpg"
+     "/images/romer/romer-1.png",
+     "/images/romer/romer-2.png",
+     "/images/romer/romer-3.png",
+     "/images/romer/romer-4.png",
+     "/images/romer/romer-5.png",
     ],
     features: [
       "Fat tire design for all terrain",
@@ -2250,12 +2252,11 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 1599,
     price: 1299,
     discount: "-19%",
-    image: "/images/products/jobobike-ace-main.jpg",
+    image: "/images/ace/ace-1.png",
     images: [
-      "/images/products/jobobike-ace-1.jpg",
-      "/images/products/jobobike-ace-2.jpg",
-      "/images/products/jobobike-ace-3.jpg",
-      "/images/products/jobobike-ace-4.jpg"
+     "/images/ace/ace-1.png",
+     "/images/ace/ace-2.png",
+     "/images/ace/ace-3.png",
     ],
     features: [
       "Foldable compact design",
@@ -2413,12 +2414,10 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 2199,
     price: 1799,
     discount: "-18%",
-    image: "/images/products/jobobike-triker-main.jpg",
+    image: "/images/triker/triker-1.png",
     images: [
-      "/images/products/jobobike-triker-1.jpg",
-      "/images/products/jobobike-triker-2.jpg",
-      "/images/products/jobobike-triker-3.jpg",
-      "/images/products/jobobike-triker-4.jpg"
+      "/images/triker/triker-1.png",
+      "/images/triker/triker-2.png",
     ],
     features: [
       "Three-wheel electric tricycle",
@@ -2577,12 +2576,10 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 1999,
     price: 1699,
     discount: "-15%",
-    image: "/images/products/jobobike-luxe-main.jpg",
+    image: "/images/luxe/luxe-1.png",
     images: [
-      "/images/products/jobobike-luxe-1.jpg",
-      "/images/products/jobobike-luxe-2.jpg",
-      "/images/products/jobobike-luxe-3.jpg",
-      "/images/products/jobobike-luxe-4.jpg"
+      "/images/luxe/luxe-1.png",
+      "/images/luxe/luxe-2.png",
     ],
     features: [
       "Premium cruiser design",
@@ -2741,12 +2738,10 @@ export const PRODUCTS_DATA: ProductCard[] = [
     originalPrice: 1799,
     price: 1499,
     discount: "-17%",
-    image: "/images/products/jobobike-dyno-main.jpg",
+    image: "/images/dyno-gt/dyno-gt-1.png",
     images: [
-      "/images/products/jobobike-dyno-1.jpg",
-      "/images/products/jobobike-dyno-2.jpg",
-      "/images/products/jobobike-dyno-3.jpg",
-      "/images/products/jobobike-dyno-4.jpg"
+      "/images/dyno-gt/dyno-gt-1.png",
+      "/images/dyno-gt/dyno-gt-2.png",
     ],
     features: [
       "Step-through comfort design",
@@ -2897,8 +2892,8 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Bell"
     ]
   },
- 
-  
+
+
 ];
 
 
@@ -2923,7 +2918,7 @@ export const getRelatedProducts = (
 
 // âœ… Get products by category
 export const getProductsByCategory = (category: string): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.category.includes(category)
   );
 };
@@ -2934,10 +2929,10 @@ export const searchProducts = (query: string): ProductCard[] => {
   return PRODUCTS_DATA.filter((product) =>
     product.name.toLowerCase().includes(lowerQuery) ||
     product.description.toLowerCase().includes(lowerQuery) ||
-    product.keyFeatures.some(feature => 
+    product.keyFeatures.some(feature =>
       feature.toLowerCase().includes(lowerQuery)
     ) ||
-    product.category.some(cat => 
+    product.category.some(cat =>
       cat.toLowerCase().includes(lowerQuery)
     )
   );
@@ -2945,24 +2940,24 @@ export const searchProducts = (query: string): ProductCard[] => {
 
 // âœ… Get products by price range
 export const getProductsByPriceRange = (
-  minPrice: number, 
+  minPrice: number,
   maxPrice: number
 ): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.price >= minPrice && product.price <= maxPrice
   );
 };
 
 // âœ… Get products sorted by price
 export const getProductsSortedByPrice = (ascending: boolean = true): ProductCard[] => {
-  return [...PRODUCTS_DATA].sort((a, b) => 
+  return [...PRODUCTS_DATA].sort((a, b) =>
     ascending ? a.price - b.price : b.price - a.price
   );
 };
 
 // âœ… Get products sorted by rating
 export const getProductsSortedByRating = (ascending: boolean = false): ProductCard[] => {
-  return [...PRODUCTS_DATA].sort((a, b) => 
+  return [...PRODUCTS_DATA].sort((a, b) =>
     ascending ? a.rating - b.rating : b.rating - a.rating
   );
 };
@@ -2974,28 +2969,28 @@ export const getFeaturedProducts = (): ProductCard[] => {
 
 // âœ… Get lightweight products
 export const getLightweightProducts = (): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.category.includes('lightweight')
   );
 };
 
 // âœ… Get folding bikes
 export const getFoldingBikes = (): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.specifications.foldable === true
   );
 };
 
 // âœ… Get commuter bikes
 export const getCommuterBikes = (): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.category.includes('commuter-ebike')
   );
 };
 
 // âœ… Get step-through bikes
 export const getStepThroughBikes = (): ProductCard[] => {
-  return PRODUCTS_DATA.filter((product) => 
+  return PRODUCTS_DATA.filter((product) =>
     product.category.includes('step-through')
   );
 };
