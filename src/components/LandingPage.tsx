@@ -139,6 +139,82 @@ const LandingPage = () => {
         </ul>
       </section>
 
+      {/* Certificates Section */}
+      <section className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
+        {/* Background decorative elements */}
+        <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
+          <svg className="w-full h-full" viewBox="0 0 400 400">
+            <path d="M 200 50 Q 350 200 200 350 Q 50 200 200 50" stroke="currentColor" strokeWidth="2" fill="none" className="text-gray-400"/>
+          </svg>
+        </div>
+
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8 relative">
+          {/* Quote Icon */}
+          <div className="flex justify-start mb-8">
+            <svg className="w-20 h-20 md:w-24 md:h-24 text-gray-300" fill="currentColor" viewBox="0 0 100 100">
+              <path d="M20,45 Q15,30 25,25 Q35,20 40,30 L35,45 L45,45 L45,70 L20,70 Z"/>
+              <path d="M55,45 Q50,30 60,25 Q70,20 75,30 L70,45 L80,45 L80,70 L55,70 Z"/>
+            </svg>
+          </div>
+
+          {/* Section Header */}
+          <div className="mb-12">
+            <p className="text-[#12b190] text-base md:text-lg font-medium mb-3">
+              Transport and exercise
+            </p>
+            <h2 className="text-4xl md:text-5xl lg:text-6xl font-bold text-black mb-6 tracking-tight">
+              CERTIFICATES
+            </h2>
+            <p className="text-gray-700 text-base md:text-lg max-w-2xl leading-relaxed">
+              JOBOBIKE achieves a great combination of transport and exercise. Our e-bikes have obtained the following professional certifications.
+            </p>
+          </div>
+
+          {/* Read More Button */}
+          <div className="mb-16">
+            <button className="bg-[#12b190] text-white px-10 py-3.5 rounded-full font-medium hover:bg-[#0fa080] transition-colors shadow-lg hover:shadow-xl">
+              Read more
+            </button>
+          </div>
+
+          {/* Certificates Grid */}
+          <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
+            {/* ISO Certificate */}
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <img
+                  src="/images/certification-iso.webp"
+                  alt="ISO Certificate"
+                  className="w-28 h-28 md:w-32 md:h-32 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* CE EN15194 Certificate */}
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <img
+                  src="/images/certification-ce.webp"
+                  alt="CE EN15194 Certificate"
+                  className="w-28 h-28 md:w-32 md:h-32 object-contain"
+                />
+              </div>
+            </div>
+
+            {/* RoHS Certificate */}
+            <div className="flex flex-col items-center text-center">
+              <div className="mb-4">
+                <img
+                  src="/images/certification-rohs.webp"
+                  alt="RoHS Certificate"
+                  className="w-28 h-28 md:w-32 md:h-32 object-contain"
+                />
+              </div>
+            </div>
+          </div>
+        </div>
+      </section>
+
       {/* Service & Support Section */}
       <section className="py-12 md:py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
