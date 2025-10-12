@@ -29,10 +29,10 @@ const PrivacyPolicy = () => {
             At Jobo Europe, we take your personal privacy seriously and recognize that you expect privacy and security for all your personal information. We understand the need to provide clear and specific information about our websites designed to prevent misuse of your information.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
-            We encourage you to read this privacy notice (the "Privacy Notice") carefully to understand the information we collect and what we do with it.
+            We encourage you to read this privacy notice (the &quot;Privacy Notice&quot;) carefully to understand the information we collect and what we do with it.
           </p>
           <p className="text-gray-700 leading-relaxed">
-            Jobo Europe Sp. z o.o. and its affiliates and subsidiaries (collectively "Jobo Europe," "us," "our," or "we") are responsible for your information, and this Privacy Notice constitutes an agreement between you and Jobo Europe. When you access and use our website (the "Site") www.jobobike.eu you acknowledge that you have read this Privacy Notice, understood it, and that you do not object to our processing activities.
+            Jobo Europe Sp. z o.o. and its affiliates and subsidiaries (collectively &quot;Jobo Europe,&quot; &quot;us,&quot; &quot;our,&quot; or &quot;we&quot;) are responsible for your information, and this Privacy Notice constitutes an agreement between you and Jobo Europe. When you access and use our website (the &quot;Site&quot;) www.jobobike.eu you acknowledge that you have read this Privacy Notice, understood it, and that you do not object to our processing activities.
           </p>
         </section>
 
@@ -41,8 +41,8 @@ const PrivacyPolicy = () => {
           <p className="text-gray-700 leading-relaxed mb-4">
             This Privacy Notice describes how Jobo Europe collects, protects, uses, and discloses information and data collected and created in the course of your access to and use of the Jobo Europe Site, products, and services, as well as your interactions with Jobo Europe via telephone, through email or at our physical locations. It also explains what your rights are, which may differ depending on where you are located.
           </p>
-          <p className="text-gray-700 leading-relaxed">
-            At certain points in your interaction with the Site, certain third party service providers engaged by Jobo Europe ("Service Providers") may be responsible for collecting information pertaining to you, and we may also disclose general information. At other points, you will need to submit various pieces of information to a Service Provider in order to take advantage of services offered by Jobo Europe, including but not limited to making a purchase, financing a purchase, applying for credit, or entering a contest. This information you submit is being collected, transmitted or stored by a Service Provider, and in most instances, your information will become subject to terms and conditions and a privacy policy operated by that Service Provider. Please see the "Access to Your Information" section below for more information about our Service Providers.
+          <p className="text-gray-700 leading-relaxed mb-4">
+            At certain points in your interaction with the Site, certain third party service providers engaged by Jobo Europe (&quot;Service Providers&quot;) may be responsible for collecting information pertaining to you, and we may also disclose general information. At other points, you will need to submit various pieces of information to a Service Provider in order to take advantage of services offered by Jobo Europe, including but not limited to making a purchase, financing a purchase, applying for credit, or entering a contest. This information you submit is being collected, transmitted or stored by a Service Provider, and in most instances, your information will become subject to terms and conditions and a privacy policy operated by that Service Provider. Please see the &quot;Access to Your Information&quot; section below for more information about our Service Providers.
           </p>
         </section>
 
@@ -76,13 +76,13 @@ const PrivacyPolicy = () => {
             How we collect Your Information
           </h2>
           <p className="text-gray-700 leading-relaxed mb-4">
-            The only personal information we collect about you is either provided by you voluntarily or as described below under "Information Collected from Your Use of the Site." Jobo Europe does not collect children's information or any other special category data.
+            The only personal information we collect about you is either provided by you voluntarily or as described below under &quot;Information Collected from Your Use of the Site.&quot; Jobo Europe does not collect children&apos;s information or any other special category data.
           </p>
           <p className="text-gray-700 leading-relaxed mb-4">
             If you access or submit an inquiry through our Site, set up an account, subscribe to a service, register to receive marketing materials, participate in contests, sweepstakes or promotions, upload a photo, or receive other services, we may ask you to provide certain personal information such as your name, email address, phone number, location, and zip code, and other personally identifiable information ("Personal Information").
           </p>
           <p className="text-gray-700 leading-relaxed">
-            We take reasonable steps to make sure that we ask only for the information we need for the purposes listed in "How We Use Your Information". We also take steps to ensure that your contact information is accurate, complete, current, and otherwise reliable. We will only collect and process your Personal Information if we have a lawful basis for doing so.
+            We take reasonable steps to make sure that we ask only for the information we need for the purposes listed in &quot;How We Use Your Information&quot;. We also take steps to ensure that your contact information is accurate, complete, current, and otherwise reliable. We will only collect and process your Personal Information if we have a lawful basis for doing so.
           </p>
         </section>
 

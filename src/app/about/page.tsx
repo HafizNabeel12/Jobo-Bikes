@@ -26,7 +26,7 @@ const AboutUs = () => {
             JOBOBIKE has been specialising in the production of e-bikes for over 20 years, focusing on quality and innovation, making it the most reliable choice for you.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed mb-6">
-            JOBOBIKE has been present in the e-bike market for two decades. We have been producing bikes for well-known worldwide clients' brands. Helping others to succeed has resulted in our own success. Today, we are one of the leading companies in the e-bike industry.
+            JOBOBIKE has been present in the e-bike market for two decades. We have been producing bikes for well-known worldwide clients brands. Helping others to succeed has resulted in our own success. Today, we are one of the leading companies in the e-bike industry.
           </p>
           <p className="text-lg text-gray-700 leading-relaxed">
             Moreover, our lifetime customer service is always with you.
@@ -129,13 +129,13 @@ const AboutUs = () => {
               <div>
                 <h3 className="text-2xl font-bold mb-4">Service</h3>
                 <p className="leading-relaxed">
-                  With 300+ partners across Europe and lifetime customer service, we're always here to support your journey.
+                  With 300+ partners across Europe and lifetime customer service, we&apos;re always here to support your journey.
                 </p>
               </div>
               <div>
                 <h3 className="text-2xl font-bold mb-4">Sustainability</h3>
                 <p className="leading-relaxed">
-                  We're committed to creating eco-friendly transportation solutions that reduce carbon emissions and promote healthier lifestyles.
+                  We&apos;re committed to creating eco-friendly transportation solutions that reduce carbon emissions and promote healthier lifestyles.
                 </p>
               </div>
             </div>
@@ -170,7 +170,7 @@ const AboutUs = () => {
             Join the JOBOBIKE Family
           </h2>
           <p className="text-lg text-gray-700 max-w-3xl mx-auto mb-8">
-            Experience the perfect blend of innovation, quality, and service. With JOBOBIKE, you're not just buying an e-bike – you're joining a community dedicated to sustainable and enjoyable transportation.
+            Experience the perfect blend of innovation, quality, and service. With JOBOBIKE, you&apos;re not just buying an e-bike – you&apos;re joining a community dedicated to sustainable and enjoyable transportation.
           </p>
           <a
             href="/cycle"
