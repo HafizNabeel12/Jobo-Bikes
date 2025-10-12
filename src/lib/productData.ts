@@ -1590,6 +1590,1313 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Keys (2x)"
     ]
   },
+  {
+    id: "jobobike-viva",
+    name: "JOBOBIKE Viva",
+    slug: "jobobike-viva",
+    originalPrice: 1699,
+    price: 1399,
+    discount: "-18%",
+    image: "/images/products/jobobike-viva-main.jpg",
+    images: [
+      "/images/products/jobobike-viva-1.jpg",
+      "/images/products/jobobike-viva-2.jpg",
+      "/images/products/jobobike-viva-3.jpg",
+      "/images/products/jobobike-viva-4.jpg"
+    ],
+    features: [
+      "Lightweight 22kg aluminum frame",
+      "250W XOFO rear hub motor",
+      "36V 14Ah LG battery with BMS",
+      "28-inch wheels for smooth city riding",
+      "Integrated lights and mudguards"
+    ],
+    badge: "Lightweight",
+    category: ["City", "Commuter"],
+    rating: 4.7,
+    reviewCount: 89,
+    specifications: {
+      motor: "250W XOFO Rear Hub",
+      battery: "36V 14Ah (504Wh)",
+      range: "50-70 km",
+      speed: "25 km/h",
+      weight: "22 kg",
+      wheelSize: "28\"",
+      foldable: false,
+      brakes: "Mechanical Disc Brakes",
+      frame: "Aluminum Alloy 6061",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Viva",
+        frameType: "Step-over",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: false,
+        dimensions: {
+          unfolded: "1850 x 680 x 1050 mm",
+          folded: "N/A"
+        },
+        weight: "22 kg",
+        maxLoad: "120 kg",
+        recommendedHeight: "165-185 cm"
+      },
+      motor: {
+        type: "XOFO Brushless",
+        power: "250W",
+        peakPower: "450W",
+        torque: "30 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "LG Lithium-ion",
+        voltage: "36V",
+        capacity: "14Ah",
+        capacityWh: "504Wh",
+        removable: true,
+        chargingTime: "4-6 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "45 km",
+          pedalAssist: "70 km",
+          combined: "50-70 km"
+        },
+        gradability: "15°",
+        turningRadius: "2.5m"
+      },
+      wheels: {
+        size: "28\"",
+        tireType: "City Tire",
+        tireSize: "28 x 1.75\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "160mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LED Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED Integrated"
+        },
+        horn: true,
+        throttle: false,
+        assistLevels: "3 levels"
+      },
+      comfort: {
+        suspension: {
+          front: false,
+          rear: false,
+          type: "N/A"
+        },
+        seat: {
+          type: "Ergonomic Saddle",
+          adjustable: true,
+          material: "Synthetic Leather"
+        },
+        handlebar: {
+          type: "City Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: false
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Viva is the lightest model in the JOBOBIKE family at just 22kg. Designed specifically for urban commuting, it combines elegant design with practical functionality. The lightweight aluminum frame makes it easy to carry and maneuver through city streets, while the 28-inch wheels provide a smooth and comfortable ride. Perfect for fashionable urbanites who value style and comfort.",
+    keyFeatures: [
+      "Ultra-lightweight 22kg construction",
+      "Powerful 250W rear hub motor with 30Nm torque",
+      "Long-range 504Wh battery for extended rides",
+      "Elegant urban design with integrated components",
+      "Reliable Shimano 7-speed transmission",
+      "Built-in lights and mudguards for all-weather riding"
+    ],
+    availableColors: ["Blue", "White", "Black"],
+    availableSizes: ["One Size (165-185cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Viva E-bike",
+      "36V 14Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell"
+    ]
+  },
+  {
+    id: "jobobike-viva-st",
+    name: "JOBOBIKE Viva ST",
+    slug: "jobobike-viva-st",
+    originalPrice: 1699,
+    price: 1399,
+    discount: "-18%",
+    image: "/images/products/jobobike-viva-st-main.jpg",
+    images: [
+      "/images/products/jobobike-viva-st-1.jpg",
+      "/images/products/jobobike-viva-st-2.jpg",
+      "/images/products/jobobike-viva-st-3.jpg",
+      "/images/products/jobobike-viva-st-4.jpg"
+    ],
+    features: [
+      "Step-through frame for easy mounting",
+      "Lightweight 22kg design",
+      "250W rear hub motor",
+      "36V 10.4Ah battery",
+      "Perfect for city commuting"
+    ],
+    badge: "Step-Through",
+    category: ["City", "Commuter", "Women"],
+    rating: 4.8,
+    reviewCount: 76,
+    specifications: {
+      motor: "250W XOFO Rear Hub",
+      battery: "36V 10.4Ah (374Wh)",
+      range: "40-60 km",
+      speed: "25 km/h",
+      weight: "22 kg",
+      wheelSize: "28\"",
+      foldable: false,
+      brakes: "Mechanical Disc Brakes",
+      frame: "Step-through Aluminum Alloy",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Viva ST",
+        frameType: "Step-through",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: false,
+        dimensions: {
+          unfolded: "1850 x 680 x 1050 mm",
+          folded: "N/A"
+        },
+        weight: "22 kg",
+        maxLoad: "120 kg",
+        recommendedHeight: "165-185 cm"
+      },
+      motor: {
+        type: "XOFO Brushless",
+        power: "250W",
+        peakPower: "450W",
+        torque: "30 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "LG Lithium-ion",
+        voltage: "36V",
+        capacity: "10.4Ah",
+        capacityWh: "374Wh",
+        removable: true,
+        chargingTime: "4-5 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "35 km",
+          pedalAssist: "60 km",
+          combined: "40-60 km"
+        },
+        gradability: "15°",
+        turningRadius: "2.5m"
+      },
+      wheels: {
+        size: "28\"",
+        tireType: "City Tire",
+        tireSize: "28 x 1.75\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "160mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LED Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED Integrated"
+        },
+        horn: true,
+        throttle: false,
+        assistLevels: "3 levels"
+      },
+      comfort: {
+        suspension: {
+          front: false,
+          rear: false,
+          type: "N/A"
+        },
+        seat: {
+          type: "Comfort Saddle",
+          adjustable: true,
+          material: "Synthetic Leather"
+        },
+        handlebar: {
+          type: "Swept-back Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: false
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Viva ST features a step-through frame design that makes mounting and dismounting effortless. Ideal for riders who prioritize comfort and convenience, this lightweight city e-bike combines elegant styling with practical urban functionality. The low-entry frame is perfect for daily commutes and casual rides around town.",
+    keyFeatures: [
+      "Easy step-through frame design",
+      "Ultra-lightweight 22kg construction",
+      "Reliable 250W motor with 30Nm torque",
+      "Comfortable upright riding position",
+      "Integrated lights and mudguards",
+      "Smooth Shimano 7-speed gear system"
+    ],
+    availableColors: ["Blue", "White", "Cream"],
+    availableSizes: ["One Size (165-185cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Viva ST E-bike",
+      "36V 10.4Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell"
+    ]
+  },
+  {
+    id: "jobobike-henry",
+    name: "JOBOBIKE Henry",
+    slug: "jobobike-henry",
+    originalPrice: 2299,
+    price: 1899,
+    discount: "-17%",
+    image: "/images/products/jobobike-henry-main.jpg",
+    images: [
+      "/images/products/jobobike-henry-1.jpg",
+      "/images/products/jobobike-henry-2.jpg",
+      "/images/products/jobobike-henry-3.jpg",
+      "/images/products/jobobike-henry-4.jpg"
+    ],
+    features: [
+      "Bafang M200 mid-drive motor",
+      "Hidden integrated battery",
+      "Retro classic design",
+      "28-inch wheels",
+      "Premium components"
+    ],
+    badge: "Mid-Drive",
+    category: ["City", "Commuter", "Men"],
+    rating: 4.9,
+    reviewCount: 64,
+    specifications: {
+      motor: "Bafang M200 Mid-Drive 250W",
+      battery: "36V 14Ah (504Wh)",
+      range: "60-90 km",
+      speed: "25 km/h",
+      weight: "24 kg",
+      wheelSize: "28\"",
+      foldable: false,
+      brakes: "Hydraulic Disc Brakes",
+      frame: "Classic Step-over Aluminum",
+      drivetrain: "Shimano 8-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Henry",
+        frameType: "Step-over Classic",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: false,
+        dimensions: {
+          unfolded: "1900 x 700 x 1100 mm",
+          folded: "N/A"
+        },
+        weight: "24 kg",
+        maxLoad: "125 kg",
+        recommendedHeight: "170-195 cm"
+      },
+      motor: {
+        type: "Bafang M200",
+        power: "250W",
+        peakPower: "500W",
+        torque: "55 Nm",
+        location: "Mid-Drive",
+        torqueSensor: true
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "36V",
+        capacity: "14Ah",
+        capacityWh: "504Wh",
+        removable: true,
+        chargingTime: "4-6 hours",
+        batteryLife: "1000+ cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "50 km",
+          pedalAssist: "90 km",
+          combined: "60-90 km"
+        },
+        gradability: "20°",
+        turningRadius: "2.8m"
+      },
+      wheels: {
+        size: "28\"",
+        tireType: "City Tire",
+        tireSize: "28 x 1.75\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Hydraulic Disc",
+        rear: "Hydraulic Disc",
+        type: "180mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "8-speed",
+        shifter: "Shimano Altus"
+      },
+      electrical: {
+        display: "Color LCD Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED Integrated"
+        },
+        horn: true,
+        throttle: false,
+        assistLevels: "5 levels"
+      },
+      comfort: {
+        suspension: {
+          front: false,
+          rear: false,
+          type: "N/A"
+        },
+        seat: {
+          type: "Ergonomic Saddle",
+          adjustable: true,
+          material: "Genuine Leather"
+        },
+        handlebar: {
+          type: "Classic Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX5",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: true
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Henry is a refined urban e-bike designed for men who value minimalist style and cutting-edge technology. Featuring a powerful Bafang M200 mid-drive motor with torque sensor, it delivers a smooth, natural riding experience. The hidden battery integration provides a clean, classic appearance while maintaining modern e-bike performance.",
+    keyFeatures: [
+      "Premium Bafang M200 mid-drive motor with 55Nm torque",
+      "Integrated hidden battery for sleek aesthetics",
+      "Torque sensor for natural pedal assistance",
+      "High-quality hydraulic disc brakes",
+      "Color LCD display with comprehensive data",
+      "Classic retro styling with modern technology"
+    ],
+    availableColors: ["Matte Black", "Forest Green", "Navy Blue"],
+    availableSizes: ["One Size (170-195cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Henry E-bike",
+      "36V 14Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell"
+    ]
+  },
+   {
+    id: "jobobike-romer",
+    name: "JOBOBIKE Romer",
+    slug: "jobobike-romer",
+    originalPrice: 2199,
+    price: 1799,
+    discount: "-18%",
+    image: "/images/products/jobobike-romer-main.jpg",
+    images: [
+      "/images/products/jobobike-romer-1.jpg",
+      "/images/products/jobobike-romer-2.jpg",
+      "/images/products/jobobike-romer-3.jpg",
+      "/images/products/jobobike-romer-4.jpg"
+    ],
+    features: [
+      "Fat tire design for all terrain",
+      "Powerful 500W motor",
+      "Long-range 48V battery",
+      "Full suspension system",
+      "Heavy-duty cargo capacity"
+    ],
+    badge: "Popular",
+    category: ["Fat Tire", "All-Terrain", "Cargo"],
+    rating: 4.8,
+    reviewCount: 126,
+    specifications: {
+      motor: "500W Rear Hub",
+      battery: "48V 13Ah (624Wh)",
+      range: "55-90 km",
+      speed: "25 km/h",
+      weight: "30 kg",
+      wheelSize: "26\" x 4.0\"",
+      foldable: false,
+      brakes: "Mechanical Disc Brakes",
+      frame: "High-Tensile Steel",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Romer",
+        frameType: "Step-over",
+        frameMaterial: "High-Tensile Steel",
+        foldable: false,
+        dimensions: {
+          unfolded: "1950 x 750 x 1150 mm",
+          folded: "N/A"
+        },
+        weight: "30 kg",
+        maxLoad: "150 kg",
+        recommendedHeight: "165-195 cm"
+      },
+      motor: {
+        type: "Brushless Gear",
+        power: "500W",
+        peakPower: "750W",
+        torque: "60 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "48V",
+        capacity: "13Ah",
+        capacityWh: "624Wh",
+        removable: true,
+        chargingTime: "5-7 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "50 km",
+          pedalAssist: "90 km",
+          combined: "55-90 km"
+        },
+        gradability: "25°",
+        turningRadius: "3.2m"
+      },
+      wheels: {
+        size: "26\"",
+        tireType: "Fat Tire",
+        tireSize: "26 x 4.0\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "180mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LCD Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED High-Power"
+        },
+        horn: true,
+        throttle: true,
+        assistLevels: "5 levels"
+      },
+      comfort: {
+        suspension: {
+          front: true,
+          rear: true,
+          type: "Coil Spring"
+        },
+        seat: {
+          type: "Wide Comfort Saddle",
+          adjustable: true,
+          material: "Synthetic Leather"
+        },
+        handlebar: {
+          type: "MTB Handlebar",
+          adjustable: false,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX5",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: true
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: true
+      }
+    },
+    description: "The JOBOBIKE Romer is a versatile fat tire e-bike designed to handle any terrain with confidence. Whether you're riding on sand, snow, gravel, or city streets, the massive 4-inch tires provide exceptional grip and stability. With a powerful 500W motor and full suspension system, it's built for adventure while maintaining cargo-hauling capability with its heavy-duty rear rack.",
+    keyFeatures: [
+      "26\" x 4.0\" fat tires for all-terrain capability",
+      "Powerful 500W motor with 60Nm torque",
+      "Long-range 624Wh battery for extended rides",
+      "Full front and rear suspension for comfort",
+      "150kg maximum load capacity",
+      "Throttle mode for effortless riding"
+    ],
+    availableColors: ["Army Green", "Matte Black", "Sand Beige"],
+    availableSizes: ["One Size (165-195cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Romer E-bike",
+      "48V 13Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell",
+      "Rear Rack"
+    ]
+  },
+  {
+    id: "jobobike-ace",
+    name: "JOBOBIKE Ace",
+    slug: "jobobike-ace",
+    originalPrice: 1599,
+    price: 1299,
+    discount: "-19%",
+    image: "/images/products/jobobike-ace-main.jpg",
+    images: [
+      "/images/products/jobobike-ace-1.jpg",
+      "/images/products/jobobike-ace-2.jpg",
+      "/images/products/jobobike-ace-3.jpg",
+      "/images/products/jobobike-ace-4.jpg"
+    ],
+    features: [
+      "Foldable compact design",
+      "Mobile app control",
+      "250W motor with 45Nm torque",
+      "20-inch wheels",
+      "Lightweight and portable"
+    ],
+    badge: "Foldable",
+    category: ["Folding", "City", "Compact"],
+    rating: 4.6,
+    reviewCount: 118,
+    specifications: {
+      motor: "250W Rear Hub",
+      battery: "36V 10Ah (360Wh)",
+      range: "40-60 km",
+      speed: "25 km/h",
+      weight: "21 kg",
+      wheelSize: "20\" x 2.125\"",
+      foldable: true,
+      brakes: "Mechanical Disc Brakes",
+      frame: "Foldable Aluminum Alloy",
+      drivetrain: "Single Speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Ace",
+        frameType: "Foldable",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: true,
+        dimensions: {
+          unfolded: "1480 x 580 x 1050 mm",
+          folded: "800 x 450 x 650 mm"
+        },
+        weight: "21 kg",
+        maxLoad: "120 kg",
+        recommendedHeight: "155-190 cm"
+      },
+      motor: {
+        type: "Brushless",
+        power: "250W",
+        peakPower: "450W",
+        torque: "45 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "36V",
+        capacity: "10Ah",
+        capacityWh: "360Wh",
+        removable: true,
+        chargingTime: "4-5 hours",
+        batteryLife: "800+ cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "35 km",
+          pedalAssist: "60 km",
+          combined: "40-60 km"
+        },
+        gradability: "15°",
+        turningRadius: "2.0m"
+      },
+      wheels: {
+        size: "20\"",
+        tireType: "CST Anti-Puncture",
+        tireSize: "20 x 2.125\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "160mm Disc Brakes"
+      },
+      transmission: {
+        type: "Single Speed",
+        gears: "1-speed",
+        shifter: "N/A"
+      },
+      electrical: {
+        display: "LED Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED with Reflective Strips"
+        },
+        horn: true,
+        throttle: false,
+        assistLevels: "3 levels"
+      },
+      comfort: {
+        suspension: {
+          front: false,
+          rear: false,
+          type: "N/A"
+        },
+        seat: {
+          type: "Comfort Saddle",
+          adjustable: true,
+          material: "Synthetic Leather"
+        },
+        handlebar: {
+          type: "Foldable Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: true,
+        gps: false,
+        bluetooth: true,
+        usb: false
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: false,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Ace is the perfect solution for urban commuters who need a compact, portable e-bike. Its innovative folding design allows easy storage in apartments, offices, or car trunks. Despite its compact size, it delivers impressive performance with a 250W motor and smart app connectivity for modern riders.",
+    keyFeatures: [
+      "Quick-fold design for easy transport",
+      "Mobile app control via Bluetooth",
+      "Powerful 250W motor with 45Nm torque",
+      "CST anti-puncture tires with reflective strips",
+      "Compact 20-inch wheels for agile city riding",
+      "Lightweight 21kg for easy carrying"
+    ],
+    availableColors: ["Black", "White", "Grey"],
+    availableSizes: ["Universal (155-190cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Ace E-bike",
+      "36V 10Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell"
+    ]
+  },
+  {
+    id: "jobobike-triker",
+    name: "JOBOBIKE Triker",
+    slug: "jobobike-triker",
+    originalPrice: 2199,
+    price: 1799,
+    discount: "-18%",
+    image: "/images/products/jobobike-triker-main.jpg",
+    images: [
+      "/images/products/jobobike-triker-1.jpg",
+      "/images/products/jobobike-triker-2.jpg",
+      "/images/products/jobobike-triker-3.jpg",
+      "/images/products/jobobike-triker-4.jpg"
+    ],
+    features: [
+      "Three-wheel electric tricycle",
+      "Large rear cargo basket",
+      "Extra stability and safety",
+      "250W motor with differential",
+      "Perfect for seniors and cargo"
+    ],
+    badge: "Tricycle",
+    category: ["Tricycle", "Cargo", "Senior"],
+    rating: 4.9,
+    reviewCount: 54,
+    specifications: {
+      motor: "250W Differential Motor",
+      battery: "36V 13Ah (468Wh)",
+      range: "50-70 km",
+      speed: "25 km/h",
+      weight: "38 kg",
+      wheelSize: "24\" Front / 20\" Rear",
+      foldable: false,
+      brakes: "V-Brakes",
+      frame: "Low Step-through Steel",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Triker",
+        frameType: "Low Step-through Tricycle",
+        frameMaterial: "High-Tensile Steel",
+        foldable: false,
+        dimensions: {
+          unfolded: "1800 x 750 x 1100 mm",
+          folded: "N/A"
+        },
+        weight: "38 kg",
+        maxLoad: "160 kg",
+        recommendedHeight: "155-185 cm"
+      },
+      motor: {
+        type: "Differential Motor",
+        power: "250W",
+        peakPower: "450W",
+        torque: "35 Nm",
+        location: "Rear Axle",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "36V",
+        capacity: "13Ah",
+        capacityWh: "468Wh",
+        removable: true,
+        chargingTime: "5-6 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "45 km",
+          pedalAssist: "70 km",
+          combined: "50-70 km"
+        },
+        gradability: "12°",
+        turningRadius: "3.5m"
+      },
+      wheels: {
+        size: "24\" / 20\"",
+        tireType: "Puncture-Resistant",
+        tireSize: "24\" x 1.95\" / 20\" x 1.95\"",
+        rimMaterial: "Steel"
+      },
+      brakes: {
+        front: "V-Brake",
+        rear: "V-Brake",
+        type: "V-Brake System"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LED Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED"
+        },
+        horn: true,
+        throttle: true,
+        assistLevels: "3 levels"
+      },
+      comfort: {
+        suspension: {
+          front: true,
+          rear: false,
+          type: "Spring Fork"
+        },
+        seat: {
+          type: "Extra Wide Comfort Saddle",
+          adjustable: true,
+          material: "Synthetic Leather with Springs"
+        },
+        handlebar: {
+          type: "Ergonomic Swept-back",
+          adjustable: true,
+          material: "Steel"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: false
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: false,
+        basket: true,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Triker is an innovative three-wheel electric tricycle designed for maximum stability and cargo capacity. Perfect for seniors, delivery services, or anyone who values extra stability. The large rear basket can carry groceries, packages, or cargo with ease, while the low step-through frame ensures easy mounting and dismounting.",
+    keyFeatures: [
+      "Superior three-wheel stability",
+      "Large rear cargo basket (100L capacity)",
+      "Low step-through frame for easy access",
+      "Differential motor for smooth cornering",
+      "Extra-wide comfort saddle with suspension",
+      "Perfect for seniors and cargo transport"
+    ],
+    availableColors: ["Blue", "Black", "Red"],
+    availableSizes: ["Universal (155-185cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Triker E-tricycle",
+      "36V 13Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell",
+      "Rear Cargo Basket"
+    ]
+  },
+  {
+    id: "jobobike-luxe",
+    name: "JOBOBIKE Luxe",
+    slug: "jobobike-luxe",
+    originalPrice: 1999,
+    price: 1699,
+    discount: "-15%",
+    image: "/images/products/jobobike-luxe-main.jpg",
+    images: [
+      "/images/products/jobobike-luxe-1.jpg",
+      "/images/products/jobobike-luxe-2.jpg",
+      "/images/products/jobobike-luxe-3.jpg",
+      "/images/products/jobobike-luxe-4.jpg"
+    ],
+    features: [
+      "Premium cruiser design",
+      "Fat tire comfort",
+      "500W powerful motor",
+      "Retro aesthetic",
+      "Front suspension"
+    ],
+    badge: "Cruiser",
+    category: ["Cruiser", "Beach", "Fat Tire"],
+    rating: 4.7,
+    reviewCount: 71,
+    specifications: {
+      motor: "500W Rear Hub",
+      battery: "48V 13Ah (624Wh)",
+      range: "50-80 km",
+      speed: "25 km/h",
+      weight: "28 kg",
+      wheelSize: "26\" x 3.0\"",
+      foldable: false,
+      brakes: "Mechanical Disc Brakes",
+      frame: "Cruiser Aluminum Alloy",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Luxe",
+        frameType: "Cruiser Step-through",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: false,
+        dimensions: {
+          unfolded: "1900 x 700 x 1150 mm",
+          folded: "N/A"
+        },
+        weight: "28 kg",
+        maxLoad: "130 kg",
+        recommendedHeight: "165-190 cm"
+      },
+      motor: {
+        type: "Brushless Gear",
+        power: "500W",
+        peakPower: "750W",
+        torque: "60 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "48V",
+        capacity: "13Ah",
+        capacityWh: "624Wh",
+        removable: true,
+        chargingTime: "5-7 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "45 km",
+          pedalAssist: "80 km",
+          combined: "50-80 km"
+        },
+        gradability: "20°",
+        turningRadius: "3.0m"
+      },
+      wheels: {
+        size: "26\"",
+        tireType: "Fat Tire CST",
+        tireSize: "26 x 3.0\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "180mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LCD Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED Vintage Style"
+        },
+        horn: true,
+        throttle: true,
+        assistLevels: "5 levels"
+      },
+      comfort: {
+        suspension: {
+          front: true,
+          rear: false,
+          type: "Spring Fork"
+        },
+        seat: {
+          type: "Wide Cruiser Saddle",
+          adjustable: true,
+          material: "Synthetic Leather with Springs"
+        },
+        handlebar: {
+          type: "Beach Cruiser Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX5",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: true
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: true
+      }
+    },
+    description: "The JOBOBIKE Luxe brings vintage cruiser aesthetics into the electric age. With its comfortable upright riding position, fat tires, and powerful 500W motor, it's perfect for leisurely beach rides, park cruising, or comfortable commuting. The retro design combined with modern electric technology creates a unique riding experience.",
+    keyFeatures: [
+      "Classic beach cruiser design with modern power",
+      "500W motor with 60Nm torque",
+      "26\" x 3.0\" fat tires for ultimate comfort",
+      "Front suspension for smooth rides",
+      "Vintage-style LED lights",
+      "Wide cruiser saddle with spring suspension"
+    ],
+    availableColors: ["Ivory White", "Mint Green", "Navy Blue"],
+    availableSizes: ["Universal (165-190cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Luxe E-bike",
+      "48V 13Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell",
+      "Rear Rack"
+    ]
+  },
+  {
+    id: "jobobike-dyno",
+    name: "JOBOBIKE Dyno",
+    slug: "jobobike-dyno",
+    originalPrice: 1799,
+    price: 1499,
+    discount: "-17%",
+    image: "/images/products/jobobike-dyno-main.jpg",
+    images: [
+      "/images/products/jobobike-dyno-1.jpg",
+      "/images/products/jobobike-dyno-2.jpg",
+      "/images/products/jobobike-dyno-3.jpg",
+      "/images/products/jobobike-dyno-4.jpg"
+    ],
+    features: [
+      "Step-through comfort design",
+      "250W reliable motor",
+      "Front suspension",
+      "26-inch wheels",
+      "Affordable quality"
+    ],
+    badge: "Best Value",
+    category: ["City", "Commuter", "Women"],
+    rating: 4.6,
+    reviewCount: 103,
+    specifications: {
+      motor: "250W Rear Hub",
+      battery: "36V 13Ah (468Wh)",
+      range: "50-70 km",
+      speed: "25 km/h",
+      weight: "25 kg",
+      wheelSize: "26\" x 1.95\"",
+      foldable: false,
+      brakes: "Mechanical Disc Brakes",
+      frame: "Step-through Aluminum Alloy",
+      drivetrain: "Shimano 7-speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "JOBOBIKE Dyno",
+        frameType: "Step-through",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: false,
+        dimensions: {
+          unfolded: "1850 x 680 x 1100 mm",
+          folded: "N/A"
+        },
+        weight: "25 kg",
+        maxLoad: "120 kg",
+        recommendedHeight: "160-185 cm"
+      },
+      motor: {
+        type: "Brushless",
+        power: "250W",
+        peakPower: "450W",
+        torque: "40 Nm",
+        location: "Rear Hub",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "36V",
+        capacity: "13Ah",
+        capacityWh: "468Wh",
+        removable: true,
+        chargingTime: "5-6 hours",
+        batteryLife: "800-1000 cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "45 km",
+          pedalAssist: "70 km",
+          combined: "50-70 km"
+        },
+        gradability: "15°",
+        turningRadius: "2.6m"
+      },
+      wheels: {
+        size: "26\"",
+        tireType: "City Tire",
+        tireSize: "26 x 1.95\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "160mm Disc Brakes"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-speed",
+        shifter: "Shimano Tourney"
+      },
+      electrical: {
+        display: "LED Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED"
+        },
+        horn: true,
+        throttle: false,
+        assistLevels: "3 levels"
+      },
+      comfort: {
+        suspension: {
+          front: true,
+          rear: false,
+          type: "Spring Fork"
+        },
+        seat: {
+          type: "Comfort Saddle",
+          adjustable: true,
+          material: "Synthetic Leather"
+        },
+        handlebar: {
+          type: "Ergonomic Handlebar",
+          adjustable: true,
+          material: "Aluminum Alloy"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["CE", "EN15194"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: false
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: true,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Dyno offers exceptional value for urban commuters seeking comfort and reliability. Its step-through frame design ensures easy mounting, while the front suspension absorbs bumps for a smooth ride. With a solid range and dependable components, it's an excellent choice for daily commuting without breaking the bank.",
+    keyFeatures: [
+      "Easy step-through frame design",
+      "Front suspension for comfortable rides",
+      "Reliable 250W motor with 40Nm torque",
+      "Long-range 468Wh battery",
+      "26-inch wheels for stability",
+      "Excellent value for money"
+    ],
+    availableColors: ["White", "Black", "Silver"],
+    availableSizes: ["Universal (160-185cm)"],
+    whatsInTheBox: [
+      "JOBOBIKE Dyno E-bike",
+      "36V 13Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Tool Kit",
+      "Pedals",
+      "Bell"
+    ]
+  },
  
   
 ];
