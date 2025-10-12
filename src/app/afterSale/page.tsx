@@ -7,17 +7,12 @@ const AfterSalesService = () => {
   return (
     <div className="min-h-screen bg-white">
       {/* Breadcrumb */}
-      <div className="bg-gray-50 py-4 mt-32 md:mt-24">
+      <div className="bg-gray-50 py-4 mt-32 md:mt-32">
         <div className="max-w-4xl mx-auto px-4 sm:px-6 lg:px-8">
           <nav className="flex text-sm text-gray-600">
             <Link href="/" className="hover:text-[#12b190]">Home</Link>
             <span className="mx-2">&gt;</span>
-            <Link href="/support" className="hover:text-[#12b190]">Support</Link>
-            <span className="mx-2">&gt;</span>
-            <Link href="/support/help-center" className="hover:text-[#12b190]">Help Center</Link>
-            <span className="mx-2">&gt;</span>
-            <Link href="/support/help-center/pre-sale" className="hover:text-[#12b190]">Pre-Sale</Link>
-            <span className="mx-2">&gt;</span>
+          
             <span className="text-gray-900">After-sales Service</span>
           </nav>
         </div>

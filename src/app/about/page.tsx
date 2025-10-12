@@ -173,7 +173,7 @@ const AboutUs = () => {
             Experience the perfect blend of innovation, quality, and service. With JOBOBIKE, you're not just buying an e-bike – you're joining a community dedicated to sustainable and enjoyable transportation.
           </p>
           <a
-            href="/products"
+            href="/cycle"
             className="inline-block bg-[#12b190] text-white px-8 py-3 rounded-full font-medium hover:bg-[#0fa080] transition-colors"
           >
             Explore Our E-Bikes
