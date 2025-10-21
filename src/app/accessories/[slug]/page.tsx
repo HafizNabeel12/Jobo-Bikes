@@ -9,9 +9,10 @@ export async function generateStaticParams() {
   }));
 }
 
-export default function AccessoryProductPage({ params }: { params: { slug: string } }) {
-  const product = getAccessoryBySlug(params.slug);
-  
+export default async function AccessoryProductPage({ params }: { params: { slug: string } }) {
+  // Await the async function
+  const product = await getAccessoryBySlug(params.slug);
+
   if (!product) {
     notFound();
   }
