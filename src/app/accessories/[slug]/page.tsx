@@ -2,24 +2,26 @@ import { notFound } from 'next/navigation';
 import { accessoriesProducts, getAccessoryBySlug } from '@/lib/accessoriesProducts';
 import AccessoryProductClient from '@/components/AccessoryProductClient';
 
-// Ensure `generateStaticParams` returns a Promise
+// Generate static params for all accessories
 export async function generateStaticParams() {
-  const params = await Promise.all(
-    accessoriesProducts.map(async (product) => ({
-      slug: product.slug,
-    }))
-  );
-  return params;
+  return accessoriesProducts.map((product) => ({
+    slug: product.slug,
+  }));
 }
 
 interface AccessoryProductPageProps {
-  params: { slug: string };
+  params: {
+    slug: string;
+  };
 }
 
-export default async function AccessoryProductPage({ params }: AccessoryProductPageProps) {
-  // Await the async function call
+export default async function AccessoryProductPage({
+  params,
+}: AccessoryProductPageProps) {
+  // Ensure that we await the async function call
   const product = await getAccessoryBySlug(params.slug);
 
+  // Handle 404 if no product is found
   if (!product) {
     notFound();
   }
