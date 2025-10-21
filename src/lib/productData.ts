@@ -140,7 +140,170 @@ export interface ProductCard {
   whatsInTheBox: string[];
 }
 
-export const PRODUCTS_DATA: ProductCard[] = [
+export const PRODUCTS_DATA: ProductCard[] = [  {
+    id: "9",
+    name: "JOBOBIKE Sam",
+    slug: "jobobike-sam",
+    originalPrice: 1299,
+    price: 1099,
+    discount: "15%",
+    image: "/images/sam/sam-1.png",
+    images: [
+      "/images/sam/sam-1.png",
+      "/images/sam/sam-2.png",
+      "/images/sam/sam-3.png",
+      "/images/sam/sam-4.png",
+      "/images/sam/sam-5.png",
+      "/images/sam/sam-6.png",
+      "/images/sam/sam-7.png",
+      "/images/sam/sam-8.png",
+     
+    ],
+    features: [
+      "350W Rear Hub Motor",
+      "36V 12.8Ah Battery",
+      "20\" Fat Tires",
+      "Foldable Design",
+      "5 Assist Levels"
+    ],
+    category: ["jobo"],
+    rating: 4.3,
+    reviewCount: 67,
+    specifications: {
+      motor: "350W Rear Hub",
+      battery: "36V 12.8Ah (461Wh)",
+      range: "60-80 km",
+      speed: "25 km/h",
+      weight: "22 kg",
+      wheelSize: "20\"",
+      foldable: true,
+      brakes: "Disc Brakes",
+      frame: "Aluminum Alloy",
+      drivetrain: "7-Speed"
+    },
+    technicalSpecifications: {
+      general: {
+        model: "Sam",
+        frameType: "Foldable",
+        frameMaterial: "6061 Aluminum Alloy",
+        foldable: true,
+        dimensions: {
+          unfolded: "160 x 58 x 100 cm",
+          folded: "80 x 58 x 70 cm"
+        },
+        weight: "22 kg",
+        maxLoad: "100 kg",
+        recommendedHeight: "155-185 cm"
+      },
+      motor: {
+        type: "Rear Hub",
+        power: "350W",
+        peakPower: "500W",
+        torque: "40 N.m",
+        location: "Rear Wheel",
+        torqueSensor: false
+      },
+      battery: {
+        type: "Lithium-ion",
+        voltage: "36V",
+        capacity: "12.8Ah",
+        capacityWh: "461Wh",
+        removable: true,
+        chargingTime: "4-5 hours",
+        batteryLife: "600+ cycles"
+      },
+      performance: {
+        maxSpeed: "25 km/h",
+        range: {
+          pureElectric: "45 km",
+          pedalAssist: "60-80 km",
+          combined: "50-70 km"
+        },
+        gradability: "15°"
+      },
+      wheels: {
+        size: "20\"",
+        tireType: "Fat Tire",
+        tireSize: "20 x 4.0\"",
+        rimMaterial: "Aluminum Alloy"
+      },
+      brakes: {
+        front: "Mechanical Disc",
+        rear: "Mechanical Disc",
+        type: "160mm Rotors"
+      },
+      transmission: {
+        type: "Derailleur",
+        gears: "7-Speed",
+        shifter: "Shimano"
+      },
+      electrical: {
+        display: "LCD Display",
+        lights: {
+          front: true,
+          rear: true,
+          type: "LED"
+        },
+        horn: false,
+        throttle: true,
+        assistLevels: "5 levels"
+      },
+      comfort: {
+        suspension: {
+          front: true,
+          rear: false,
+          type: "Spring Fork"
+        },
+        seat: {
+          type: "Comfort Saddle",
+          adjustable: true,
+          material: "PU Leather"
+        },
+        handlebar: {
+          type: "Foldable",
+          adjustable: true,
+          material: "Steel"
+        }
+      },
+      safety: {
+        reflectors: true,
+        bell: true,
+        waterResistance: "IPX4",
+        certification: ["EN15194", "CE"]
+      },
+      connectivity: {
+        app: false,
+        gps: false,
+        bluetooth: false,
+        usb: true
+      },
+      accessories: {
+        kickstand: true,
+        mudguards: true,
+        rack: false,
+        basket: false,
+        bottleHolder: false
+      }
+    },
+    description: "The JOBOBIKE Sam is a versatile folding e-bike perfect for urban commuters who need portability without sacrificing performance. Its compact design makes storage and transport effortless.",
+    keyFeatures: [
+      "Quick-fold mechanism for easy storage",
+      "Fat tires for enhanced stability and comfort",
+      "Powerful 350W motor for city riding",
+      "Removable battery for convenient charging",
+      "Compact size perfect for apartments and offices"
+    ],
+    availableColors: ["Matte Black", "White", "Red"],
+    availableSizes: ["One Size"],
+    whatsInTheBox: [
+      "JOBOBIKE Sam E-bike",
+      "36V 12.8Ah Battery",
+      "Battery Charger",
+      "User Manual",
+      "Folding Guide",
+      "Keys (2x)"
+    ]
+  },
 
   {
     id: "7",
