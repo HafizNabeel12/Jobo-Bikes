@@ -2,15 +2,22 @@ import { notFound } from 'next/navigation';
 import { accessoriesProducts, getAccessoryBySlug } from '@/lib/accessoriesProducts';
 import AccessoryProductClient from '@/components/AccessoryProductClient';
 
-// Generate static params for all accessories
+// Ensure `generateStaticParams` returns a Promise
 export async function generateStaticParams() {
-  return accessoriesProducts.map((product) => ({
-    slug: product.slug,
-  }));
+  const params = await Promise.all(
+    accessoriesProducts.map(async (product) => ({
+      slug: product.slug,
+    }))
+  );
+  return params;
 }
 
-export default async function AccessoryProductPage({ params }: { params: { slug: string } }) {
-  // Await the async function
+interface AccessoryProductPageProps {
+  params: { slug: string };
+}
+
+export default async function AccessoryProductPage({ params }: AccessoryProductPageProps) {
+  // Await the async function call
   const product = await getAccessoryBySlug(params.slug);
 
   if (!product) {
