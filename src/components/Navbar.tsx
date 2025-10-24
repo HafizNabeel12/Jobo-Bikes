@@ -415,7 +415,7 @@ export default function Navbar() {
         <div className="fixed inset-0 z-50 lg:hidden">
           <div className="fixed inset-0 bg-black bg-opacity-50" onClick={toggleMobileMenu}></div>
           
-          <div className="fixed top-0 right-0 bottom-0 w-80 bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
+          <div className="fixed top-0 right-0 bottom-0 w-full max-w-sm bg-white shadow-xl transform transition-transform duration-300 ease-in-out overflow-y-auto">
             {/* Mobile Menu Header */}
             <div className="flex justify-between items-center p-4 border-b border-gray-200">
               <h2 className="text-lg font-bold text-gray-900">Menu</h2>
