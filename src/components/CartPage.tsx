@@ -246,7 +246,7 @@ const CartPage: React.FC = () => {
                 </p>
               </div>
               <div className="w-16 h-16 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center">
-                <ShoppingBag className="h-8 w-8 text-[#12b190]" />
+                <ShoppingBag className="h-8 w-8 text-white" />
               </div>
             </div>
           </div>
@@ -260,15 +260,15 @@ const CartPage: React.FC = () => {
                       <div key={item.id}>
                         <div className="flex items-center gap-8 p-4 rounded-xl hover:bg-gray-50 transition-all duration-200">
                           {/* Product Image */}
-                          <div className="flex-shrink-0">
-                            <div className="w-28 h-28 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden shadow-lg">
+                          <div className=" ">
+                            <div className="w-28 h-28 bg-gradient-to-br from-gray-100 to-gray-200 rounded-lg shadow-lg">
                               {item.image ? (
                                 <Image 
                                   src={item.image} 
                                   alt={item.name}
                                   width={112}
                                   height={112}
-                                  className="w-full h-full object-cover"
+                                  className="w-full h-full  "
                                 />
                               ) : (
                                 <div className="w-full h-full bg-gradient-to-br from-gray-200 to-gray-300 flex items-center justify-center">
