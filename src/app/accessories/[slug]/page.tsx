@@ -13,9 +13,9 @@ export async function generateStaticParams(): Promise<{ slug: string }[]> {
 export default async function AccessoryProductPage({
   params,
 }: {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }) {
-  const { slug } = params;
+  const { slug } = await params;
 
   const product = await getAccessoryBySlug(slug);
 
