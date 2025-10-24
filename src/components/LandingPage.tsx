@@ -83,7 +83,7 @@ const LandingPage = () => {
 
           <div className="grid grid-cols-1 sm:grid-cols-3 gap-10 items-center justify-center text-center">
             {/* Fat Tire */}
-            <Link href="/category/fat-tire">
+            <Link href="/category/Fatbike">
               <div>
                 <img
                   src="/images/mover/mover-1.png"
@@ -98,7 +98,7 @@ const LandingPage = () => {
             </Link>
 
             {/* lightweight */}
-            <Link href="/category/lightweight">
+            <Link href="/category/Pendler ">
               <div>
                 <img
                   src="/images/lyon/lyon-1.png"
@@ -113,7 +113,7 @@ const LandingPage = () => {
             </Link>
 
             {/* Cargo & Family */}
-            <Link href="/category/cargo">
+            <Link href="/category/Lastesykkel">
               <div>
                 <img
                   src="/images/eddy-x/eddy-1.png"

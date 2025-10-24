@@ -109,7 +109,7 @@ const CartPage: React.FC = () => {
           <div className="hidden lg:block">
             <div className="bg-white rounded-3xl shadow-xl border border-gray-200 p-16 text-center max-w-2xl mx-auto backdrop-blur-sm">
               <div className="w-28 h-28 bg-gradient-to-br from-[#12b190] to-[#12b190] rounded-full flex items-center justify-center mx-auto mb-8">
-                <ShoppingBag className="h-14 w-14 text-[#12b190]" />
+                <ShoppingBag className="h-14 w-14 text-white" />
               </div>
               <h2 className="text-3xl font-bold text-gray-900 mb-4">Handlekurven din er tom</h2>
               <p className="text-gray-600 mb-10 text-lg">Det ser ut som du ikke har lagt til noe i handlekurven ennÃ¥.</p>

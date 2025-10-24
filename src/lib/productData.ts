@@ -162,7 +162,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Automatic brake light sensing"
   ],
   badge: "Smart Tech",
-  category: ["By & Pendler"],
+  category: ["Pendler"],
   rating: 4.8,
   reviewCount: 89,
   specifications: {
@@ -493,7 +493,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Premium all-terrain performance"
   ],
   badge: "Extended Range",
-  category: ["Fatbike" , "By & Pendler"],
+  category: ["Fatbike" , "Pendler"],
   rating: 4.9,
   reviewCount: 98,
   specifications: {
@@ -1337,7 +1337,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Foldable Design",
       "5 Assist Levels"
     ],
-    category: ["By & Pendler"],
+    category: ["Pendler"],
     rating: 4.3,
     reviewCount: 67,
     specifications: {
@@ -1497,7 +1497,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Bluetooth App Connectivity"
     ],
     badge: "Best Seller",
-    category: ["By & Pendler"],
+    category: ["Pendler"],
     rating: 4.7,
     reviewCount: 142,
     specifications: {
@@ -1658,7 +1658,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Torque Sensor",
       "Smart LCD Display"
     ],
-    category: ["By & Pendler" ,"Hybrid"],
+    category: ["Pendler" ,"Hybrid"],
     rating: 4.5,
     reviewCount: 89,
     specifications: {
@@ -2467,7 +2467,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Integrated lights and mudguards"
     ],
     badge: "Lightweight",
-    category: ["By & Pendler"],
+    category: ["Pendler"],
     rating: 4.7,
     reviewCount: 89,
     specifications: {
@@ -2631,7 +2631,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Perfect for city commuting"
     ],
     badge: "Step-Through",
-    category: ["By & Pendler"],
+    category: ["Pendler"],
     rating: 4.8,
     reviewCount: 76,
     specifications: {
@@ -2955,7 +2955,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Lightweight and portable"
     ],
     badge: "Foldable",
-    category: ["Hybrid", "By & Pendler"],
+    category: ["Hybrid", "Pendler"],
     rating: 4.6,
     reviewCount: 118,
     specifications: {
