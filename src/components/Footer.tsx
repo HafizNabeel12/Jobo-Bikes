@@ -102,7 +102,7 @@ const Footer = () => {
           <div className="flex gap-4">
             <img src="/images/vipps.png" alt="Vipps" className="h-6 object-contain" />
             <img src="/images/visa.png" alt="Visa" className="h-6 object-contain" />
-            <img src="/images/mastercard.png" alt="Mastercard" className="h-6 object-contain" />
+            {/* <img src="/images/mastercard.png" alt="Mastercard" className="h-6 object-contain" /> */}
           </div>
         </div>
       </div>
