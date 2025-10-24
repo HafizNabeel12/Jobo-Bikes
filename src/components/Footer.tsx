@@ -94,12 +94,12 @@ const Footer = () => {
       </div>
 
       {/* Bottom Bar */}
-      <div className="border-t border-gray-200 py-4 max-w-5xl ">
+      <div className="border-t border-gray-200 py-4 max-w-7xl ">
         <div className=" px-6 flex justify-between items-center text-xs text-gray-500">
           <div>
             © 2025 <span className="text-[#12b190] font-semibold">JALUT AI INNOSCRIBE</span>. Org nr: 932806517. Alle rettigheter forbeholdt.
           </div>
-          <div className=" gap-4">
+          <div className="sm:flex gap-4">
             <img src="/images/vipps.png" alt="Vipps" className="h-6 object-contain" />
             <img src="/images/visa.png" alt="Visa" className="h-6 object-contain" />
             <img src="/images/mastercard.png" alt="Mastercard" className="h-6 object-contain" />
