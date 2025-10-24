@@ -301,7 +301,6 @@ export default function AccessoryProductClient({ product }: AccessoryProductClie
                 <ul className="space-y-2">
                   {product.features.map((feature, index) => (
                     <li key={index} className="flex items-start gap-2 text-gray-600">
-                      <span className="text-teal-500 mt-1">âœ“</span>
                       <span>{feature}</span>
                     </li>
                   ))}
