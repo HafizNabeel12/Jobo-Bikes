@@ -2,23 +2,20 @@ import { notFound } from 'next/navigation';
 import { accessoriesProducts, getAccessoryBySlug } from '@/lib/accessoriesProducts';
 import AccessoryProductClient from '@/components/AccessoryProductClient';
 
-// ✅ Generate static params for all accessories
-export async function generateStaticParams() {
+// ✅ Explicit return type to avoid Promise inference issues
+export async function generateStaticParams(): Promise<{ slug: string }[]> {
   return accessoriesProducts.map((product) => ({
     slug: product.slug,
   }));
 }
 
-// ✅ Use correct typing (no Promise for params)
-interface AccessoryProductPageProps {
-  params: { slug: string };
-}
-
-// ✅ Async server component
+// ✅ Explicitly conforming to Next.js PageProps type
 export default async function AccessoryProductPage({
   params,
-}: AccessoryProductPageProps) {
-  const { slug } = params; // no await needed
+}: {
+  params: { slug: string };
+}) {
+  const { slug } = params;
 
   const product = await getAccessoryBySlug(slug);
 
