@@ -333,8 +333,562 @@ export const accessoriesProducts: AccessoryProduct[] = [
       "JOBOBIKE Romer"
     ],
     inStock: true
+  },
+
+
+  // 3. Integrated Front Basket
+  {
+    id: "acc-integrated-basket-001",
+    slug: "integrated-front-basket",
+    name: "JOBOBIKE Integrated Front Basket",
+    description: "Integrated basket specially designed for e-bikes. Mounts directly on front or rear rack without additional hardware. Quick and easy installation.",
+    fullDescription: "Integrated basket, specially designed for e-bikes. It can be mounted directly on the front or rear rack of the e-bike without the need for an additional front rack. Installation is quick and easy. The basket is made of aluminum alloy and features a durable matte black powder coating for excellent rust resistance. This makes it suitable for all weather conditions and ensures a long service life. The basket's design combines modern urban style with natural wood elements.",
+    price: 88,
+    currency: "EUR",
+    image: "/images/accessories/integrated-basket-main.jpg",
+    images: [
+      "/images/accessories/integrated-basket-main.jpg",
+      "/images/accessories/integrated-basket-mounted.jpg",
+      "/images/accessories/integrated-basket-side.jpg",
+      "/images/accessories/integrated-basket-detail.jpg"
+    ],
+    category: ["Baskets", "Storage", "Cargo"],
+    specifications: [
+      { label: "Material", value: "Aluminum alloy with wood accents" },
+      { label: "Finish", value: "Matte black powder coating" },
+      { label: "Base Dimensions", value: "30 x 19.5 cm" },
+      { label: "Top Dimensions", value: "36.5 x 26.5 cm" },
+      { label: "Height", value: "14 cm" },
+      { label: "Load Capacity", value: "25 kg" },
+      { label: "Mounting", value: "Direct rack mount (no additional rack needed)" },
+      { label: "Installation", value: "Tool-free quick install" }
+    ],
+    features: [
+      "No additional front rack required - mounts directly",
+      "Quick and easy tool-free installation",
+      "Aluminum alloy with durable powder coating",
+      "Rustproof for all weather conditions",
+      "Natural wood elements for aesthetic appeal",
+      "Secure mounting - won't come loose during turns or braking",
+      "25 kg load capacity",
+      "Spacious interior for everyday items"
+    ],
+    compatibility: [
+      "Romer",
+      "Romer Pro",
+      "Linda",
+      "Eddy X",
+      "Viva",
+      "Henry",
+      "Commuter",
+      "Transer"
+    ],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+ 
+  // 7. Phone Holder (Shockproof)
+  {
+    id: "acc-phone-holder-shockproof-001",
+    slug: "phone-holder-shockproof",
+    name: "JOBOBIKE Shockproof Phone Holder",
+    description: "Universal shockproof phone mount with anti-slip silicone pads and 360° rotation. Tool-free installation, fits phones 4.8\"-7.0\".",
+    fullDescription: "Secure your phone on every ride with this shockproof, universal e-bike phone mount. Built to handle rough roads and daily commutes, it features a non-slip clamp, 360° adjustable viewing, and a quick-install system – no tools needed. Compatible with phones 132–182mm long (about 4.8\" to 7.0\") and mounts on handlebars up to 46mm in diameter. Full silicone padding protects your phone from scratches and shocks, while the safety lock clip enhances grip and stability during rides.",
+    price: 29,
+    currency: "EUR",
+    image: "/images/accessories/phone-holder-shockproof-main.jpg",
+    images: [
+      "/images/accessories/phone-holder-shockproof-main.jpg",
+      "/images/accessories/phone-holder-shockproof-mounted.jpg",
+      "/images/accessories/phone-holder-shockproof-detail.jpg"
+    ],
+    category: ["Phone Holders", "Accessories", "Navigation"],
+    specifications: [
+      { label: "Phone Size", value: "132-182mm (4.8\"-7.0\")" },
+      { label: "Handlebar Diameter", value: "Up to 46mm" },
+      { label: "Rotation", value: "360° adjustable" },
+      { label: "Installation", value: "Tool-free quick install" },
+      { label: "Padding", value: "Full silicone protection" },
+      { label: "Grip System", value: "Anti-slip silicone pads + locking clamp" },
+      { label: "Safety Feature", value: "Lock clip for enhanced stability" },
+      { label: "Material", value: "High-grade plastic with silicone padding" }
+    ],
+    features: [
+      "Fits most phones 4.8\" to 7.0\"",
+      "Wide handlebar compatibility (up to 46mm)",
+      "Anti-slip silicone pads prevent phone movement",
+      "Locking clamp prevents shaking on rough terrain",
+      "360° rotation for optimal viewing angle",
+      "Tool-free installation - quick and easy setup",
+      "Full silicone padding protects from scratches and shocks",
+      "Safety lock clip for enhanced stability",
+      "Durable construction for daily use"
+    ],
+    compatibility: ["All models"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  
+
+  // 11. Water Bottle Holder (JOBOBIKE Logo)
+  {
+    id: "acc-bottle-holder-logo-001",
+    slug: "water-bottle-holder-jobobike-logo",
+    name: "JOBOBIKE Logo Water Bottle Holder",
+    description: "Premium water bottle holder with JOBOBIKE branding. Durable construction with secure grip for standard bottles.",
+    fullDescription: "Premium water bottle holder featuring the JOBOBIKE logo. Made from high-quality materials with a durable black finish. Provides secure retention for standard water bottles while adding a branded touch to your e-bike. Easy installation with included mounting hardware.",
+    price: 19,
+    currency: "EUR",
+    image: "/images/accessories/bottle-holder-logo-main.jpg",
+    images: [
+      "/images/accessories/bottle-holder-logo-main.jpg",
+      "/images/accessories/bottle-holder-logo-detail.jpg",
+      "/images/accessories/bottle-holder-logo-mounted.jpg"
+    ],
+    category: ["Accessories", "Hydration", "Bottle Holders"],
+    specifications: [
+      { label: "Material", value: "High-grade plastic/composite" },
+      { label: "Bottle Compatibility", value: "Standard 500-750ml bottles" },
+      { label: "Mounting", value: "Frame bolt-on" },
+      { label: "Branding", value: "JOBOBIKE logo" },
+      { label: "Weight", value: "~70g" },
+      { label: "Hardware", value: "Mounting screws included" }
+    ],
+    features: [
+      "Features JOBOBIKE branding",
+      "Durable black finish",
+      "Secure bottle retention mechanism",
+      "Fits standard 500-750ml water bottles",
+      "Easy frame mounting",
+      "Weather-resistant materials",
+      "Stylish branded design"
+    ],
+    compatibility: [
+      "Transer",
+      "Linda",
+      "Sam",
+      "Commuter",
+      "Henry",
+      "Dyno",
+      "Dyno GT",
+      "Astra",
+      "Luxe",
+      "Lyon Pro"
+    ],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 12. Magnet Water Bottle Holder
+  {
+    id: "acc-bottle-holder-magnet-001",
+    slug: "magnet-water-bottle-holder",
+    name: "Magnetic Water Bottle Holder",
+    description: "Innovative magnetic water bottle holder for quick access. Strong magnetic grip with easy one-hand operation.",
+    fullDescription: "Revolutionary magnetic water bottle holder that allows quick, one-handed access to your water bottle while riding. Features powerful magnets that securely hold your bottle in place, yet release easily when needed. Perfect for riders who need frequent hydration without stopping. Compatible with special magnetic water bottles or magnetic bottle adapters.",
+    price: 35.99,
+    currency: "EUR",
+    image: "/images/accessories/bottle-holder-magnet-main.jpg",
+    images: [
+      "/images/accessories/bottle-holder-magnet-main.jpg",
+      "/images/accessories/bottle-holder-magnet-action.jpg",
+      "/images/accessories/bottle-holder-magnet-detail.jpg"
+    ],
+    category: ["Accessories", "Hydration", "Bottle Holders", "Magnetic"],
+    specifications: [
+      { label: "Type", value: "Magnetic mounting system" },
+      { label: "Mounting", value: "Frame bolt-on" },
+      { label: "Magnetic Strength", value: "High-power neodymium magnets" },
+      { label: "Bottle Compatibility", value: "Magnetic bottles or with adapter" },
+      { label: "Operation", value: "One-hand quick release" },
+      { label: "Weight Capacity", value: "Up to 1kg" },
+      { label: "Material", value: "Reinforced polymer with magnets" }
+    ],
+    features: [
+      "Powerful magnetic grip holds bottle securely",
+      "One-handed quick access while riding",
+      "Easy to grab and replace without looking",
+      "Compatible with magnetic water bottles",
+      "Sturdy frame mounting",
+      "Weather-resistant construction",
+      "Reduces distraction while maintaining hydration",
+      "Universal compatibility with all models"
+    ],
+    compatibility: ["All models"],
+    inStock: true,
+    colors: ["Black", "Grey"]
+  },
+
+  // 13. Single Side Pannier Bag
+  {
+    id: "acc-pannier-single-001",
+    slug: "single-side-pannier-bag",
+    name: "Single Side Pannier Bag",
+    description: "Waterproof single-side pannier bag for rear rack. Perfect for daily commuting and grocery shopping.",
+    fullDescription: "Versatile single-side pannier bag designed to attach to your rear rack. Features waterproof construction, reflective strips for safety, and multiple compartments for organized storage. Ideal for commuters who need moderate cargo capacity without the bulk of double panniers. Quick-release mounting system allows easy attachment and removal.",
+    price: 66,
+    currency: "EUR",
+    image: "/images/accessories/pannier-single-main.jpg",
+    images: [
+      "/images/accessories/pannier-single-main.jpg",
+      "/images/accessories/pannier-single-mounted.jpg",
+      "/images/accessories/pannier-single-open.jpg"
+    ],
+    category: ["Bags", "Panniers", "Storage", "Cargo"],
+    specifications: [
+      { label: "Capacity", value: "~15-20L" },
+      { label: "Material", value: "Waterproof fabric" },
+      { label: "Mounting", value: "Quick-release rack hooks" },
+      { label: "Compartments", value: "Main compartment + pockets" },
+      { label: "Closure", value: "Roll-top or zipper" },
+      { label: "Reflective Elements", value: "Yes" },
+      { label: "Carry Handle", value: "Integrated" },
+      { label: "Shoulder Strap", value: "Optional/removable" }
+    ],
+    features: [
+      "Waterproof construction protects contents",
+      "Quick-release mounting for easy on/off",
+      "Reflective strips enhance visibility",
+      "Multiple compartments for organization",
+      "Integrated carry handle",
+      "Compatible with all rear racks",
+      "Durable, tear-resistant material",
+      "Perfect for daily commuting"
+    ],
+    compatibility: ["All models with rear rack"],
+    inStock: true,
+    colors: ["Blue"]
+  },
+
+  // 14. Double Side Pannier Bag
+  {
+    id: "acc-pannier-double-001",
+    slug: "double-side-pannier-bag",
+    name: "Double Side Pannier Bag Set",
+    description: "Waterproof double pannier bag set for maximum cargo capacity. Ideal for touring, shopping, and heavy loads.",
+    fullDescription: "Complete double-sided pannier bag system for serious cargo needs. Features two spacious bags that attach to both sides of your rear rack, providing balanced weight distribution and maximum storage capacity. Waterproof construction with roll-top closures, reflective safety elements, and quick-release mounting. Perfect for bike touring, large shopping trips, or transporting equipment.",
+    price: 119,
+    currency: "EUR",
+    image: "/images/accessories/pannier-double-main.jpg",
+    images: [
+      "/images/accessories/pannier-double-mounted.jpg",
+      "/images/accessories/pannier-double-open.jpg",
+      "/images/accessories/pannier-double-detail.jpg"
+    ],
+    category: ["Bags", "Panniers", "Storage", "Cargo", "Touring"],
+    specifications: [
+      { label: "Total Capacity", value: "~40-50L (20-25L per side)" },
+      { label: "Material", value: "Waterproof 600D polyester" },
+      { label: "Mounting", value: "Quick-release rack hooks" },
+      { label: "Compartments", value: "Multiple pockets each side" },
+      { label: "Closure", value: "Roll-top + buckle closure" },
+      { label: "Reflective Elements", value: "3M reflective strips" },
+      { label: "Carry Handles", value: "Reinforced handles on both bags" },
+      { label: "Shoulder Straps", value: "Removable and adjustable" }
+    ],
+    features: [
+      "Complete set - two bags for both sides",
+      "40-50L total storage capacity",
+      "Fully waterproof with sealed seams",
+      "Quick-release mounting system",
+      "Balanced weight distribution",
+      "3M reflective strips for night visibility",
+      "Reinforced carry handles and shoulder straps",
+      "Multiple compartments and pockets",
+      "Roll-top closure with secure buckles",
+      "Ideal for touring and heavy cargo"
+    ],
+    compatibility: ["All models with rear rack"],
+    inStock: true,
+    colors: ["Black", "Grey"]
+  },
+
+  // 15. Canopy
+  {
+    id: "acc-canopy-001",
+    slug: "bike-canopy",
+    name: "JOBOBIKE Canopy",
+    description: "Weather protection canopy for cargo bikes. Shields rider and cargo from rain, sun, and wind.",
+    fullDescription: "The JOBOBIKE Canopy provides comprehensive weather protection for cargo bike riders. This durable canopy shields you and your cargo from rain, harsh sun, and wind, making year-round riding more comfortable. Features a sturdy aluminum frame with waterproof fabric cover, easy installation, and adjustable positioning. Perfect for delivery riders, parents transporting children, or anyone who rides in all weather conditions.",
+    price: 259,
+    currency: "EUR",
+    image: "/images/accessories/canopy-main.jpg",
+    images: [
+      "/images/accessories/canopy-main.jpg",
+      "/images/accessories/canopy-installed.jpg",
+      "/images/accessories/canopy-side.jpg",
+      "/images/accessories/canopy-rain.jpg"
+    ],
+    category: ["Weather Protection", "Cargo", "Accessories"],
+    specifications: [
+      { label: "Frame Material", value: "Aluminum alloy" },
+      { label: "Cover Material", value: "Waterproof PVC/polyester" },
+      { label: "UV Protection", value: "UPF 50+" },
+      { label: "Waterproof Rating", value: "IPX5" },
+      { label: "Dimensions", value: "Approx. 140cm x 90cm" },
+      { label: "Mounting", value: "Frame-specific brackets" },
+      { label: "Adjustability", value: "Height and angle adjustable" },
+      { label: "Weight", value: "~3-4 kg" }
+    ],
+    features: [
+      "Complete weather protection from rain, sun, and wind",
+      "UPF 50+ UV protection",
+      "Waterproof and windproof fabric",
+      "Sturdy aluminum frame construction",
+      "Adjustable height and angle",
+      "Easy installation with included hardware",
+      "Transparent front panel for visibility",
+      "Foldable design for storage",
+      "Year-round riding comfort"
+    ],
+    compatibility: ["Transer", "Mover"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 16. Monkey Bar
+  {
+    id: "acc-monkey-bar-001",
+    slug: "monkey-bar",
+    name: "JOBOBIKE Monkey Bar",
+    description: "Front handlebar attachment for child passenger. Safe and comfortable seating position for young riders.",
+    fullDescription: "The JOBOBIKE Monkey Bar is a front-mounted handlebar attachment that allows you to safely transport a child on your cargo bike. This innovative accessory provides a secure holding bar for children to grip while riding, positioned in front of the rider for maximum supervision and interaction. Features padded grips, adjustable positioning, and sturdy construction to ensure safety and comfort.",
+    price: 220,
+    currency: "EUR",
+    image: "/images/accessories/monkey-bar-main.jpg",
+    images: [
+      "/images/accessories/monkey-bar-main.jpg",
+      "/images/accessories/monkey-bar-installed.jpg",
+      "/images/accessories/monkey-bar-use.jpg"
+    ],
+    category: ["Child Transport", "Safety", "Cargo", "Accessories"],
+    specifications: [
+      { label: "Material", value: "Steel tube with padding" },
+      { label: "Finish", value: "Powder-coated" },
+      { label: "Grip Material", value: "Soft foam padding" },
+      { label: "Mounting", value: "Frame clamp system" },
+      { label: "Weight Capacity", value: "Suitable for children up to ~25kg" },
+      { label: "Adjustability", value: "Height and width adjustable" },
+      { label: "Age Range", value: "Approximately 2-7 years" }
+    ],
+    features: [
+      "Safe front-mounted handlebar for children",
+      "Padded foam grips for comfort",
+      "Adjustable height and width",
+      "Sturdy steel construction with powder coating",
+      "Allows parent to supervise child while riding",
+      "Easy installation with frame clamps",
+      "Enhances riding experience for parent and child",
+      "Compatible with captain chair and safety accessories"
+    ],
+    compatibility: ["Transer", "Mover"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 17. Captain Chair
+  {
+    id: "acc-captain-chair-001",
+    slug: "captain-chair",
+    name: "JOBOBIKE Captain Chair",
+    description: "Premium child seat with full back support and safety harness. Comfortable and secure seating for young passengers.",
+    fullDescription: "The JOBOBIKE Captain Chair is a premium child seating solution for cargo bikes. Features a full backrest, comfortable cushioning, integrated safety harness, and footrests for secure and comfortable transport of children. Designed to work seamlessly with the Monkey Bar for the ultimate family riding experience. High-quality construction ensures durability and safety for years of use.",
+    price: 245,
+    currency: "EUR",
+    image: "/images/accessories/captain-chair-main.jpg",
+    images: [
+      "/images/accessories/captain-chair-main.jpg",
+      "/images/accessories/captain-chair-installed.jpg",
+      "/images/accessories/captain-chair-detail.jpg",
+      "/images/accessories/captain-chair-child.jpg"
+    ],
+    category: ["Child Transport", "Seating", "Safety", "Cargo"],
+    specifications: [
+      { label: "Material", value: "High-density foam with waterproof cover" },
+      { label: "Backrest", value: "Full back support" },
+      { label: "Safety Harness", value: "5-point harness system" },
+      { label: "Footrests", value: "Adjustable footrests included" },
+      { label: "Weight Capacity", value: "Up to 25-30kg" },
+      { label: "Age Range", value: "Approximately 1-7 years" },
+      { label: "Mounting", value: "Cargo platform mounting" },
+      { label: "Cushion", value: "Weather-resistant padded cushion" }
+    ],
+    features: [
+      "Full back support for comfort and safety",
+      "Integrated 5-point safety harness",
+      "High-density foam cushioning",
+      "Waterproof and weather-resistant cover",
+      "Adjustable footrests for growing children",
+      "Compatible with Monkey Bar handlebar",
+      "Easy installation on cargo platform",
+      "Durable construction for long-term use",
+      "Removable cushion for cleaning"
+    ],
+    compatibility: ["Transer", "Mover"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 18. Armrest
+  {
+    id: "acc-armrest-001",
+    slug: "armrest",
+    name: "JOBOBIKE Armrest",
+    description: "Comfortable armrests for cargo bike seating. Adds extra comfort and security for passengers.",
+    fullDescription: "The JOBOBIKE Armrest set provides additional comfort and security for cargo bike passengers. These padded armrests attach to the sides of the cargo platform, giving passengers something to hold onto and lean against during the ride. Particularly useful when transporting adults or older children, or when using the cargo area for extended trips.",
+    price: 59,
+    currency: "EUR",
+    image: "/images/accessories/armrest-main.jpg",
+    images: [
+      "/images/accessories/armrest-main.jpg",
+      "/images/accessories/armrest-installed.jpg",
+      "/images/accessories/armrest-detail.jpg"
+    ],
+    category: ["Comfort", "Cargo", "Accessories", "Seating"],
+    specifications: [
+      { label: "Material", value: "Padded foam with vinyl cover" },
+      { label: "Mounting", value: "Clamp or bolt-on system" },
+      { label: "Quantity", value: "Pair (left and right)" },
+      { label: "Adjustability", value: "Height adjustable" },
+      { label: "Padding", value: "Weather-resistant foam" },
+      { label: "Cover Material", value: "Waterproof vinyl" }
+    ],
+    features: [
+      "Sold as a pair (left and right)",
+      "Comfortable padded construction",
+      "Weather-resistant vinyl cover",
+      "Height adjustable for different riders",
+      "Provides extra security for passengers",
+      "Easy installation with clamp system",
+      "Adds comfort for longer rides",
+      "Durable materials for outdoor use"
+    ],
+    compatibility: ["Transer"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 19. Safety Belt
+  {
+    id: "acc-safety-belt-001",
+    slug: "safety-belt",
+    name: "JOBOBIKE Safety Belt",
+    description: "Adjustable safety belt for securing cargo or passengers on rear rack. Essential safety accessory.",
+    fullDescription: "The JOBOBIKE Safety Belt is an essential safety accessory for securing cargo or passengers on your rear rack. Features adjustable length, quick-release buckle, and durable webbing that can withstand outdoor conditions. Perfect for securing bags, boxes, or providing additional safety for rear-mounted child seats.",
+    price: 15,
+    currency: "EUR",
+    image: "/images/accessories/safety-belt-main.jpg",
+    images: [
+      "/images/accessories/safety-belt-main.jpg",
+      "/images/accessories/safety-belt-use.jpg"
+    ],
+    category: ["Safety", "Cargo", "Accessories"],
+    specifications: [
+      { label: "Material", value: "Heavy-duty nylon webbing" },
+      { label: "Buckle Type", value: "Quick-release plastic buckle" },
+      { label: "Length", value: "Adjustable, ~150cm max" },
+      { label: "Width", value: "~25-38mm webbing" },
+      { label: "Weight Capacity", value: "Suitable for light to medium loads" },
+      { label: "Weather Resistance", value: "Water and UV resistant" }
+    ],
+    features: [
+      "Heavy-duty nylon webbing construction",
+      "Quick-release buckle for easy use",
+      "Adjustable length fits various cargo sizes",
+      "Water and UV resistant materials",
+      "Secures cargo or provides additional passenger safety",
+      "Compatible with all rear rack systems",
+      "Lightweight and portable",
+      "Essential safety accessory"
+    ],
+    compatibility: ["All models with rear rack"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 20. Cushion
+  {
+    id: "acc-cushion-001",
+    slug: "rear-rack-cushion",
+    name: "JOBOBIKE Rear Rack Cushion",
+    description: "Comfortable cushion for rear rack passenger seating. Waterproof and padded for extended comfort.",
+    fullDescription: "Transform your rear rack into a comfortable passenger seat with the JOBOBIKE Rear Rack Cushion. This padded cushion features waterproof covering, anti-slip bottom, and secure attachment straps. Perfect for giving friends a ride or creating a comfortable seating area on your cargo rack. The cushion is weather-resistant and easy to clean.",
+    price: 40,
+    currency: "EUR",
+    image: "/images/accessories/cushion-main.jpg",
+    images: [
+      "/images/accessories/cushion-main.jpg",
+      "/images/accessories/cushion-mounted.jpg",
+      "/images/accessories/cushion-detail.jpg"
+    ],
+    category: ["Comfort", "Seating", "Accessories"],
+    specifications: [
+      { label: "Material", value: "High-density foam with waterproof cover" },
+      { label: "Dimensions", value: "Approx. 35cm x 25cm x 5cm thick" },
+      { label: "Cover Material", value: "Waterproof vinyl/PU leather" },
+      { label: "Bottom", value: "Anti-slip texture" },
+      { label: "Attachment", value: "Adjustable straps" },
+      { label: "Weight Capacity", value: "Suitable for adults up to 100kg" },
+      { label: "Weather Resistance", value: "Waterproof and UV resistant" }
+    ],
+    features: [
+      "High-density foam padding for comfort",
+      "Waterproof and weather-resistant cover",
+      "Anti-slip bottom keeps cushion in place",
+      "Adjustable straps for secure attachment",
+      "Easy to install and remove",
+      "Easy to clean - just wipe down",
+      "Suitable for rear rack passenger seating",
+      "Durable construction for long-term use"
+    ],
+    compatibility: ["All models with rear rack"],
+    inStock: true,
+    colors: ["Black"]
+  },
+
+  // 21. Loading-Bearing Plate
+  {
+    id: "acc-loading-plate-001",
+    slug: "loading-bearing-plate",
+    name: "JOBOBIKE Loading-Bearing Plate",
+    description: "Heavy-duty loading platform extension for cargo bikes. Increases cargo capacity and provides flat loading surface.",
+    fullDescription: "The JOBOBIKE Loading-Bearing Plate is a heavy-duty platform extension designed for serious cargo needs. This reinforced plate mounts to your cargo bike's platform, providing a stable, flat surface for transporting larger items, boxes, or equipment. Made from durable materials that can handle significant weight, it's perfect for delivery riders, business use, or anyone who needs maximum cargo capacity.",
+    price: 99,
+    currency: "EUR",
+    image: "/images/accessories/loading-plate-main.jpg",
+    images: [
+      "/images/accessories/loading-plate-main.jpg",
+      "/images/accessories/loading-plate-installed.jpg",
+      "/images/accessories/loading-plate-cargo.jpg"
+    ],
+    category: ["Cargo", "Accessories", "Heavy Duty"],
+    specifications: [
+      { label: "Material", value: "Reinforced steel or aluminum" },
+      { label: "Dimensions", value: "Custom fit for Transer/Mover platform" },
+      { label: "Load Capacity", value: "Up to 100kg" },
+      { label: "Surface", value: "Anti-slip textured surface" },
+      { label: "Mounting", value: "Bolt-on platform mount" },
+      { label: "Finish", value: "Powder-coated for weather resistance" },
+      { label: "Thickness", value: "~3-5mm" }
+    ],
+    features: [
+      "Heavy-duty construction for maximum load capacity",
+      "Flat, stable platform for larger cargo items",
+      "Anti-slip surface keeps items secure",
+      "Weather-resistant powder coating",
+      "Bolt-on installation for secure mounting",
+      "Compatible with other cargo accessories",
+      "Ideal for delivery and business use",
+      "Significantly increases cargo capacity"
+    ],
+    compatibility: ["Transer", "Mover"],
+    inStock: true,
+    colors: ["Black"]
   }
 ];
+
 
 // Helper function to get product by slug
 export const getAccessoryBySlug = (slug: string): AccessoryProduct | undefined => {
