@@ -520,6 +520,16 @@ export default function Navbar() {
                 )}
               </div>
 
+              {/* View All Bikes Link */}
+              <Link
+                href="/cycle"
+                className="flex items-center justify-between px-4 py-3 text-sm font-semibold text-[#12b190] bg-[#12b190]/5 rounded-lg hover:bg-[#12b190]/10 transition-colors border border-[#12b190]/20"
+                onClick={toggleMobileMenu}
+              >
+                <span>View All Bikes</span>
+                <ChevronRight className="w-4 h-4 text-[#12b190]" />
+              </Link>
+
               {/* Other Navigation Items */}
               {navItems
                 .filter((i) => i.name !== 'E-Bikes')
