@@ -3,7 +3,7 @@ import { PRODUCTS_DATA } from "@/lib/productData";
 import CategoryClient from "@/components/CategoryClient";
 
 interface CategoryPageProps {
-  params: { slug: string };
+  params: Promise<{ slug: string }>;
 }
 
 export async function generateStaticParams() {
@@ -18,8 +18,8 @@ export async function generateStaticParams() {
   return categories.map((cat) => ({ slug: cat }));
 }
 
-export default function CategoryPage({ params }: CategoryPageProps) {
-  const { slug } = params;
+export default async function CategoryPage({ params }: CategoryPageProps) {
+  const { slug } = await params;
 
   const filteredProducts = PRODUCTS_DATA.filter((p) =>
     Array.isArray(p.category)
