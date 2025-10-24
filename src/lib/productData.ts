@@ -162,7 +162,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Automatic brake light sensing"
   ],
   badge: "Smart Tech",
-  category: ["Urban", "Commuter", "Smart"],
+  category: ["By & Pendler"],
   rating: 4.8,
   reviewCount: 89,
   specifications: {
@@ -328,7 +328,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "USB charging port"
   ],
   badge: "All-Terrain",
-  category: ["Fat Tire", "All-Terrain", "Mountain"],
+  category: ["Fatbike"],
   rating: 4.7,
   reviewCount: 156,
   specifications: {
@@ -493,7 +493,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Premium all-terrain performance"
   ],
   badge: "Extended Range",
-  category: ["Fat Tire", "All-Terrain", "Premium"],
+  category: ["Fatbike" , "By & Pendler"],
   rating: 4.9,
   reviewCount: 98,
   specifications: {
@@ -662,7 +662,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "150km range in eco mode"
   ],
   badge: "Utility",
-  category: ["Utility", "Foldable", "Fat Tire"],
+  category: ["Sammenleggbar" , "Fatbike"],
   rating: 4.6,
   reviewCount: 112,
   specifications: {
@@ -828,7 +828,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Enhanced cargo capacity"
   ],
   badge: "Pro Utility",
-  category: ["Utility", "Foldable", "Cargo"],
+  category: ["Lastesykkel" , "Sammenleggbar"],
   rating: 4.8,
   reviewCount: 87,
   specifications: {
@@ -995,7 +995,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Premium color LCD display"
   ],
   badge: "Performance",
-  category: ["Mountain", "All-Terrain", "Performance"],
+  category: ["Terreng"],
   rating: 4.9,
   reviewCount: 134,
   specifications: {
@@ -1163,7 +1163,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     "Heavy-duty construction"
   ],
   badge: "Cargo",
-  category: ["Cargo", "Utility", "Foldable"],
+  category: ["Lastesykkel" ,"Sammenleggbar"],
   rating: 4.7,
   reviewCount: 76,
   specifications: {
@@ -1337,7 +1337,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Foldable Design",
       "5 Assist Levels"
     ],
-    category: ["jobo"],
+    category: ["By & Pendler"],
     rating: 4.3,
     reviewCount: 67,
     specifications: {
@@ -1497,7 +1497,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Bluetooth App Connectivity"
     ],
     badge: "Best Seller",
-    category: ["lightweight"],
+    category: ["By & Pendler"],
     rating: 4.7,
     reviewCount: 142,
     specifications: {
@@ -1658,7 +1658,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Torque Sensor",
       "Smart LCD Display"
     ],
-    category: ["commuter-ebike"],
+    category: ["By & Pendler" ,"Hybrid"],
     rating: 4.5,
     reviewCount: 89,
     specifications: {
@@ -1821,7 +1821,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Extra Long Frame"
     ],
     badge: "Family Choice",
-    category: ["folding"],
+    category: ["Sammenleggbar" , "Hybrid"],
     rating: 4.8,
     reviewCount: 123,
     specifications: {
@@ -1982,7 +1982,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Comfortable Riding Position",
       "Integrated Lights"
     ],
-    category: ["fat-tire"],
+    category: ["Fatbike"],
     rating: 4.4,
     reviewCount: 78,
     specifications: {
@@ -2143,7 +2143,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Integrated Design",
       "Urban Optimized"
     ],
-    category: ["cargo"],
+    category: ["Lastesykkel"],
     rating: 4.5,
     reviewCount: 94,
     specifications: {
@@ -2305,7 +2305,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Simple Operation"
     ],
     badge: "Best Value",
-    category: ["folding"],
+    category: ["Sammenleggbar"],
     rating: 4.2,
     reviewCount: 156,
     specifications: {
@@ -2467,7 +2467,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Integrated lights and mudguards"
     ],
     badge: "Lightweight",
-    category: ["City", "Commuter"],
+    category: ["By & Pendler"],
     rating: 4.7,
     reviewCount: 89,
     specifications: {
@@ -2631,7 +2631,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Perfect for city commuting"
     ],
     badge: "Step-Through",
-    category: ["City", "Commuter", "Women"],
+    category: ["By & Pendler"],
     rating: 4.8,
     reviewCount: 76,
     specifications: {
@@ -2792,7 +2792,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Premium components"
     ],
     badge: "Mid-Drive",
-    category: ["City", "Commuter", "Men"],
+    category: ["Terreng"],
     rating: 4.9,
     reviewCount: 64,
     specifications: {
@@ -2955,7 +2955,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Lightweight and portable"
     ],
     badge: "Foldable",
-    category: ["Folding", "City", "Compact"],
+    category: ["Hybrid", "By & Pendler"],
     rating: 4.6,
     reviewCount: 118,
     specifications: {
@@ -3116,7 +3116,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Perfect for seniors and cargo"
     ],
     badge: "Tricycle",
-    category: ["Tricycle", "Cargo", "Senior"],
+    category: ["Hybrid", "Terreng"],
     rating: 4.9,
     reviewCount: 54,
     specifications: {
@@ -3279,7 +3279,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
       "Affordable quality"
     ],
     badge: "Best Value",
-    category: ["City", "Commuter", "Women"],
+    category: ["Hybrid"],
     rating: 4.6,
     reviewCount: 103,
     specifications: {
