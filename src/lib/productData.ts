@@ -140,7 +140,1178 @@ export interface ProductCard {
   whatsInTheBox: string[];
 }
 
-export const PRODUCTS_DATA: ProductCard[] = [  {
+export const PRODUCTS_DATA: ProductCard[] = [  
+  // 1. JOBOBIKE Luxe
+{
+  id: "luxe-001",
+  name: "JOBOBIKE Luxe",
+  slug: "jobobike-luxe",
+  originalPrice: 2299,
+  price: 2099,
+  discount: "9%",
+  image: "/images/luxe/luxe-1.png",
+  images: [
+    "/images/luxe/luxe-1.png",
+    "/images/luxe/luxe-2.png",
+  ],
+  features: [
+    "Carbon belt drive system",
+    "Internal 8-speed transmission",
+    "Hydraulic brakes",
+    "Smart App connectivity via Bluetooth",
+    "Automatic brake light sensing"
+  ],
+  badge: "Smart Tech",
+  category: ["Urban", "Commuter", "Smart"],
+  rating: 4.8,
+  reviewCount: 89,
+  specifications: {
+    motor: "250W Mid-Drive, 90Nm",
+    battery: "36V 15Ah (540Wh)",
+    range: "90km",
+    speed: "25 km/h",
+    weight: "24kg",
+    wheelSize: "27.5\"",
+    foldable: false,
+    brakes: "Hydraulic disc brakes",
+    frame: "Aluminum alloy",
+    drivetrain: "Internal 8-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Luxe",
+      frameType: "Step-over urban frame",
+      frameMaterial: "Aluminum alloy",
+      foldable: false,
+      dimensions: {
+        unfolded: "180cm x 110cm x 65cm",
+        folded: "N/A"
+      },
+      weight: "24kg",
+      maxLoad: "120kg",
+      recommendedHeight: "165-195cm"
+    },
+    motor: {
+      type: "Mid-drive motor",
+      power: "250W",
+      peakPower: "400W",
+      torque: "90Nm",
+      location: "Center",
+      torqueSensor: true
+    },
+    battery: {
+      type: "Lithium-ion with BMS",
+      voltage: "36V",
+      capacity: "15Ah",
+      capacityWh: "540Wh",
+      removable: true,
+      chargingTime: "4-6 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "45km",
+        pedalAssist: "90km",
+        combined: "65km"
+      },
+      gradability: "15°",
+      turningRadius: "2.5m"
+    },
+    wheels: {
+      size: "27.5\"",
+      tireType: "Urban tires",
+      tireSize: "27.5\" x 2.1\"",
+      rimMaterial: "Aluminum alloy"
+    },
+    brakes: {
+      front: "Hydraulic disc brake",
+      rear: "Hydraulic disc brake",
+      type: "Hydraulic disc"
+    },
+    transmission: {
+      type: "Internal hub gears",
+      gears: "8-speed",
+      shifter: "Grip shift"
+    },
+    electrical: {
+      display: "Bluetooth LCD display",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED with automatic brake light"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels + auto"
+    },
+    comfort: {
+      suspension: {
+        front: false,
+        rear: false,
+        type: "Rigid"
+      },
+      seat: {
+        type: "Comfort saddle",
+        adjustable: true,
+        material: "Synthetic leather"
+      },
+      handlebar: {
+        type: "Urban handlebar",
+        adjustable: true,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX5",
+      certification: ["EN15194", "CE"]
+    },
+    connectivity: {
+      app: true,
+      gps: false,
+      bluetooth: true,
+      usb: true
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: true,
+      basket: false,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Luxe is a premium smart urban e-bike that combines technology and elegance. Featuring a maintenance-free carbon belt drive system and internal 8-speed transmission, it offers a smooth, quiet, and low-maintenance riding experience. The integrated Bluetooth app allows real-time monitoring of riding data and personalized settings, making urban commuting smarter and more relaxed.",
+  keyFeatures: [
+    "Carbon belt drive - maintenance-free up to 30,000km",
+    "Smart App integration for real-time data monitoring",
+    "Internal 8-speed transmission for smooth shifting",
+    "Hydraulic brakes for all-weather performance",
+    "Automatic brake light sensing function",
+    "27.5\" large tires with anti-puncture and reflective strips",
+    "5 levels of electric assist plus automatic mode",
+    "Quick-release design for easy accessory installation"
+  ],
+  availableColors: ["Silver Gray", "Snow White"],
+  availableSizes: ["One Size"],
+  whatsInTheBox: [
+    "JOBOBIKE Luxe e-bike",
+    "36V 15Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front and rear lights",
+    "Kickstand",
+    "Bell"
+  ]
+},
+
+// 2. JOBOBIKE Robin
+{
+  id: "robin-001",
+  name: "JOBOBIKE Robin",
+  slug: "jobobike-robin",
+  originalPrice: 1699,
+  price: 1399,
+  discount: "18%",
+  image: "/images/robin/robin-1.png",
+  images: [
+    "/images/robin/robin-1.png",
+    "/images/robin/robin-2.png",
+    "/images/robin/robin-3.png",
+  ],
+  features: [
+    "26\" x 4.0\" fat tires",
+    "80mm RST hydraulic suspension",
+    "Powerful Bafang 250W motor with 80Nm torque",
+    "All-terrain capability",
+    "USB charging port"
+  ],
+  badge: "All-Terrain",
+  category: ["Fat Tire", "All-Terrain", "Mountain"],
+  rating: 4.7,
+  reviewCount: 156,
+  specifications: {
+    motor: "250W Bafang Hub, 80Nm",
+    battery: "48V 13Ah (624Wh)",
+    range: "65km",
+    speed: "25 km/h",
+    weight: "32kg",
+    wheelSize: "26\"",
+    foldable: false,
+    brakes: "Hydraulic disc brakes",
+    frame: "6061 Aluminum alloy",
+    drivetrain: "Shimano 7-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Robin",
+      frameType: "High frame / Step-through available",
+      frameMaterial: "6061 Aluminum alloy",
+      foldable: false,
+      dimensions: {
+        unfolded: "190cm x 120cm x 75cm",
+        folded: "N/A"
+      },
+      weight: "32kg",
+      maxLoad: "150kg",
+      recommendedHeight: "160-200cm"
+    },
+    motor: {
+      type: "Rear hub motor",
+      power: "250W",
+      peakPower: "500W",
+      torque: "80Nm",
+      location: "Rear hub",
+      torqueSensor: false
+    },
+    battery: {
+      type: "Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "13Ah",
+      capacityWh: "624Wh",
+      removable: true,
+      chargingTime: "6-8 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "40km",
+        pedalAssist: "65km",
+        combined: "55km"
+      },
+      gradability: "20°",
+      turningRadius: "3m"
+    },
+    wheels: {
+      size: "26\"",
+      tireType: "Fat tires",
+      tireSize: "26\" x 4.0\"",
+      rimMaterial: "Aluminum alloy wide rim"
+    },
+    brakes: {
+      front: "Hydraulic disc brake",
+      rear: "Hydraulic disc brake",
+      type: "Hydraulic disc"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "7-speed Shimano",
+      shifter: "Shimano twist grip"
+    },
+    electrical: {
+      display: "Color LCD with USB port",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED 60 LUX front, brake light rear"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels"
+    },
+    comfort: {
+      suspension: {
+        front: true,
+        rear: false,
+        type: "RST hydraulic suspension 80mm"
+      },
+      seat: {
+        type: "Velo leather comfort saddle",
+        adjustable: true,
+        material: "Leather"
+      },
+      handlebar: {
+        type: "Mountain bike handlebar 720mm",
+        adjustable: false,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX4",
+      certification: ["EN15194", "CE", "TUV"]
+    },
+    connectivity: {
+      app: false,
+      gps: false,
+      bluetooth: false,
+      usb: true
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: false,
+      basket: false,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Robin is the most powerful and dynamic fat tire e-bike in the lineup. Born for adventure, it excels on bumpy forest trails, mountains, and even snowy terrain where regular bikes can't go. With 26\" x 4.0\" fat tires and RST hydraulic suspension, Robin delivers exceptional traction and stability across all terrains.",
+  keyFeatures: [
+    "26\" x 4.0\" CST/Kenda fat tires with run-flat technology",
+    "80mm RST hydraulic suspension with rebound adjustment",
+    "Bafang 250W brushless motor with 80Nm torque",
+    "48V 13Ah (624Wh) battery with BMS protection",
+    "Hydraulic disc brakes for all-weather stopping power",
+    "Color LCD display with USB charging port",
+    "Shimano 7-speed for terrain adaptation",
+    "High frame and step-through options available"
+  ],
+  availableColors: ["Black-Red", "Gray-Green"],
+  availableSizes: ["High Frame", "Step-Through"],
+  whatsInTheBox: [
+    "JOBOBIKE Robin e-bike",
+    "48V 13Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front LED light (60 LUX)",
+    "Rear brake light",
+    "Kickstand",
+    "Bell"
+  ]
+},
+
+// 3. JOBOBIKE Robin Pro
+{
+  id: "robin-pro-001",
+  name: "JOBOBIKE Robin Pro",
+  slug: "jobobike-robin-pro",
+  originalPrice: 2099,
+  price: 1799,
+  discount: "14%",
+  image: "/images/robin-pro/robin-pro-1.png",
+  images: [
+    "/images/robin-pro/robin-pro-1.png",
+  ],
+  features: [
+    "Extended range 48V 20Ah battery",
+    "26\" x 4.0\" fat tires",
+    "80mm RST hydraulic suspension",
+    "90km range on single charge",
+    "Premium all-terrain performance"
+  ],
+  badge: "Extended Range",
+  category: ["Fat Tire", "All-Terrain", "Premium"],
+  rating: 4.9,
+  reviewCount: 98,
+  specifications: {
+    motor: "250W Bafang Hub, 80Nm",
+    battery: "48V 20Ah (960Wh)",
+    range: "90km",
+    speed: "25 km/h",
+    weight: "34kg",
+    wheelSize: "26\"",
+    foldable: false,
+    brakes: "Hydraulic disc brakes",
+    frame: "6061 Aluminum alloy",
+    drivetrain: "Shimano 7-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Robin Pro",
+      frameType: "High frame / Step-through available",
+      frameMaterial: "6061 Aluminum alloy",
+      foldable: false,
+      dimensions: {
+        unfolded: "190cm x 120cm x 75cm",
+        folded: "N/A"
+      },
+      weight: "34kg",
+      maxLoad: "150kg",
+      recommendedHeight: "160-200cm"
+    },
+    motor: {
+      type: "Rear hub motor",
+      power: "250W",
+      peakPower: "500W",
+      torque: "80Nm",
+      location: "Rear hub",
+      torqueSensor: false
+    },
+    battery: {
+      type: "Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "20Ah",
+      capacityWh: "960Wh",
+      removable: true,
+      chargingTime: "8-10 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "50km",
+        pedalAssist: "90km",
+        combined: "70km"
+      },
+      gradability: "20°",
+      turningRadius: "3m"
+    },
+    wheels: {
+      size: "26\"",
+      tireType: "Fat tires",
+      tireSize: "26\" x 4.0\"",
+      rimMaterial: "Aluminum alloy wide rim"
+    },
+    brakes: {
+      front: "Hydraulic disc brake",
+      rear: "Hydraulic disc brake",
+      type: "Hydraulic disc"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "7-speed Shimano",
+      shifter: "Shimano twist grip"
+    },
+    electrical: {
+      display: "Color LCD with USB port",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED 60 LUX front, brake light rear"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels"
+    },
+    comfort: {
+      suspension: {
+        front: true,
+        rear: false,
+        type: "RST hydraulic suspension 80mm"
+      },
+      seat: {
+        type: "Velo leather comfort saddle",
+        adjustable: true,
+        material: "Leather"
+      },
+      handlebar: {
+        type: "Mountain bike handlebar 720mm",
+        adjustable: false,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX4",
+      certification: ["EN15194", "CE", "TUV"]
+    },
+    connectivity: {
+      app: false,
+      gps: false,
+      bluetooth: false,
+      usb: true
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: false,
+      basket: false,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Robin Pro is the upgraded version of the popular Robin fat tire e-bike, featuring an extended range 48V 20Ah (960Wh) battery that delivers up to 90km on a single charge. Perfect for longer adventures on forest trails, mountains, and challenging terrains where standard bikes can't venture.",
+  keyFeatures: [
+    "Extended 48V 20Ah (960Wh) battery for 90km range",
+    "26\" x 4.0\" CST/Kenda fat tires with run-flat technology",
+    "80mm RST hydraulic suspension with rebound adjustment",
+    "Bafang 250W brushless motor with 80Nm torque",
+    "Hydraulic disc brakes for superior stopping power",
+    "Color LCD display with USB charging port",
+    "Shimano 7-speed transmission",
+    "Available in multiple premium colors"
+  ],
+  availableColors: ["Black-Red", "Grey-Green", "Black-Gold", "Black-Blue"],
+  availableSizes: ["High Frame", "Step-Through"],
+  whatsInTheBox: [
+    "JOBOBIKE Robin Pro e-bike",
+    "48V 20Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front LED light (60 LUX)",
+    "Rear brake light",
+    "Kickstand",
+    "Bell"
+  ]
+},
+
+// 4. JOBOBIKE Romer
+{
+  id: "romer-001",
+  name: "JOBOBIKE Romer",
+  slug: "jobobike-romer",
+  originalPrice: 1999,
+  price: 1799,
+  discount: "10%",
+  image: "/images/romer/romer-1.png",
+  images: [
+    "/images/romer/romer-1.png",
+    "/images/romer/romer-2.png",
+    "/images/romer/romer-3.png",
+    "/images/romer/romer-4.png",
+    "/images/romer/romer-5.png",
+  ],
+  features: [
+    "Foldable design for easy transport",
+    "20\" fat tires for stability",
+    "Step-through frame",
+    "Compatible with various accessories",
+    "150km range in eco mode"
+  ],
+  badge: "Utility",
+  category: ["Utility", "Foldable", "Fat Tire"],
+  rating: 4.6,
+  reviewCount: 112,
+  specifications: {
+    motor: "250W Hub, 80Nm",
+    battery: "48V 13Ah (624Wh)",
+    range: "65-150km",
+    speed: "25 km/h",
+    weight: "30kg",
+    wheelSize: "20\"",
+    foldable: true,
+    brakes: "Mechanical disc brakes",
+    frame: "Double-layer aluminum alloy",
+    drivetrain: "Shimano 7-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Romer",
+      frameType: "Step-through foldable",
+      frameMaterial: "Double-layer aluminum alloy",
+      foldable: true,
+      dimensions: {
+        unfolded: "165cm x 110cm x 70cm",
+        folded: "106cm x 60cm x 86cm"
+      },
+      weight: "30kg",
+      maxLoad: "150kg",
+      recommendedHeight: "160cm+"
+    },
+    motor: {
+      type: "Rear hub motor",
+      power: "250W",
+      peakPower: "450W",
+      torque: "80Nm",
+      location: "Rear hub",
+      torqueSensor: false
+    },
+    battery: {
+      type: "LG Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "13Ah",
+      capacityWh: "624Wh",
+      removable: true,
+      chargingTime: "6-8 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "45km",
+        pedalAssist: "150km",
+        combined: "65km"
+      },
+      gradability: "18°",
+      turningRadius: "2.2m"
+    },
+    wheels: {
+      size: "20\"",
+      tireType: "Fat tires",
+      tireSize: "20\" x 4.0\"",
+      rimMaterial: "Aluminum alloy"
+    },
+    brakes: {
+      front: "Mechanical disc brake",
+      rear: "Mechanical disc brake",
+      type: "Tektro mechanical disc"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "7-speed Shimano",
+      shifter: "Shimano twist grip"
+    },
+    electrical: {
+      display: "LCD display",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED with waterproof wiring"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels"
+    },
+    comfort: {
+      suspension: {
+        front: false,
+        rear: false,
+        type: "Rigid with fat tire cushioning"
+      },
+      seat: {
+        type: "Comfort saddle",
+        adjustable: true,
+        material: "Synthetic leather"
+      },
+      handlebar: {
+        type: "Foldable handlebar",
+        adjustable: true,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX4",
+      certification: ["EN15194", "CE"]
+    },
+    connectivity: {
+      app: false,
+      gps: false,
+      bluetooth: false,
+      usb: false
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: true,
+      basket: true,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Romer is a versatile utility e-bike designed for maximum practicality. With its foldable design and step-through frame, it's perfect for commuters who need easy transport and storage. The double-layer frame provides extra strength while protecting the battery, and it's compatible with various accessories like trailers, baby seats, and baskets.",
+  keyFeatures: [
+    "Foldable design - compact storage at 106cm x 60cm x 86cm",
+    "20\" fat tires for stable, comfortable ride on all terrains",
+    "Step-through frame for easy mounting/dismounting",
+    "Double-layer frame for extra strength and battery protection",
+    "Compatible with trailer, baby seat, and cargo accessories",
+    "250W motor with 80Nm torque",
+    "Up to 150km range in eco mode",
+    "Rust-resistant foldable pedals"
+  ],
+  availableColors: ["Mint Cream", "Dark Olive"],
+  availableSizes: ["One Size"],
+  whatsInTheBox: [
+    "JOBOBIKE Romer e-bike",
+    "48V 13Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front and rear lights",
+    "Foldable pedals",
+    "Kickstand",
+    "Mudguards",
+    "Bell"
+  ]
+},
+
+// 5. JOBOBIKE Romer Pro
+{
+  id: "romer-pro-001",
+  name: "JOBOBIKE Romer Pro",
+  slug: "jobobike-romer-pro",
+  originalPrice: 2199,
+  price: 1999,
+  discount: "9%",
+  image: "/images/romer-pro/romer-1.png",
+  images: [
+    "/images/romer-pro/romer-1.png",
+  ],
+  features: [
+    "Hydraulic disc brakes",
+    "Torque sensor technology",
+    "Suspension seatpost",
+    "Foldable utility design",
+    "Enhanced cargo capacity"
+  ],
+  badge: "Pro Utility",
+  category: ["Utility", "Foldable", "Cargo"],
+  rating: 4.8,
+  reviewCount: 87,
+  specifications: {
+    motor: "250W Bafang Hub, 80Nm",
+    battery: "48V 15Ah (720Wh)",
+    range: "70-160km",
+    speed: "25 km/h",
+    weight: "31kg",
+    wheelSize: "20\"",
+    foldable: true,
+    brakes: "Hydraulic disc brakes",
+    frame: "Double-layer aluminum alloy",
+    drivetrain: "Shimano 7-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Romer Pro",
+      frameType: "Step-through foldable",
+      frameMaterial: "Double-layer aluminum alloy",
+      foldable: true,
+      dimensions: {
+        unfolded: "165cm x 110cm x 70cm",
+        folded: "106cm x 60cm x 86cm"
+      },
+      weight: "31kg",
+      maxLoad: "150kg",
+      recommendedHeight: "160cm+"
+    },
+    motor: {
+      type: "Rear hub motor",
+      power: "250W",
+      peakPower: "500W",
+      torque: "80Nm",
+      location: "Rear hub",
+      torqueSensor: true
+    },
+    battery: {
+      type: "LG Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "15Ah",
+      capacityWh: "720Wh",
+      removable: true,
+      chargingTime: "6-8 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "50km",
+        pedalAssist: "160km",
+        combined: "70km"
+      },
+      gradability: "18°",
+      turningRadius: "2.2m"
+    },
+    wheels: {
+      size: "20\"",
+      tireType: "Fat tires",
+      tireSize: "20\" x 4.0\"",
+      rimMaterial: "Aluminum alloy"
+    },
+    brakes: {
+      front: "Hydraulic disc brake",
+      rear: "Hydraulic disc brake",
+      type: "Tektro hydraulic disc"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "7-speed Shimano",
+      shifter: "Shimano twist grip"
+    },
+    electrical: {
+      display: "Advanced LCD display",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED with waterproof wiring"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels"
+    },
+    comfort: {
+      suspension: {
+        front: false,
+        rear: true,
+        type: "Suspension seatpost"
+      },
+      seat: {
+        type: "Premium comfort saddle",
+        adjustable: true,
+        material: "Synthetic leather"
+      },
+      handlebar: {
+        type: "Foldable handlebar",
+        adjustable: true,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX4",
+      certification: ["EN15194", "CE"]
+    },
+    connectivity: {
+      app: false,
+      gps: false,
+      bluetooth: false,
+      usb: true
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: true,
+      basket: true,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Romer Pro is the upgraded version of the popular Romer utility e-bike. It features hydraulic disc brakes for superior stopping power, a torque sensor for more natural pedal assist, and a suspension seatpost for enhanced comfort. Perfect for daily commuting, family outings, and cargo transport.",
+  keyFeatures: [
+    "Hydraulic disc brakes for stronger, more stable braking",
+    "Torque sensor for smooth, natural power assistance",
+    "Suspension seatpost for enhanced comfort",
+    "48V 15Ah (720Wh) battery for extended range",
+    "Foldable design with double-layer reinforced frame",
+    "20\" fat tires for stability on all terrains",
+    "Compatible with cargo accessories and child seats",
+    "Advanced LCD display with USB port"
+  ],
+  availableColors: ["Jungle Green", "Dark Olive", "Blue Grey"],
+  availableSizes: ["One Size"],
+  whatsInTheBox: [
+    "JOBOBIKE Romer Pro e-bike",
+    "48V 15Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front and rear lights",
+    "Foldable pedals",
+    "Kickstand",
+    "Mudguards",
+    "Rear rack",
+    "Bell"
+  ]
+},
+
+// 6. JOBOBIKE Ace Pro
+{
+  id: "ace-pro-001",
+  name: "JOBOBIKE Ace Pro",
+  slug: "jobobike-ace-pro",
+  originalPrice: 2499,
+  price: 2199,
+  discount: "12%",
+  image: "/images/ace-pro/ace-pro-1.jpeg",
+  images: [
+    "/images/ace-pro/ace-pro-1.jpeg",
+  ],
+  features: [
+    "Full suspension system",
+    "27.5\" x 2.8\" all-terrain tires",
+    "500W Bafang motor with 95Nm torque",
+    "Hydraulic brakes with cutoff sensors",
+    "Premium color LCD display"
+  ],
+  badge: "Performance",
+  category: ["Mountain", "All-Terrain", "Performance"],
+  rating: 4.9,
+  reviewCount: 134,
+  specifications: {
+    motor: "500W Bafang Mid-Drive, 95Nm",
+    battery: "48V 17.5Ah (840Wh)",
+    range: "80-120km",
+    speed: "25 km/h",
+    weight: "28kg",
+    wheelSize: "27.5\"",
+    foldable: false,
+    brakes: "Tektro hydraulic disc brakes",
+    frame: "Aluminum alloy full suspension",
+    drivetrain: "Shimano 9-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Ace Pro",
+      frameType: "Full suspension mountain frame",
+      frameMaterial: "6061 Aluminum alloy",
+      foldable: false,
+      dimensions: {
+        unfolded: "185cm x 115cm x 72cm",
+        folded: "N/A"
+      },
+      weight: "28kg",
+      maxLoad: "130kg",
+      recommendedHeight: "170-195cm"
+    },
+    motor: {
+      type: "Mid-drive motor",
+      power: "500W",
+      peakPower: "750W",
+      torque: "95Nm",
+      location: "Center",
+      torqueSensor: true
+    },
+    battery: {
+      type: "Samsung Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "17.5Ah",
+      capacityWh: "840Wh",
+      removable: true,
+      chargingTime: "6-8 hours",
+      batteryLife: "1000+ charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h (EU) / 32 km/h (configurable)",
+      range: {
+        pureElectric: "50km",
+        pedalAssist: "120km",
+        combined: "80km"
+      },
+      gradability: "25°",
+      turningRadius: "2.8m"
+    },
+    wheels: {
+      size: "27.5\"",
+      tireType: "All-terrain plus tires",
+      tireSize: "27.5\" x 2.8\"",
+      rimMaterial: "Double-wall aluminum alloy"
+    },
+    brakes: {
+      front: "Tektro hydraulic disc 180mm",
+      rear: "Tektro hydraulic disc 180mm",
+      type: "Hydraulic disc with motor cutoff"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "9-speed Shimano",
+      shifter: "Shimano Alivio"
+    },
+    electrical: {
+      display: "Premium color LCD with Bluetooth",
+      lights: {
+        front: true,
+        rear: true,
+        type: "High-power LED with multiple modes"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels + walk mode"
+    },
+    comfort: {
+      suspension: {
+        front: true,
+        rear: true,
+        type: "Full suspension - Front: 120mm travel, Rear: 100mm travel"
+      },
+      seat: {
+        type: "Performance saddle",
+        adjustable: true,
+        material: "Premium synthetic leather"
+      },
+      handlebar: {
+        type: "MTB riser bar 760mm",
+        adjustable: false,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX5",
+      certification: ["EN15194", "CE", "TUV"]
+    },
+    connectivity: {
+      app: true,
+      gps: false,
+      bluetooth: true,
+      usb: true
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: false,
+      basket: false,
+      bottleHolder: true
+    }
+  },
+  description: "JOBOBIKE Ace Pro is the ultimate performance e-mountain bike designed for serious riders who demand the best. Featuring a powerful 500W Bafang mid-drive motor with 95Nm torque, full suspension system, and premium components throughout, the Ace Pro conquers the toughest trails with ease while delivering an exhilarating riding experience.",
+  keyFeatures: [
+    "500W Bafang mid-drive motor with 95Nm torque for exceptional power",
+    "Full suspension system (120mm front / 100mm rear) for maximum comfort",
+    "27.5\" x 2.8\" plus-size tires for superior traction and stability",
+    "48V 17.5Ah Samsung battery for 80-120km range",
+    "Tektro hydraulic disc brakes with 180mm rotors",
+    "Shimano 9-speed transmission for precise gear changes",
+    "Color LCD display with Bluetooth connectivity",
+    "Integrated torque sensor for natural pedal assistance"
+  ],
+  availableColors: ["Matte Black", "Anthracite Grey", "Forest Green"],
+  availableSizes: ["M (170-180cm)", "L (180-195cm)"],
+  whatsInTheBox: [
+    "JOBOBIKE Ace Pro e-bike",
+    "48V 17.5Ah Samsung battery with fast charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "High-power LED front light",
+    "LED rear brake light",
+    "Kickstand",
+    "Mudguards",
+    "Bottle holder",
+    "Bell",
+    "Pedals"
+  ]
+},
+
+// 7. JOBOBIKE Romer C
+{
+  id: "romer-c-001",
+  name: "JOBOBIKE Romer C",
+  slug: "jobobike-romer-c",
+  originalPrice: 1899,
+  price: 1699,
+  discount: "11%",
+  image: "/images/romer-c/romer-c.png",
+  images: [
+   "/images/romer-c/romer-c.png",
+  ],
+  features: [
+    "Enhanced cargo capacity",
+    "Reinforced rear rack",
+    "20\" fat tires",
+    "Foldable cargo design",
+    "Heavy-duty construction"
+  ],
+  badge: "Cargo",
+  category: ["Cargo", "Utility", "Foldable"],
+  rating: 4.7,
+  reviewCount: 76,
+  specifications: {
+    motor: "250W Hub, 80Nm",
+    battery: "48V 13Ah (624Wh)",
+    range: "60-140km",
+    speed: "25 km/h",
+    weight: "32kg",
+    wheelSize: "20\"",
+    foldable: true,
+    brakes: "Mechanical disc brakes",
+    frame: "Reinforced aluminum alloy",
+    drivetrain: "Shimano 7-speed"
+  },
+  technicalSpecifications: {
+    general: {
+      model: "Romer C",
+      frameType: "Step-through cargo frame",
+      frameMaterial: "Reinforced aluminum alloy",
+      foldable: true,
+      dimensions: {
+        unfolded: "165cm x 110cm x 70cm",
+        folded: "106cm x 60cm x 86cm"
+      },
+      weight: "32kg",
+      maxLoad: "180kg",
+      recommendedHeight: "160cm+"
+    },
+    motor: {
+      type: "Rear hub motor",
+      power: "250W",
+      peakPower: "450W",
+      torque: "80Nm",
+      location: "Rear hub",
+      torqueSensor: false
+    },
+    battery: {
+      type: "LG Lithium-ion with BMS",
+      voltage: "48V",
+      capacity: "13Ah",
+      capacityWh: "624Wh",
+      removable: true,
+      chargingTime: "6-8 hours",
+      batteryLife: "800-1000 charge cycles"
+    },
+    performance: {
+      maxSpeed: "25 km/h",
+      range: {
+        pureElectric: "45km",
+        pedalAssist: "140km",
+        combined: "60km"
+      },
+      gradability: "15°",
+      turningRadius: "2.2m"
+    },
+    wheels: {
+      size: "20\"",
+      tireType: "Fat tires",
+      tireSize: "20\" x 4.0\"",
+      rimMaterial: "Reinforced aluminum alloy"
+    },
+    brakes: {
+      front: "Mechanical disc brake",
+      rear: "Mechanical disc brake",
+      type: "Tektro mechanical disc"
+    },
+    transmission: {
+      type: "External derailleur",
+      gears: "7-speed Shimano",
+      shifter: "Shimano twist grip"
+    },
+    electrical: {
+      display: "LCD display",
+      lights: {
+        front: true,
+        rear: true,
+        type: "LED with cargo visibility lights"
+      },
+      horn: true,
+      throttle: false,
+      assistLevels: "5 levels"
+    },
+    comfort: {
+      suspension: {
+        front: false,
+        rear: false,
+        type: "Fat tire cushioning"
+      },
+      seat: {
+        type: "Wide comfort saddle",
+        adjustable: true,
+        material: "Synthetic leather with extra padding"
+      },
+      handlebar: {
+        type: "Swept-back comfort handlebar",
+        adjustable: true,
+        material: "Aluminum alloy"
+      }
+    },
+    safety: {
+      reflectors: true,
+      bell: true,
+      waterResistance: "IPX4",
+      certification: ["EN15194", "CE"]
+    },
+    connectivity: {
+      app: false,
+      gps: false,
+      bluetooth: false,
+      usb: false
+    },
+    accessories: {
+      kickstand: true,
+      mudguards: true,
+      rack: true,
+      basket: true,
+      bottleHolder: false
+    }
+  },
+  description: "JOBOBIKE Romer C is the cargo-focused variant of the popular Romer series, designed specifically for heavy-duty transport needs. With its reinforced frame, enhanced rear rack, and 180kg maximum load capacity, it's perfect for deliveries, shopping trips, or transporting children and cargo. The foldable design ensures easy storage when not in use.",
+  keyFeatures: [
+    "Reinforced frame with 180kg maximum load capacity",
+    "Heavy-duty rear rack designed for cargo boxes and child seats",
+    "20\" fat tires for stable cargo transport on all surfaces",
+    "Foldable design for convenient storage",
+    "Wide comfort saddle with extra padding for longer trips",
+    "Compatible with cargo boxes, child seats, and trailers",
+    "Double kickstand for stable parking when loaded",
+    "Enhanced visibility lights for cargo safety"
+  ],
+  availableColors: ["Cargo Black", "Industrial Grey"],
+  availableSizes: ["One Size"],
+  whatsInTheBox: [
+    "JOBOBIKE Romer C e-bike",
+    "48V 13Ah battery with charger",
+    "User manual and assembly tools",
+    "Warranty card",
+    "Front and rear lights",
+    "Heavy-duty rear rack",
+    "Double kickstand",
+    "Mudguards",
+    "Large basket (optional)",
+    "Bell",
+    "Foldable pedals"
+  ]
+},
+  
+  {
     id: "9",
     name: "JOBOBIKE Sam",
     slug: "jobobike-sam",
