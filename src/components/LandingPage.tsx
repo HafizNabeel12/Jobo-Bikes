@@ -1,12 +1,22 @@
 ﻿'use client';
 
-import React from 'react';
+import React, { useState } from 'react';
 import Link from 'next/link';
+import { Minus, Plus } from 'lucide-react';
 import { AddToCartButton } from './AddToCartButton';
 import { PRODUCTS_DATA } from "@/lib/productData";
 import { formatCurrency } from '@/utils/currency';
 
 const LandingPage = () => {
+  const [quantities, setQuantities] = useState<{[key: string]: number}>({});
+
+  const handleQuantityChange = (productId: string, newQuantity: number) => {
+    if (newQuantity < 1) return;
+    setQuantities(prev => ({ ...prev, [productId]: newQuantity }));
+  };
+
+  const getQuantity = (productId: string) => quantities[productId] || 1;
+
   return (
     <div className="min-h-screen bg-white mt-32 md:mt-24">
 
@@ -183,10 +193,32 @@ const LandingPage = () => {
                   )}
                 </div>
 
-                <div className="mt-2 sm:mt-0 sm:ml-2 flex-shrink-0">
+                {/* Quantity + Add to Cart */}
+                <div className="mt-2 sm:mt-0 flex items-center gap-2">
+                  {/* Compact Quantity Selector */}
+                  <div className="flex items-center border border-gray-200 rounded-md">
+                    <button
+                      onClick={() => handleQuantityChange(product.id, getQuantity(product.id) - 1)}
+                      className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                    >
+                      <Minus className="h-3 w-3 text-gray-600" />
+                    </button>
+                    <span className="text-xs font-semibold min-w-[16px] text-center text-black px-1">
+                      {getQuantity(product.id)}
+                    </span>
+                    <button
+                      onClick={() => handleQuantityChange(product.id, getQuantity(product.id) + 1)}
+                      className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                    >
+                      <Plus className="h-3 w-3 text-gray-600" />
+                    </button>
+                  </div>
+                  
+                  {/* Add to Cart Button */}
                   <AddToCartButton
                     product={product}
-                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white bg-[#12b190] hover:bg-[#12b190] transition   sm:bg-black sm:hover:border-black  sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
+                    quantity={getQuantity(product.id)}
+                    className="flex-1 rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white bg-[#12b190] hover:bg-[#12b190] transition sm:bg-black sm:hover:border-black sm:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
                   />
                 </div>
               </div>

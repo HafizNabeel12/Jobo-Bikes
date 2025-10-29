@@ -13,6 +13,7 @@ import {
   Factory,
   Truck,
   Users,
+  EllipsisVertical,
 } from 'lucide-react';
 import { CartIcon } from './CartIcon';
 import { searchProducts, getProductBySlug, getAllProductSlugs } from '@/lib/productData';
@@ -24,6 +25,7 @@ export default function Navbar() {
   const [activeDropdown, setActiveDropdown] = useState<null | number>(null);
   const [isMobileMenuOpen, setIsMobileMenuOpen] = useState(false);
   const [isSearchOpen, setIsSearchOpen] = useState(false);
+  const [isMoreMenuOpen, setIsMoreMenuOpen] = useState(false);
 
   // Search state
   const [query, setQuery] = useState('');
@@ -160,6 +162,11 @@ export default function Navbar() {
     { name: 'Contact', href: '/contact' },
   ];
 
+  const moreMenuItems = [
+    { name: 'Vilkår for tjeneste', href: '/terms' },
+    { name: 'Kontakt oss', href: '/contact' },
+  ];
+
   const toggleDropdown = (index: number) =>
     setActiveDropdown(activeDropdown === index ? null : index);
 
@@ -180,6 +187,10 @@ export default function Navbar() {
         searchInput?.focus();
       }, 100);
     }
+  };
+
+   const toggleMoreMenu = () => {
+    setIsMoreMenuOpen(!isMoreMenuOpen);
   };
 
   return (
@@ -259,13 +270,13 @@ export default function Navbar() {
                                 className="group flex flex-col items-center text-center p-4 rounded-lg hover:bg-gray-50 transition-all duration-300 hover:shadow-md"
                                 onClick={() => setActiveDropdown(null)}
                               >
-                                <div className="w-full h-32 mb-4 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden group-hover:bg-white transition-colors">
+                                {/* <div className="w-full h-32 mb-4 flex items-center justify-center bg-gray-50 rounded-lg overflow-hidden group-hover:bg-white transition-colors">
                                   <img
                                     src={cat.image}
                                     alt={cat.name}
                                     className="w-full h-full object-contain transform group-hover:scale-105 transition-transform duration-300"
                                   />
-                                </div>
+                                </div> */}
                                 <div className="w-full">
                                   <div className="flex items-center justify-center gap-1 mb-2">
                                     <h4 className="text-base font-bold text-gray-900 group-hover:text-[#12b190] transition-colors">
@@ -332,6 +343,11 @@ export default function Navbar() {
                 <Link href="/cart" className="relative p-2 hover:bg-gray-100 rounded-full transition-colors inline-flex items-center justify-center">
                   <CartIcon />
                 </Link>
+
+                {/* More menu button */}
+                <button onClick={toggleMoreMenu} className="flex items-center space-x-1 text-gray-700 hover:text-black transition-colors p-2">
+                  <EllipsisVertical className="w-5 h-5" />
+                </button>
 
                 {/* Mobile Menu Button */}
                 <button
@@ -545,6 +561,30 @@ export default function Navbar() {
                   </Link>
                 ))}
             </div>
+          </div>
+        </div>
+      )}
+
+          {/* Right-side drawer for More Menu */}
+      {isMoreMenuOpen && (
+        <div className="fixed inset-0 z-50 flex justify-end bg-black bg-opacity-30">
+          <div className="w-80 bg-white h-full shadow-lg transform transition-transform duration-300 ease-in-out">
+            <div className="flex justify-between items-center p-4 border-b">
+              <h2 className="text-lg font-semibold text-gray-700">Flere alternativer</h2>
+              <button onClick={toggleMoreMenu}>
+                <X className="w-5 h-5 text-gray-600 hover:text-black" />
+              </button>
+            </div>
+
+            <div className="p-6 space-y-4">
+              {moreMenuItems.map((item) => (
+                <Link key={item.name} href={item.href} className="block text-gray-700 hover:text-black" onClick={toggleMoreMenu}>
+                  {item.name}
+                </Link>
+              ))}
+            </div>
+
+            <div className="absolute bottom-0 w-full p-4 border-t text-center text-sm text-gray-500">Trenger du hjelp? Kontakt vårt supportteam</div>
           </div>
         </div>
       )}

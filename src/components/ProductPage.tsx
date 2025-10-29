@@ -1,10 +1,11 @@
 ﻿"use client";
 
 import { useMemo, useState } from "react";
-import { ChevronDown } from "lucide-react";
+import { ChevronDown, Minus, Plus } from "lucide-react";
 import Link from "next/link";
 import { AddToCartButton } from "./AddToCartButton";
-import { PRODUCTS_DATA } from "@/lib/productData";  // ✅ Import products from data file
+import { PRODUCTS_DATA } from "@/lib/productData";
+import { useCart } from "./CartContext";
 
 /**
  * ProductPage.tsx
@@ -15,16 +16,7 @@ import { PRODUCTS_DATA } from "@/lib/productData";  // ✅ Import products from 
  * - Semantic HTML + accessible aria labels
  */
 
-const SUBCATEGORIES = [
-  "Elsykkel",
-  "Terreng",
-  "Landevei",
-  "Gravel",
-  "Hybrid/By",
-  "Barn/Junior",
-  "Deler",
-  "Tilbehør",
-];
+
 
 const SORTS = [
   { value: "recommended", label: "Anbefalt" },
@@ -34,20 +26,28 @@ const SORTS = [
 ];
 
 export default function ProductPage() {
-  const [activeSub, setActiveSub] = useState("Elsykkel");
   const [sort, setSort] = useState(SORTS[0].value);
   const [page, setPage] = useState(1);
+  const [quantities, setQuantities] = useState<{[key: string]: number}>({});
+  const { updateQuantity } = useCart();
 
   const perPage = 24;
   const total = PRODUCTS_DATA.length;
 
-  const product = useMemo(() => {
+  const products = useMemo(() => {
     let arr = [...PRODUCTS_DATA];
     if (sort === "price-asc") arr.sort((a, b) => a.price - b.price);
     if (sort === "price-desc") arr.sort((a, b) => b.price - a.price);
     if (sort === "new") arr.reverse();
     return arr.slice((page - 1) * perPage, page * perPage);
   }, [sort, page]);
+
+  const handleQuantityChange = (productId: string, newQuantity: number) => {
+    if (newQuantity < 1) return;
+    setQuantities(prev => ({ ...prev, [productId]: newQuantity }));
+  };
+
+  const getQuantity = (productId: string) => quantities[productId] || 1;
 
   return (
     <main className="bg-white text-gray-900 mt-52 md:mt-36">     
@@ -130,14 +130,36 @@ export default function ProductPage() {
                   )}
                 </div>
 
-                {/* Add to Cart Button */}
-                <div className="mt-2 sm:mt-0 sm:ml-2 flex-shrink-0">
+                {/* Quantity + Add to Cart */}
+                <div className="mt-2 sm:mt-0 flex items-center gap-2">
+                  {/* Compact Quantity Selector */}
+                  <div className="flex items-center border border-gray-200 rounded-md">
+                    <button
+                      onClick={() => handleQuantityChange(product.id, getQuantity(product.id) - 1)}
+                      className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                    >
+                      <Minus className="h-3 w-3 text-gray-600" />
+                    </button>
+                    <span className="text-xs font-semibold min-w-[16px] text-center text-black px-1">
+                      {getQuantity(product.id)}
+                    </span>
+                    <button
+                      onClick={() => handleQuantityChange(product.id, getQuantity(product.id) + 1)}
+                      className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"
+                    >
+                      <Plus className="h-3 w-3 text-gray-600" />
+                    </button>
+                  </div>
+                  
+                  {/* Add to Cart Button */}
                   <AddToCartButton 
-                    product={product}  
-                    className="w-full sm:w-auto rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white sm:bg-[#12b190] sm:hover:bg-[#29ecc5] transition md:text-white  md:hover:border-black md:bg-black md:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
+                    product={product}
+                    quantity={getQuantity(product.id)}
+                    className="flex-1 rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white sm:bg-[#12b190] sm:hover:bg-[#29ecc5] transition md:text-white md:hover:border-black md:bg-black md:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
                   />
                 </div>
               </div> 
+              
             </li>
           ))}
         </ul>

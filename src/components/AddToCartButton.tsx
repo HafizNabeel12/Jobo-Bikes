@@ -8,12 +8,14 @@ interface AddToCartButtonProps {
   product: Omit< CartItem, 'quantity'>;
   className?: string;
   children?: React.ReactNode;
+  quantity?: number;
 }
 
 export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
   product,
   className = '',
   children,
+  quantity = 1,
 }) => {
   const { addToCart, } = useCart();
   const [isAdding, setIsAdding] = useState(false);
@@ -23,7 +25,7 @@ export const AddToCartButton: React.FC<AddToCartButtonProps> = ({
     if (isAdding) return;
 
     setIsAdding(true);
-    addToCart(product);
+    addToCart(product, quantity);
     
     // Show success state
     setJustAdded(true);
