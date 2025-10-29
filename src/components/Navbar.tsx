@@ -344,8 +344,8 @@ export default function Navbar() {
                   <CartIcon />
                 </Link>
 
-                {/* More menu button */}
-                <button onClick={toggleMoreMenu} className="flex items-center space-x-1 text-gray-700 hover:text-black transition-colors p-2">
+                {/* More menu button - Hidden on mobile */}
+                <button onClick={toggleMoreMenu} className="hidden md:flex items-center space-x-1 text-gray-700 hover:text-black transition-colors p-2">
                   <EllipsisVertical className="w-5 h-5" />
                 </button>
 
