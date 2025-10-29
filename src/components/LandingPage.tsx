@@ -30,60 +30,7 @@ const LandingPage = () => {
         />
       </section>
 
-      {/* Why Trust Section */}
-      <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
-        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          {/* Section Title */}
-          <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
-              WHY TRUST JOBOBIKE?
-            </h2>
-          </div>
-
-          {/* Stats Grid */}
-          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
-            {/* Stat 1 */}
-            <div className="text-center">
-              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
-                300+
-              </div>
-              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
-                Partners in Europe
-              </p>
-            </div>
-
-            {/* Stat 2 */}
-            <div className="text-center">
-              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
-                50000+
-              </div>
-              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
-                Sold Electric Bikes
-              </p>
-            </div>
-
-            {/* Stat 3 */}
-            <div className="text-center">
-              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
-                100000+
-              </div>
-              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
-                Jobobike Fans
-              </p>
-            </div>
-
-            {/* Stat 4 */}
-            <div className="text-center">
-              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
-                20+
-              </div>
-              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
-                Experience in Ebike Manufacturing
-              </p>
-            </div>
-          </div>
-        </div>
-      </section>
+     
 
       {/* ===== Popular Categories Section ===== */}
       <section className="py-12 md:py-20 bg-white">
@@ -183,9 +130,9 @@ const LandingPage = () => {
                       <span className="text-sm sm:text-base font-semibold text-black whitespace-nowrap">
                         {formatCurrency(product.price)}
                       </span>
-                      <span className="text-xs sm:text-sm text-gray-500 line-through whitespace-nowrap">
+                      {/* <span className="text-xs sm:text-sm text-gray-500 line-through whitespace-nowrap">
                         {formatCurrency(product.originalPrice)}
-                      </span>
+                      </span> */}
                     </div>
                   ) : (
                     <span className="text-sm sm:text-base font-semibold text-black whitespace-nowrap">
@@ -231,6 +178,61 @@ const LandingPage = () => {
       <section>
 
         <EbikeCalculator products={PRODUCTS_DATA} />
+      </section>
+
+       {/* Why Trust Section */}
+      <section className="py-12 md:py-20 bg-gradient-to-b from-gray-50 to-white">
+        <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
+          {/* Section Title */}
+          <div className="text-center mb-10 md:mb-16">
+            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
+              WHY TRUST JOBOBIKE?
+            </h2>
+          </div>
+
+          {/* Stats Grid */}
+          <div className="grid grid-cols-2 lg:grid-cols-4 gap-6 md:gap-8 lg:gap-12">
+            {/* Stat 1 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
+                300+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Partners in Europe
+              </p>
+            </div>
+
+            {/* Stat 2 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
+                50000+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Sold Electric Bikes
+              </p>
+            </div>
+
+            {/* Stat 3 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
+                100000+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Jobobike Fans
+              </p>
+            </div>
+
+            {/* Stat 4 */}
+            <div className="text-center">
+              <div className="text-3xl md:text-5xl lg:text-6xl font-bold text-[#12b190] mb-2 md:mb-3">
+                20+
+              </div>
+              <p className="text-sm md:text-base lg:text-lg text-gray-700 font-medium">
+                Experience in Ebike Manufacturing
+              </p>
+            </div>
+          </div>
+        </div>
       </section>
 
       {/* Certificates Section */}

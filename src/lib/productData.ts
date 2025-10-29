@@ -1316,7 +1316,7 @@ export const PRODUCTS_DATA: ProductCard[] = [
     name: "JOBOBIKE Sam",
     slug: "jobobike-sam",
     originalPrice: 1299,
-    price: 1099,
+    price: 1299,
     discount: "15%",
     image: "/images/sam/sam-1.png",
     images: [

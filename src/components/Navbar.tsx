@@ -89,15 +89,12 @@ export default function Navbar() {
   // Helper function to get category taglines
   const getCategoryTagline = (category: string): string => {
     const taglines: { [key: string]: string } = {
-      'dyu': 'Smart Compact Mobility',
-      'jobo': 'Adventure with Power',
-      'lightweight': 'Easy to Carry & Ride',
-      'commuter-ebike': 'Urban Mobility Enjoyment',
-      'step-through': 'Comfort Inclusivity Safety',
-      'folding': 'Fold Ride Conquer',
-      'fat-tire': 'Stable Off-road All-Terrain',
-      'cargo': 'More Power When Carrying Loads',
-      'mtb': 'Power Technique Outstand',
+      'Hybrid': 'Smart Compact Mobility',
+      'Pendler': 'Urban Mobility Enjoyment',
+      'Sammenleggbar': 'Fold Ride Conquer',
+      'Fatbike': 'Stable Off-road All-Terrain',
+      'Lastesykkel': 'More Power When Carrying Loads',
+      'Terreng': 'Power Technique Outstand',
     };
     return taglines[category] || 'Explore our collection';
   };
