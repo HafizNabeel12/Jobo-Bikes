@@ -43,7 +43,7 @@ export default function ResultsDisplay({
           No Perfect Match Found
         </h3>
         <p className="text-gray-400 mb-8">
-          We couldn't find e-bikes matching all your criteria. Try adjusting your preferences.
+          We couldn&apos;t find e-bikes matching all your criteria. Try adjusting your preferences.
         </p>
         <button
           onClick={onReset}

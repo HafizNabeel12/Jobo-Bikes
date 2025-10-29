@@ -46,7 +46,7 @@ export default function EbikeCalculator({ products = [] }: EbikeCalculatorProps)
             Find Your Perfect E-Bike
           </h2>
           <p className="text-lg text-gray-600 max-w-2xl mx-auto">
-            Answer a few questions and we'll recommend the best e-bikes tailored to your needs
+            Answer a few questions and we&apos;ll recommend the best e-bikes tailored to your needs
           </p>
         </div>
 
