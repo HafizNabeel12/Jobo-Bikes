@@ -197,7 +197,7 @@ const LandingPage = () => {
                 {/* Quantity + Add to Cart */}
                 <div className="mt-2 sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-2">
                   {/* Compact Quantity Selector */}
-                  <div className="flex items-center justify-center sm:justify-start border border-gray-200 rounded-md w-fit mx-auto sm:mx-0">
+                  <div className="flex items-center border border-gray-200 rounded-md w-fit">
                     <button
                       onClick={() => handleQuantityChange(product.id, getQuantity(product.id) - 1)}
                       className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"

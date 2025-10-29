@@ -131,9 +131,9 @@ export default function ProductPage() {
                 </div>
 
                 {/* Quantity + Add to Cart */}
-                <div className="mt-2 sm:mt-0 flex items-center gap-2">
+                <div className="mt-2 sm:mt-0 flex flex-col sm:flex-row sm:items-center gap-2">
                   {/* Compact Quantity Selector */}
-                  <div className="flex items-center border border-gray-200 rounded-md">
+                  <div className="flex items-center border border-gray-200 rounded-md w-fit">
                     <button
                       onClick={() => handleQuantityChange(product.id, getQuantity(product.id) - 1)}
                       className="w-6 h-6 flex items-center justify-center hover:bg-gray-50 transition-colors"
@@ -155,7 +155,7 @@ export default function ProductPage() {
                   <AddToCartButton 
                     product={product}
                     quantity={getQuantity(product.id)}
-                    className="flex-1 rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white sm:bg-[#12b190] sm:hover:bg-[#29ecc5] transition md:text-white md:hover:border-black md:bg-black md:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
+                    className="w-full sm:flex-1 rounded-full border border-gray-300 px-2 sm:px-3 py-1 sm:py-1.5 text-xs font-medium text-white sm:bg-[#12b190] sm:hover:bg-[#29ecc5] transition md:text-white md:hover:border-black md:bg-black md:hover:bg-gray-50 sm:hover:text-black whitespace-nowrap"
                   />
                 </div>
               </div> 
