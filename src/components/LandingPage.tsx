@@ -6,9 +6,10 @@ import { Minus, Plus } from 'lucide-react';
 import { AddToCartButton } from './AddToCartButton';
 import { PRODUCTS_DATA } from "@/lib/productData";
 import { formatCurrency } from '@/utils/currency';
+import EbikeCalculator from './EbikeFinder/EbikeCalculator';
 
 const LandingPage = () => {
-  const [quantities, setQuantities] = useState<{[key: string]: number}>({});
+  const [quantities, setQuantities] = useState<{ [key: string]: number }>({});
 
   const handleQuantityChange = (productId: string, newQuantity: number) => {
     if (newQuantity < 1) return;
@@ -84,7 +85,7 @@ const LandingPage = () => {
         </div>
       </section>
 
-       {/* ===== Popular Categories Section ===== */}
+      {/* ===== Popular Categories Section ===== */}
       <section className="py-12 md:py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-center text-black mb-12">
@@ -143,16 +144,16 @@ const LandingPage = () => {
       {/* Featured Products */}
       <section className="mx-auto mt-6 max-w-7xl px-4 sm:px-2 mb-16">
         <div className="text-center mb-10 md:mb-16">
-            <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
-              Popular E-Bikes
-            </h2>
-          </div>
+          <h2 className="text-2xl md:text-4xl lg:text-5xl font-bold text-black mb-2">
+            Popular E-Bikes
+          </h2>
+        </div>
 
         <ul
           role="list"
           className="grid grid-cols-2 gap-2 sm:gap-3 sm:grid-cols-3 lg:grid-cols-3 overflow-hidden"
         >
-          {PRODUCTS_DATA.slice(0,6).map((product) => (
+          {PRODUCTS_DATA.slice(0, 6).map((product) => (
             <li
               key={product.id}
               className="group rounded-xl sm:rounded-2xl border border-gray-200 p-2 sm:p-3 transition hover:border-black"
@@ -213,7 +214,7 @@ const LandingPage = () => {
                       <Plus className="h-3 w-3 text-gray-600" />
                     </button>
                   </div>
-                  
+
                   {/* Add to Cart Button */}
                   <AddToCartButton
                     product={product}
@@ -227,12 +228,17 @@ const LandingPage = () => {
         </ul>
       </section>
 
+      <section>
+
+        <EbikeCalculator products={PRODUCTS_DATA} />
+      </section>
+
       {/* Certificates Section */}
       <section className="py-16 md:py-24 bg-gray-50 relative overflow-hidden">
         {/* Background decorative elements */}
         <div className="absolute top-0 right-0 w-1/3 h-full opacity-5">
           <svg className="w-full h-full" viewBox="0 0 400 400">
-            <path d="M 200 50 Q 350 200 200 350 Q 50 200 200 50" stroke="currentColor" strokeWidth="2" fill="none" className="text-gray-400"/>
+            <path d="M 200 50 Q 350 200 200 350 Q 50 200 200 50" stroke="currentColor" strokeWidth="2" fill="none" className="text-gray-400" />
           </svg>
         </div>
 
@@ -240,8 +246,8 @@ const LandingPage = () => {
           {/* Quote Icon */}
           <div className="flex justify-start mb-8">
             <svg className="w-20 h-20 md:w-24 md:h-24 text-gray-300" fill="currentColor" viewBox="0 0 100 100">
-              <path d="M20,45 Q15,30 25,25 Q35,20 40,30 L35,45 L45,45 L45,70 L20,70 Z"/>
-              <path d="M55,45 Q50,30 60,25 Q70,20 75,30 L70,45 L80,45 L80,70 L55,70 Z"/>
+              <path d="M20,45 Q15,30 25,25 Q35,20 40,30 L35,45 L45,45 L45,70 L20,70 Z" />
+              <path d="M55,45 Q50,30 60,25 Q70,20 75,30 L70,45 L80,45 L80,70 L55,70 Z" />
             </svg>
           </div>
 
@@ -258,7 +264,7 @@ const LandingPage = () => {
             </p>
           </div>
 
-         
+
 
           {/* Certificates Grid */}
           <div className="grid grid-cols-1 md:grid-cols-3 gap-12 md:gap-16 items-start">
@@ -298,8 +304,8 @@ const LandingPage = () => {
         </div>
       </section>
 
-    
-      
+
+
 
     </div>
   );

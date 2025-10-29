@@ -1973,7 +1973,6 @@ export const PRODUCTS_DATA: ProductCard[] = [
     images: [
       "/images/mover/mover-1.png",
       "/images/mover/mover-2.png",
-      "/images/mover/mover-3.png",
     ],
     features: [
       "250W Rear Hub Motor",
