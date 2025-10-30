@@ -303,31 +303,31 @@ const LandingPage = () => {
                 <h3 className="text-2xl mb-6">Perfekt for alle</h3>
                 <div className="space-y-4">
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Pendlere</strong> som vil spare tid og komme raskere frem.</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Deg</strong> som ønsker en lettere og mer behagelig sykkeltur</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Familier</strong> med barn og bagasje som trenger ekstra kraft.</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Miljøbevisste</strong> som vil gjøre en grønn forskjell i hverdagen.</span>
                   </div>
                   <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Sykkelentusiaster</strong> som bare elsker friheten på to hjul.</span>
                   </div>
                    <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Eventyrlystne</strong> som vil på tur og utforske naturen.</span>
                   </div>
                    <div className="flex items-center space-x-3">
-                    <div className="w-2 h-2 bg-black rounded-full"></div>
+                    <div className="w-2 h-2 bg-white rounded-full"></div>
                     <span><strong>Byutforskere</strong> som vil oppdage nye steder på en enkel og morsom måte.</span>
                   </div>
                 
@@ -410,24 +410,24 @@ const LandingPage = () => {
       </section>
 
       {/* Stats Section */}
-      <section className="py-16 bg-black text-white">
+      <section className="py-16 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="grid grid-cols-2 md:grid-cols-4 gap-8 text-center">
             <div>
               <div className="text-4xl text-[#12b190] mb-2">5000+</div>
-              <div className="text-gray-300">Fornøyde kunder</div>
+              <div className="text-gray-700">Fornøyde kunder</div>
             </div>
             <div>
               <div className="text-4xl text-[#12b190] mb-2">opp til 60km</div>
-              <div className="text-gray-300">Maks rekkevidde</div>
+              <div className="text-gray-700">Maks rekkevidde</div>
             </div>
             <div>
               <div className="text-4xl text-[#12b190] mb-2">2 år</div>
-              <div className="text-gray-300">Garanti</div>
+              <div className="text-gray-700">Garanti</div>
             </div>
             <div>
               <div className="text-4xl text-[#12b190] mb-2">24/7</div>
-              <div className="text-gray-300">Kundesupport</div>
+              <div className="text-gray-700">Kundesupport</div>
             </div>
           </div>
         </div>
