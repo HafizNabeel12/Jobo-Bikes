@@ -62,7 +62,7 @@ export default function SuccessClient() {
   if (loading) return (
     <div className="min-h-screen flex items-center justify-center">
       <div className="text-center">
-        <div className="animate-spin rounded-full h-10 w-10 border-4 border-b-transparent mb-4" />
+        <div className="animate-spin rounded-full h-10 w-10 border-4 border-[#12b190] border-b-transparent mb-4" />
         <p className="text-gray-600">Processing your order...</p>
       </div>
     </div>
@@ -74,7 +74,7 @@ export default function SuccessClient() {
         <h2 className="text-2xl font-semibold text-red-600 mb-2">Could not load order details</h2>
         <p className="text-gray-600 mb-4">{error}</p>
         <div className="space-x-2">
-          <button onClick={() => router.push('/')} className="px-4 py-2 bg-gray-100 rounded-md">Back to shop</button>
+          <button onClick={() => router.push('/')} className="px-4 py-2 bg-[#12b190] text-white rounded-md hover:bg-[#0f9a7a] transition-colors">Back to shop</button>
         </div>
       </div>
     </div>
@@ -101,7 +101,7 @@ export default function SuccessClient() {
         )}
 
         <div className="mt-6">
-          <button onClick={() => router.push('/')} className="px-6 py-2 bg-blue-600 text-white rounded-md">Continue shopping</button>
+          <button onClick={() => router.push('/')} className="px-6 py-2 bg-[#12b190] text-white rounded-md hover:bg-[#0f9a7a] transition-colors">Continue shopping</button>
         </div>
       </div>
     </div>

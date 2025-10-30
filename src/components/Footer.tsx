@@ -95,14 +95,14 @@ const Footer = () => {
 
       {/* Bottom Bar */}
       <div className="border-t border-gray-200 py-4 max-w-7xl ">
-        <div className=" px-6 flex justify-between items-center text-xs text-gray-500">
-          <div>
+        <div className="px-6 flex flex-col sm:flex-row justify-between items-center gap-4 text-xs text-gray-500">
+          <div className="text-center sm:text-left">
             © 2025 <span className="text-[#12b190] font-semibold">JALUT AI INNOSCRIBE</span>. Org nr: 932806517. Alle rettigheter forbeholdt.
           </div>
-          <div className="sm:flex gap-4">
-            <img src="/images/vipps.png" alt="Vipps" className="h-6 object-contain" />
-            <img src="/images/visa.png" alt="Visa" className="h-6 object-contain" />
-            <img src="/images/mastercard.png" alt="Mastercard" className="h-6 object-contain" />
+          <div className="flex gap-3 justify-center">
+            <img src="/images/vipps.png" alt="Vipps" className="h-5 sm:h-6 object-contain" />
+            <img src="/images/visa.png" alt="Visa" className="h-5 sm:h-6 object-contain" />
+            <img src="/images/mastercard.png" alt="Mastercard" className="h-5 sm:h-6 object-contain" />
           </div>
         </div>
       </div>

@@ -286,7 +286,7 @@ export default function QuestionnaireForm({ onSubmit }: QuestionnaireFormProps) 
 
           <div>
             <label className="block text-sm font-medium text-gray-700 mb-3">Comfort Level</label>
-            <div className="grid grid-cols-3 gap-3">
+            <div className="grid grid-cols-3 gap-3 sm:text-sm md:text-base ">
               {['Sporty', 'Normal', 'Extra comfort'].map(comfort => (
                 <button
                   key={comfort}
@@ -366,7 +366,7 @@ export default function QuestionnaireForm({ onSubmit }: QuestionnaireFormProps) 
           <button
             type="button"
             onClick={prevPage}
-            className="sm:px-6 py-3 border-2 border-[#12b190] bg-[#12b190] rounded-lg font-medium text-white hover:bg-[#08866c] transition-colors"
+            className="sm:px-2 md:px-6 py-3 border-2 border-[#12b190] bg-[#12b190] rounded-lg font-medium text-white hover:bg-[#08866c] transition-colors"
           >
             ← Previous
           </button>
@@ -387,7 +387,7 @@ export default function QuestionnaireForm({ onSubmit }: QuestionnaireFormProps) 
           <button
             type="submit"
             disabled={!isFormValid()}
-            className="ml-auto sm:px-8 py-3 bg-[#12b190] text-white rounded-lg sm:font-medium hover:bg-[#087f67] transition-colors disabled:bg-gray-600 disabled:cursor-not-allowed"
+            className="ml-auto sm:px-2 md:px-8 py-3 bg-[#12b190] text-white rounded-lg sm:font-medium hover:bg-[#087f67] transition-colors disabled:bg-gray-600 disabled:cursor-not-allowed"
           >
             Find My E-Bike 
           </button>
