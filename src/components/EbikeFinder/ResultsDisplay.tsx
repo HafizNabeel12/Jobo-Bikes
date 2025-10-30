@@ -111,7 +111,7 @@ export default function ResultsDisplay({
                     src={topRecommendation.image} 
                     alt={topRecommendation.name}
                     fill
-                    className="object-cover"
+                    className="object-contain"
                   />
                 </div>
               ) : (
@@ -198,7 +198,7 @@ export default function ResultsDisplay({
                         src={bike.image} 
                         alt={bike.name}
                         fill
-                        className="object-cover"
+                        className="object-contain"
                       />
                     </div>
                   ) : (
