@@ -242,8 +242,8 @@ const LandingPage = () => {
       <section className="py-20 bg-white">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
           <div className="text-center mb-16">
-            <h2 className="text-4xl text-gray-800 mb-4">Sykkellageret – spesialisten på el-sykler i Norge</h2>
-            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Oppdag el-sykler som kombinerer sykkelglede med smart teknologi. Hos Sykkellageret får du kvalitet, service og trygg handel – derfor velger flere oss.
+            <h2 className="text-4xl text-gray-800 mb-4">Jobobike – spesialisten på el-sykler i Norge</h2>
+            <p className="text-xl text-gray-600 max-w-3xl mx-auto">Oppdag el-sykler som kombinerer sykkelglede med smart teknologi. Hos Jobobike får du kvalitet, service og trygg handel – derfor velger flere oss.
 </p>
           </div>
 
@@ -358,7 +358,7 @@ const LandingPage = () => {
                   <span key={i} className="text-[#12b190]">★</span>
                 ))}
               </div>
-              <p className="text-gray-600 mb-4">&quot;Kjøpte DYU for 6 måneder siden. Fortsatt like fornøyd! Kvaliteten er topp og kundeservicen er utmerket.&quot;</p>
+              <p className="text-gray-600 mb-4">&quot;Kjøpte Jobobike for 6 måneder siden. Fortsatt like fornøyd! Kvaliteten er topp og kundeservicen er utmerket.&quot;</p>
               <div className="text-sm text-gray-500">- Lars, Bergen</div>
             </div>
             <div className="bg-white p-6 rounded-xl shadow-sm border">
@@ -367,7 +367,7 @@ const LandingPage = () => {
                   <span key={i} className="text-[#12b190]">★</span>
                 ))}
               </div>
-              <p className="text-gray-600 mb-4">&quot;Elsker min nye e-bike! Gjør pendlingen så mye mer behagelig. Anbefaler DYU til alle.&quot;</p>
+              <p className="text-gray-600 mb-4">&quot;Elsker min nye e-bike! Gjør pendlingen så mye mer behagelig. Anbefaler Jobobike til alle.&quot;</p>
               <div className="text-sm text-gray-500">- Anne, Trondheim</div>
             </div>
           </div>
@@ -376,7 +376,7 @@ const LandingPage = () => {
 
  <section className="hidden md:block py-16 bg-white ">
         <div className="max-w-7xl mx-auto px-4 sm:px-6 lg:px-8">
-          <h2 className="text-3xl text-center text-gray-800 mb-12">Sykkellageret – valgt av kunder over hele Norge</h2>
+          <h2 className="text-3xl text-center text-gray-800 mb-12">Jobobike – valgt av kunder over hele Norge</h2>
           <div className="grid md:grid-cols-3 gap-8">
             <div className="text-center">
               <div className="w-16 h-16 bg-[#12b190] rounded-full flex items-center justify-center mx-auto mb-4">

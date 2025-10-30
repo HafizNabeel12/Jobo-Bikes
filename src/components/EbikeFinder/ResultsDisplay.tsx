@@ -106,7 +106,7 @@ export default function ResultsDisplay({
           <div className="grid md:grid-cols-2 gap-6">
             <div>
               {topRecommendation.image ? (
-                <div className="relative h-80 bg-gray-100 rounded-lg overflow-hidden">
+                <div className="relative h-80 bg-white rounded-lg overflow-hidden">
                   <Image 
                     src={topRecommendation.image} 
                     alt={topRecommendation.name}
@@ -193,7 +193,7 @@ export default function ResultsDisplay({
               <div key={bike.id} className="bg-white rounded-xl shadow-lg overflow-hidden hover:shadow-xl transition-shadow border border-gray-200">
                 <div className="relative">
                   {bike.image ? (
-                    <div className="relative h-56 bg-gray-100">
+                    <div className="relative h-56 bg-white">
                       <Image 
                         src={bike.image} 
                         alt={bike.name}
