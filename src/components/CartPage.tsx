@@ -158,7 +158,7 @@ const CartPage: React.FC = () => {
                 <div className="flex gap-3">
                   {/* Product Image */}
                   <div className="flex-shrink-0">
-                    <div className="w-16 h-16 bg-gradient-to-br from-gray-100 to-gray-200 rounded-xl overflow-hidden shadow-inner">
+                    <div className="w-16 h-16 bg-white rounded-xl overflow-hidden shadow-inner">
                       {item.image ? (
                         <Image 
                           src={item.image} 
